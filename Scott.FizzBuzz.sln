@@ -157,6 +157,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".run", ".run", "{0F0B2F09-2
 		.run\Triad - Validation Accumulation - 03 LanguageExt.run.xml = .run\Triad - Validation Accumulation - 03 LanguageExt.run.xml
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{B8A3C2D1-AE0B-4F1C-A93D-C3F5B4B2E7D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{C7D1E2F3-4A5B-46C7-91D8-2E3F4A5B6C7D}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\ci.yml = .github\workflows\ci.yml
+		.github\workflows\docs-pdf.yml = .github\workflows\docs-pdf.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -190,5 +198,7 @@ Global
 		{B94BC6F5-A003-4F4F-A323-2E301F68EE71} = {D38A2C53-45E2-4338-BD4A-4A8A702A3459}
 		{F7F5D6D7-C0A8-45A5-9B74-C5A5E4CC49E7} = {D38A2C53-45E2-4338-BD4A-4A8A702A3459}
 		{1675DFA0-EBB6-4188-8C57-A6D6E424B50F} = {F8F83BB4-30CC-4532-ADFA-2BDF75A245C4}
+		{B8A3C2D1-AE0B-4F1C-A93D-C3F5B4B2E7D8} = {95AAB8A4-B7DA-4893-AB8D-077FB1D6DF93}
+		{C7D1E2F3-4A5B-46C7-91D8-2E3F4A5B6C7D} = {B8A3C2D1-AE0B-4F1C-A93D-C3F5B4B2E7D8}
 	EndGlobalSection
 EndGlobal
