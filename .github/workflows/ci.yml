@@ -81,9 +81,9 @@ jobs:
           /p:CollectCoverage=true
           /p:CoverletOutputFormat=cobertura
           /p:Include=[Scott.FizzBuzz.Core]*
-          /p:ThresholdType=line,branch
+          /p:ThresholdType="line,branch"
           /p:ThresholdStat=total
-          /p:Threshold=60,50
+          /p:Threshold="60,50"
 
       - name: Test Console Line Coverage Threshold
         run: >
@@ -93,6 +93,6 @@ jobs:
           /p:CollectCoverage=true
           /p:CoverletOutputFormat=cobertura
           /p:Include=[Scott.FizzBuzz.Console]*
-          /p:ThresholdType=line,branch
+          /p:ThresholdType="line,branch"
           /p:ThresholdStat=total
-          /p:Threshold=75,80
+          /p:Threshold="75,80"
