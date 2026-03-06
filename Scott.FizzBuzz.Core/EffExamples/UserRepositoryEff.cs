@@ -1,23 +1,17 @@
 using LanguageExt;
 using Scott.FizzBuzz.Core.CommonExampleCode;
 using static LanguageExt.Prelude;
+using static Scott.FizzBuzz.Core.CommonExampleCode.FakeDatabase;
 
 namespace Scott.FizzBuzz.Core.EffExamples;
 
-public class UserRepositoryEff
+public static class UserRepositoryEff
 {
     // Use Option to model a function that could either return a User or None
-    public Option<User> GetUser(string name)
+    public static Option<Person> GetUser(int id)
     {
-        // For demonstration purposes, let's assume we have a database with users
-        Dictionary<string, User> database = new()
-        {
-            ["Alice"] = new User { Name = "Alice", Age = 25 },
-            ["Bob"] = new User { Name = "Bob", Age = 30 }
-        };
-
         // Use TryGetValue to more efficiently check for the value
-        return database.TryGetValue(name, out var user) 
+        return Persons.TryGetValue(id, out var user) 
             ? Some(user) 
             : None;
     }

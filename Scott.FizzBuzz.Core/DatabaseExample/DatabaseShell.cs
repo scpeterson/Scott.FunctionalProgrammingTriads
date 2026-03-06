@@ -9,12 +9,9 @@ public static class DatabaseShell
     public static Eff<Person> GetPerson(int id) =>
         Eff<Person>(() =>
         {
-            if (FakeDatabase.Persons.TryGetValue(id, out var person))
-            {
-                return person;
-            }
-
-            throw new KeyNotFoundException($"No person found with id {id}");
+            return FakeDatabase.Persons.TryGetValue(id, out var person) 
+                ? person 
+                : throw new KeyNotFoundException($"No person found with id {id}");
         });
     
     public static Eff<Unit> AddPerson(Person person) =>

@@ -1,0 +1,20 @@
+nav:
+  - Home: index.md
+  - Architecture:
+    - architecture/README.md
+    - architecture/contributing.md
+    - architecture/tags.md
+    - architecture/database-changelog-workflow.md
+    - architecture/database-operations-runbook.md
+    - architecture/versioning.md
+    - architecture/pdf-export.md
+    - Diagrams:
+      - architecture/diagrams
+    - ADRs:
+      - architecture/adr/0001-demo-triad-structure.md
+      - architecture/adr/0002-output-abstraction-ioutput.md
+      - architecture/adr/0003-demo-discovery-metadata.md
+      - architecture/adr/0004-private-logic-extraction.md
+      - architecture/adr/0005-coverage-gates-and-test-strategy.md
+      - architecture/adr/0006-text-store-persistence-side-effect-boundaries.md
+      - architecture/adr/0007-postgresql-sql-first-changelog-workflow.md

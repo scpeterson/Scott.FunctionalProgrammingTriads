@@ -1,0 +1,59 @@
+site_name: Scott FizzBuzz Architecture
+site_description: Architecture overview and ADRs for Scott.FizzBuzz
+repo_name: Scott.FizzBuzz
+# Replace with your actual repository URL when a remote is configured.
+repo_url: https://github.com/your-org/Scott.FizzBuzz
+# Edit links in the docs view. Adjust branch/path if needed.
+edit_uri: edit/main/docs/
+docs_dir: docs
+
+theme:
+  name: material
+  language: en
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
+    - content.action.edit
+    - content.action.view
+    - search.suggest
+    - search.highlight
+
+plugins:
+  - search:
+      lang: en
+  - awesome-nav
+  - git-revision-date-localized:
+      enable_creation_date: true
+      enable_git_follow: false
+      strict: false
+      type: date
+      timezone: America/New_York
+  - minify:
+      minify_html: true
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format

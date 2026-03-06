@@ -1,0 +1,6 @@
+nav:
+  - 0001 Demo Triad Structure: 0001-demo-triad-structure.md
+  - 0002 Output Abstraction via IOutput: 0002-output-abstraction-ioutput.md
+  - 0003 Demo Discovery Metadata: 0003-demo-discovery-metadata.md
+  - 0004 Private Logic Extraction: 0004-private-logic-extraction.md
+  - 0005 Coverage Gates and Test Strategy: 0005-coverage-gates-and-test-strategy.md

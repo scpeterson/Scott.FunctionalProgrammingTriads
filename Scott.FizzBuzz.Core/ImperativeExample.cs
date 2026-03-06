@@ -1,5 +1,3 @@
-using CommandLine;
-
 namespace Scott.FizzBuzz.Core;
 
 public static class ImperativeExample
@@ -8,17 +6,17 @@ public static class ImperativeExample
     {
         if (value % 3 == 0 && value % 5 == 0)
         {
-            return "ImperativeFizzBuzz";
+            return "FizzBuzz";
         }
 
         if (value % 3 == 0)
         {
-            return "ImperativeFizz";
+            return "Fizz";
         }
 
         if (value % 5 == 0)
         {
-            return "ImperativeBuzz";
+            return "Buzz";
         }
 
         return value.ToString();

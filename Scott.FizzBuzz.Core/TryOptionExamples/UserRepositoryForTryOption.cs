@@ -19,14 +19,9 @@ public class UserRepositoryForTryOption
             };
 
             // Use TryGetValue to more efficiently check for the value
-            if (database.TryGetValue(name, out var user))
-            {
-                return Some(user);
-            }
-            else
-            {
-                return None;
-            }
+            return database.TryGetValue(name, out var user) 
+                ? Some(user) 
+                : None;
         });
     }
 }

@@ -1,0 +1,43 @@
+using LanguageExt;
+using Scott.FizzBuzz.Core.Interfaces;
+using static Scott.FizzBuzz.Core.OutputUtilities;
+
+namespace Scott.FizzBuzz.Core.Demos.NullOptionTriad;
+
+public class ImperativeNullHandlingDemo : IDemo
+{
+    private readonly IOutput _output;
+
+    public ImperativeNullHandlingDemo() : this(new ConsoleOutput())
+    {
+    }
+
+    public ImperativeNullHandlingDemo(IOutput output)
+    {
+        _output = output;
+    }
+
+    public string Key => "imperative-null-handling";
+    public string Category => "imperative";
+    public IReadOnlyCollection<string> Tags => ["imperative", "comparison", "null"];
+
+    public Either<string, Unit> Run(string? name, string? number) =>
+        ExecuteWithSpacing(_output, () =>
+        {
+            var rawName = name;
+            if (rawName == null)
+            {
+                _output.WriteLine("Name missing.");
+                return;
+            }
+
+            var trimmed = rawName.Trim();
+            if (trimmed.Length == 0)
+            {
+                _output.WriteLine("Name empty.");
+                return;
+            }
+
+            _output.WriteLine($"Hello, {trimmed}.");
+        }, "Imperative Null Handling");
+}

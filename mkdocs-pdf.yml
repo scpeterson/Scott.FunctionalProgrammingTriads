@@ -1,0 +1,43 @@
+site_name: Scott FizzBuzz Architecture (PDF)
+site_description: PDF-focused docs build for Scott.FizzBuzz
+repo_name: Scott.FizzBuzz
+repo_url: https://github.com/your-org/Scott.FizzBuzz
+edit_uri: edit/main/docs/
+docs_dir: docs
+
+theme:
+  name: material
+  language: en
+
+plugins:
+  - search
+  - with-pdf:
+      enabled_if_env: ENABLE_PDF_EXPORT
+      output_path: pdf/scott-fizzbuzz-architecture.pdf
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+nav:
+  - Home: index.md
+  - Architecture:
+    - Overview: architecture/README.md
+    - Contributing: architecture/contributing.md
+    - Tags: architecture/tags.md
+    - Versioning: architecture/versioning.md
+    - PDF Export: architecture/pdf-export.md
+    - Diagrams:
+      - System Overview: architecture/diagrams/system-overview.md
+      - Diagram Template: architecture/diagrams/template.md
+    - ADRs:
+      - 0001 Demo Triad Structure: architecture/adr/0001-demo-triad-structure.md
+      - 0002 Output Abstraction via IOutput: architecture/adr/0002-output-abstraction-ioutput.md
+      - 0003 Demo Discovery Metadata: architecture/adr/0003-demo-discovery-metadata.md
+      - 0004 Private Logic Extraction: architecture/adr/0004-private-logic-extraction.md
+      - 0005 Coverage Gates and Test Strategy: architecture/adr/0005-coverage-gates-and-test-strategy.md

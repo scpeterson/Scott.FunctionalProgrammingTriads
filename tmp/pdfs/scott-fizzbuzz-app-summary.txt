@@ -1,0 +1,49 @@
+SCOTT.FIZZBUZZ APP SUMMARY
+
+WHAT IT IS
+Scott.FizzBuzz is a .NET console app that demonstrates multiple
+FizzBuzz implementations and functional programming patterns in C#.
+It runs a selected demo using a command-line method key.
+
+WHO IT'S FOR
+Primary persona: C# developers learning and comparing imperative
+and functional styles, especially LanguageExt patterns.
+
+WHAT IT DOES
+- Runs demos via -m/--method (examples: imperative,
+  no-dependency, lang-ext, demo-either, demo-eff).
+- Uses dependency injection to register demo implementations.
+- Dispatches through IDemo and returns Either<string, Unit>
+  for success/error flow.
+- Accepts optional inputs -n/--name and -b/--number.
+- Shows both no-dependency and LanguageExt-based FizzBuzz styles.
+- Includes demos for currying, tuples, pattern matching,
+  and monadic functions.
+- Includes unit and integration tests for runner behavior,
+  unknown methods, null guards, and DI wiring.
+
+HOW IT WORKS (REPO-EVIDENCE ARCHITECTURE)
+- Entry point: Scott.FizzBuzz.Console/Program.cs builds Host,
+  registers IDemo services, parses options, resolves DemoRunner,
+  and calls Execute.
+- Execution layer: Scott.FizzBuzz.Console/DemoRunner.cs maps
+  demo keys to implementations and invokes IDemo.Run.
+- Core layer: demos in Scott.FizzBuzz.Core/Demos/*.cs implement
+  Scott.FizzBuzz.Core/Interfaces/IDemo.cs.
+- Data flow: CLI args -> parser -> Options -> DemoRunner ->
+  selected IDemo -> console output.
+- Persistence/services: an in-memory FakeDatabase exists;
+  external persistent datastore config is Not found in repo.
+
+HOW TO RUN (MINIMAL)
+1) Install .NET SDK per global.json (9.0.0, rollForward
+   latestMajor, allowPrerelease true); projects target net10.0.
+2) From repo root: dotnet restore Scott.FizzBuzz.sln
+3) Run a demo: dotnet run --project Scott.FizzBuzz.Console --
+   -m no-dependency
+4) Try other keys: -m imperative, -m lang-ext,
+   -m demo-either, -m demo-eff
+5) Packaging/deployment/production hosting instructions:
+   Not found in repo.
+
+Evidence scope: summary based only on files in this repository.

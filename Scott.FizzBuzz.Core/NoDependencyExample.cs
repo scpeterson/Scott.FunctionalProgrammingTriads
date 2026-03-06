@@ -6,9 +6,9 @@ public static class NoDependencyExample
     {
         return (value % 3, value % 5) switch
         {
-            (0, 0) => "NoDependencyFizzBuzz",
-            (0, _) => "NoDependencyFizz",
-            (_, 0) => "NoDependencyBuzz",
+            (0, 0) => "FizzBuzz",
+            (0, _) => "Fizz",
+            (_, 0) => "Buzz",
             _ => value.ToString()
         };
     }
