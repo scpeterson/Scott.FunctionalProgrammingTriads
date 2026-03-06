@@ -3,6 +3,13 @@ name: Docs PDF
 on:
   workflow_dispatch:
 
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build-pdf:
     runs-on: ubuntu-latest
@@ -15,6 +22,8 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.10"
+          cache: "pip"
+          cache-dependency-path: requirements-docs-pdf.txt
 
       - name: Install PDF Docs Dependencies
         run: pip install -r requirements-docs-pdf.txt
@@ -29,3 +38,4 @@ jobs:
         with:
           name: docs-pdf-site
           path: site
+          retention-days: 7

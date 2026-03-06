@@ -5,7 +5,23 @@ on:
     branches:
       - main
       - master
+    paths-ignore:
+      - "docs/**"
+      - "**/*.md"
   pull_request:
+    branches:
+      - main
+      - master
+    paths-ignore:
+      - "docs/**"
+      - "**/*.md"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build-and-test:
@@ -19,11 +35,18 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           global-json-file: global.json
+          cache: true
+          cache-dependency-path: |
+            **/*.csproj
+            **/packages.lock.json
+            global.json
 
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.10"
+          cache: "pip"
+          cache-dependency-path: requirements-docs.txt
 
       - name: Restore
         run: dotnet restore Scott.FizzBuzz.sln
@@ -58,21 +81,9 @@ jobs:
           /p:CollectCoverage=true
           /p:CoverletOutputFormat=cobertura
           /p:Include=[Scott.FizzBuzz.Core]*
-          /p:ThresholdType=line
+          /p:ThresholdType=line,branch
           /p:ThresholdStat=total
-          /p:Threshold=60
-
-      - name: Test Core Branch Coverage Threshold
-        run: >
-          dotnet test Scott.FizzBuzz.Core.Tests/Scott.FizzBuzz.Core.Tests.csproj
-          --configuration Release
-          --no-build
-          /p:CollectCoverage=true
-          /p:CoverletOutputFormat=cobertura
-          /p:Include=[Scott.FizzBuzz.Core]*
-          /p:ThresholdType=branch
-          /p:ThresholdStat=total
-          /p:Threshold=50
+          /p:Threshold=60,50
 
       - name: Test Console Line Coverage Threshold
         run: >
@@ -82,18 +93,6 @@ jobs:
           /p:CollectCoverage=true
           /p:CoverletOutputFormat=cobertura
           /p:Include=[Scott.FizzBuzz.Console]*
-          /p:ThresholdType=line
+          /p:ThresholdType=line,branch
           /p:ThresholdStat=total
-          /p:Threshold=75
-
-      - name: Test Console Branch Coverage Threshold
-        run: >
-          dotnet test Scott.FizzBuzz.Console.Tests/Scott.FizzBuzz.Console.Tests.csproj
-          --configuration Release
-          --no-build
-          /p:CollectCoverage=true
-          /p:CoverletOutputFormat=cobertura
-          /p:Include=[Scott.FizzBuzz.Console]*
-          /p:ThresholdType=branch
-          /p:ThresholdStat=total
-          /p:Threshold=80
+          /p:Threshold=75,80
