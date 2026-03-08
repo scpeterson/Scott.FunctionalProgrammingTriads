@@ -8,13 +8,16 @@ namespace Scott.FizzBuzz.Core.Tests.Demos;
 public class NegativeDemoPathsShould
 {
     [Fact]
-    public void ThrowFormatExceptionForImperativeAsyncWorkflowWhenNumberIsInvalid()
+    public void HandleInvalidNumberInImperativeAsyncWorkflowWithoutThrowing()
     {
-        var demo = new ImperativeAsyncWorkflowDemo(new RecordingOutput());
+        var output = new RecordingOutput();
+        var demo = new ImperativeAsyncWorkflowDemo(output);
 
         Action act = () => _ = demo.Run("Scott", "bad");
 
-        act.Should().Throw<FormatException>();
+        act.Should().NotThrow();
+        _ = demo.Run("Scott", "bad");
+        output.Messages.Should().Contain(message => message.Contains("Failed:", StringComparison.Ordinal));
     }
 
     [Fact]

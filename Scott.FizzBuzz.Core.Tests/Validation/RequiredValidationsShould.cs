@@ -30,4 +30,12 @@ public class RequiredValidationsShould
         var result = Required.Value(option, "Name");
         result.ShouldBeFail();
     }
+
+    [Fact]
+    public void Required_Value_Should_Return_Success_For_NonString_Value()
+    {
+        var result = Required.Value(Some(0), "Count");
+
+        result.ShouldBeSuccess();
+    }
 }

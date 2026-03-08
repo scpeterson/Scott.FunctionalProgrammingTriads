@@ -20,7 +20,8 @@ public class CSharpAsyncCompositionDemo : IDemo
 
     public string Key => "csharp-async-composition";
     public string Category => "csharp";
-    public IReadOnlyCollection<string> Tags => ["fp", "csharp", "comparison", "async"];
+    public IReadOnlyCollection<string> Tags => ["fp", "csharp", "comparison", "async", "effects"];
+    public string Description => "C# functional equivalent: explicit error channel with async composition.";
 
     public Either<string, Unit> Run(string? name, string? number) =>
         ExecuteWithSpacing(_output, () =>
@@ -28,16 +29,31 @@ public class CSharpAsyncCompositionDemo : IDemo
             var result = ComposeAsync(number ?? "10").GetAwaiter().GetResult();
             result.Match(
                 Right: value => _output.WriteLine($"Result: {value}"),
-                Left: error => _output.WriteLine(error));
-        }, "C# Async Composition");
+                Left: error => _output.WriteLine($"Failed: {error}"));
+        }, "C# Eff/Aff Equivalent Workflow");
 
     private static async Task<Either<string, int>> ComposeAsync(string input)
     {
-        if (!int.TryParse(input, out var parsed))
-            return Left<string, int>("Input must be an integer.");
+        var parsed = Parse(input);
 
-        var doubled = await Task.FromResult(parsed * 2);
-        var finalValue = await Task.FromResult(doubled + 10);
-        return Right<string, int>(finalValue);
+        return await parsed.Match(
+            Right: async value =>
+            {
+                var doubled = value * 2;
+                var finalValue = await AddTenAsync(doubled);
+                return Right<string, int>(finalValue);
+            },
+            Left: error => Task.FromResult(Left<string, int>(error)));
+    }
+
+    private static Either<string, int> Parse(string input) =>
+        int.TryParse(input, out var parsed)
+            ? Right<string, int>(parsed)
+            : Left<string, int>("Input must be an integer.");
+
+    private static async Task<int> AddTenAsync(int value)
+    {
+        await Task.Delay(10);
+        return value + 10;
     }
 }

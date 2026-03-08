@@ -22,6 +22,7 @@ The architecture intentionally optimizes for comparison, repeatability, and test
 - Demo metadata contract (`Key`, `Category`, `Tags`, `Description`) for discoverability.
 - Extraction of private demo logic into pure helper classes for direct unit testing.
 - Persistence demos isolate text-store IO at explicit side-effect boundaries.
+- LanguageExt async/sync effect demos standardize on `Aff`/`Eff` with pure transforms.
 - PostgreSQL schema/data changes follow a SQL-first changelog workflow.
 - Coverage thresholds in CI to prevent quality regressions.
 

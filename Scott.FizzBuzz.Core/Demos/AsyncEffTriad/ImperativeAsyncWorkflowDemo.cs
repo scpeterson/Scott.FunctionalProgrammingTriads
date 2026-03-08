@@ -19,17 +19,30 @@ public class ImperativeAsyncWorkflowDemo : IDemo
 
     public string Key => "imperative-async-workflow";
     public string Category => "imperative";
-    public IReadOnlyCollection<string> Tags => ["imperative", "comparison", "async"];
+    public IReadOnlyCollection<string> Tags => ["imperative", "comparison", "async", "effects"];
+    public string Description => "Imperative equivalent: direct side effects with sync + async calls and exception handling.";
 
     public Either<string, Unit> Run(string? name, string? number) =>
         ExecuteWithSpacing(_output, () =>
         {
-            var value = int.Parse(number ?? "10");
-            var first = DoubleAsync(value).GetAwaiter().GetResult();
-            var second = AddTenAsync(first).GetAwaiter().GetResult();
-            _output.WriteLine($"Result: {second}");
-        }, "Imperative Async Workflow");
+            try
+            {
+                var value = int.Parse(number ?? "10");
+                var doubled = Double(value);
+                var finalValue = AddTenAsync(doubled).GetAwaiter().GetResult();
+                _output.WriteLine($"Result: {finalValue}");
+            }
+            catch (Exception ex)
+            {
+                _output.WriteLine($"Failed: {ex.Message}");
+            }
+        }, "Imperative Eff/Aff Equivalent Workflow");
 
-    private static Task<int> DoubleAsync(int value) => Task.FromResult(value * 2);
-    private static Task<int> AddTenAsync(int value) => Task.FromResult(value + 10);
+    private static int Double(int value) => value * 2;
+
+    private static async Task<int> AddTenAsync(int value)
+    {
+        await Task.Delay(10);
+        return value + 10;
+    }
 }

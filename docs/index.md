@@ -12,6 +12,7 @@ This site hosts architecture documentation and decision records for the project.
 - [ADR 0005: Coverage Gates and Test Strategy](architecture/adr/0005-coverage-gates-and-test-strategy.md)
 - [ADR 0006: Text-Store Persistence Side-Effect Boundaries](architecture/adr/0006-text-store-persistence-side-effect-boundaries.md)
 - [ADR 0007: PostgreSQL SQL-First Changelog Workflow](architecture/adr/0007-postgresql-sql-first-changelog-workflow.md)
+- [ADR 0008: LanguageExt Eff/Aff Effect Boundaries](architecture/adr/0008-languageext-eff-aff-effect-boundaries.md)
 - [PostgreSQL Changelog Workflow](architecture/database-changelog-workflow.md)
 - [PostgreSQL Operations Runbook](architecture/database-operations-runbook.md)
 - [Architecture Docs Contributing Guide](architecture/contributing.md)

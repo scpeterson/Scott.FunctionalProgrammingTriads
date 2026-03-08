@@ -31,6 +31,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "adr", "adr", "{59C61EE3-1D6
 		docs\architecture\adr\0005-coverage-gates-and-test-strategy.md = docs\architecture\adr\0005-coverage-gates-and-test-strategy.md
 		docs\architecture\adr\0006-text-store-persistence-side-effect-boundaries.md = docs\architecture\adr\0006-text-store-persistence-side-effect-boundaries.md
 		docs\architecture\adr\0007-postgresql-sql-first-changelog-workflow.md = docs\architecture\adr\0007-postgresql-sql-first-changelog-workflow.md
+		docs\architecture\adr\0008-languageext-eff-aff-effect-boundaries.md = docs\architecture\adr\0008-languageext-eff-aff-effect-boundaries.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "database", "database", "{F8F83BB4-30CC-4532-ADFA-2BDF75A245C4}"

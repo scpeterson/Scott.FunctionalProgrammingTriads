@@ -8,30 +8,38 @@ public class LanguageExtAsyncEffWorkflowDemo : IDemo
 {
     public string Key => "langext-eff-async-workflow";
     public string Category => "functional";
-    public IReadOnlyCollection<string> Tags => ["fp", "languageext", "comparison", "async", "eff"];
+    public IReadOnlyCollection<string> Tags => ["fp", "languageext", "comparison", "async", "eff", "aff", "effects"];
+    public string Description => "LanguageExt composition using Eff (sync effect) + Aff (async effect).";
 
-    public Either<string, Unit> Run(string? name, string? number) =>
-        BuildProgram(number)
+    public Either<string, Unit> Run(string? name, string? number)
+    {
+        var effResult = ParseAndDoubleEff(number)
             .Run()
             .Match(
-                Succ: task => task.GetAwaiter().GetResult().Map(_ => unit),
-                Fail: error => Left<string, Unit>(error.Message));
+                Succ: result => result,
+                Fail: error => Left<string, int>($"Eff failure: {error.Message}"));
 
-    private static Eff<Task<Either<string, int>>> BuildProgram(string? input) =>
-        Eff(() => ComposeAsync(input));
+        var affResult = AddTenAff(effResult)
+            .Run()
+            .AsTask()
+            .GetAwaiter()
+            .GetResult()
+            .Match(
+                Succ: result => result,
+                Fail: error => Left<string, int>($"Aff failure: {error.Message}"));
 
-    private static async Task<Either<string, int>> ComposeAsync(string? input)
-    {
-        var validated = ValidateInput(input);
-        return await validated.Match(
-            Right: async value =>
-            {
-                var doubled = await Task.FromResult(value * 2);
-                var finalValue = await Task.FromResult(doubled + 10);
-                return Right<string, int>(finalValue);
-            },
-            Left: error => Task.FromResult(Left<string, int>(error)));
+        return affResult.Map(_ => unit);
     }
+
+    private static Eff<Either<string, int>> ParseAndDoubleEff(string? input) =>
+        Eff(() => ValidateInput(input).Map(value => value * 2));
+
+    private static Aff<Either<string, int>> AddTenAff(Either<string, int> current) =>
+        Aff<Either<string, int>>(async () =>
+        {
+            await Task.Delay(10);
+            return current.Map(value => value + 10);
+        });
 
     private static Either<string, int> ValidateInput(string? input) =>
         !string.IsNullOrWhiteSpace(input) && int.TryParse(input, out var parsed)

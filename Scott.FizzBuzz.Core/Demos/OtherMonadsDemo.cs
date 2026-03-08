@@ -106,7 +106,7 @@ public class OtherMonadsDemo : IDemo
                     .Map(x => x * 2)
                     .Bind(x => Aff<int>(() => new ValueTask<int>(x + 1)));
 
-                var final = aff.Run().Result;
+                var final = aff.Run().AsTask().GetAwaiter().GetResult();
                 _output.WriteLine($"Async result: {final}");
                 
                 

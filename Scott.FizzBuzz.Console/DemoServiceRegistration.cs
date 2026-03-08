@@ -23,9 +23,9 @@ public static class DemoServiceRegistration
         services.AddTransient<IDemo, PatternMatchingDemo>();
         services.AddTransient<IDemo, TupleDemo>();
         services.AddTransient<IDemo, CurryingDemo>();
+        services.AddTransient<IDemo, ApplicativeValidationDemo>();
         services.AddTransient<IDemo, EitherDemo>();
         services.AddTransient<IDemo, LanguageExtDemo>();
-        services.AddTransient<IDemo, EffDemo>();
         services.AddTransient<IDemo, SchrodingersCatDemo>();
         services.AddTransient<IDemo, MonadicFunctionsDemo>();
         services.AddTransient<IDemo, MonadBasicsCatDemo>();
