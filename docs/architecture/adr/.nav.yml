@@ -7,3 +7,4 @@ nav:
   - 0006 Text-Store Persistence Side-Effect Boundaries: 0006-text-store-persistence-side-effect-boundaries.md
   - 0007 PostgreSQL SQL-First Changelog Workflow: 0007-postgresql-sql-first-changelog-workflow.md
   - 0008 LanguageExt Eff/Aff Effect Boundaries: 0008-languageext-eff-aff-effect-boundaries.md
+  - 0009 Option Monad Triad Comparison: 0009-option-monad-triad-comparison.md

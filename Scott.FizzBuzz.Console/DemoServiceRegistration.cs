@@ -7,6 +7,7 @@ using Scott.FizzBuzz.Core.Demos.DatabaseTextStoreTriad;
 using Scott.FizzBuzz.Core.Demos.EndToEndMiniFeatureTriad;
 using Scott.FizzBuzz.Core.Demos.ExceptionBoundariesTriad;
 using Scott.FizzBuzz.Core.Demos.NullOptionTriad;
+using Scott.FizzBuzz.Core.Demos.OptionMonadTriad;
 using Scott.FizzBuzz.Core.Demos.ParseValidateTriad;
 using Scott.FizzBuzz.Core.Demos.ValidationAccumulationTriad;
 using Scott.FizzBuzz.Core.Interfaces;
@@ -35,6 +36,9 @@ public static class DemoServiceRegistration
         services.AddTransient<IDemo, ImperativeNullHandlingDemo>();
         services.AddTransient<IDemo, CSharpNullPatternsDemo>();
         services.AddTransient<IDemo, LanguageExtOptionPipelineDemo>();
+        services.AddTransient<IDemo, ImperativeOptionComparisonDemo>();
+        services.AddTransient<IDemo, CSharpOptionComparisonDemo>();
+        services.AddTransient<IDemo, LanguageExtOptionMonadComparisonDemo>();
         services.AddTransient<IDemo, ImperativeParseValidateDemo>();
         services.AddTransient<IDemo, CSharpParseValidatePipelineDemo>();
         services.AddTransient<IDemo, LanguageExtEitherParseValidateDemo>();

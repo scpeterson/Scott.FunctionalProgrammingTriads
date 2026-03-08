@@ -1,6 +1,7 @@
 using LanguageExt.UnitTesting;
 using Scott.FizzBuzz.Core.Demos;
 using Scott.FizzBuzz.Core.Demos.NullOptionTriad;
+using Scott.FizzBuzz.Core.Demos.OptionMonadTriad;
 using Scott.FizzBuzz.Core.Demos.ParseValidateTriad;
 using Scott.FizzBuzz.Core.Demos.ValidationAccumulationTriad;
 using Scott.FizzBuzz.Core.Interfaces;
@@ -18,6 +19,9 @@ public class ScaffoldedTriadsShould
             new ImperativeNullHandlingDemo(),
             new CSharpNullPatternsDemo(),
             new LanguageExtOptionPipelineDemo(),
+            new ImperativeOptionComparisonDemo(),
+            new CSharpOptionComparisonDemo(),
+            new LanguageExtOptionMonadComparisonDemo(),
             new ImperativeParseValidateDemo(),
             new CSharpParseValidatePipelineDemo(),
             new LanguageExtEitherParseValidateDemo(),

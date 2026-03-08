@@ -13,6 +13,7 @@ This site hosts architecture documentation and decision records for the project.
 - [ADR 0006: Text-Store Persistence Side-Effect Boundaries](architecture/adr/0006-text-store-persistence-side-effect-boundaries.md)
 - [ADR 0007: PostgreSQL SQL-First Changelog Workflow](architecture/adr/0007-postgresql-sql-first-changelog-workflow.md)
 - [ADR 0008: LanguageExt Eff/Aff Effect Boundaries](architecture/adr/0008-languageext-eff-aff-effect-boundaries.md)
+- [ADR 0009: Option Monad Triad Comparison](architecture/adr/0009-option-monad-triad-comparison.md)
 - [PostgreSQL Changelog Workflow](architecture/database-changelog-workflow.md)
 - [PostgreSQL Operations Runbook](architecture/database-operations-runbook.md)
 - [Architecture Docs Contributing Guide](architecture/contributing.md)
