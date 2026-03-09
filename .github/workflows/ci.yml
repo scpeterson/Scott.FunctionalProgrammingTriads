@@ -26,6 +26,8 @@ concurrency:
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
+    env:
+      MSBUILDDISABLENODEREUSE: 1
 
     steps:
       - name: Checkout
@@ -68,7 +70,7 @@ jobs:
         run: dotnet restore Scott.FizzBuzz.sln
 
       - name: Build
-        run: dotnet build Scott.FizzBuzz.sln --configuration Release --no-restore
+        run: dotnet build Scott.FizzBuzz.sln --configuration Release --no-restore -m:1
 
       - name: Install Docs Dependencies
         if: steps.changes.outputs.docs == 'true'

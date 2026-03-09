@@ -8,9 +8,21 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scott.FizzBuzz.Core.Tests",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scott.FizzBuzz.Console.Tests", "Scott.FizzBuzz.Console.Tests\Scott.FizzBuzz.Console.Tests.csproj", "{9BE3C6C8-39AD-4998-AC10-EAA86B02748E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "legacy", "legacy", "{BEA5255B-BD06-4D99-8812-B08071A0A733}"
+	ProjectSection(SolutionItems) = preProject
+		Scott.FizzBuzz.Core\Legacy\CommonExampleCode\FakeDatabase.cs = Scott.FizzBuzz.Core\Legacy\CommonExampleCode\FakeDatabase.cs
+		Scott.FizzBuzz.Core\Legacy\Currying\UnCurriedFilter.cs = Scott.FizzBuzz.Core\Legacy\Currying\UnCurriedFilter.cs
+		Scott.FizzBuzz.Core\Legacy\Demos\SchrodingerDemo.cs = Scott.FizzBuzz.Core\Legacy\Demos\SchrodingerDemo.cs
+		Scott.FizzBuzz.Core\Legacy\EitherExamples\UserRepository.cs = Scott.FizzBuzz.Core\Legacy\EitherExamples\UserRepository.cs
+		Scott.FizzBuzz.Core\Legacy\MathExamples.cs = Scott.FizzBuzz.Core\Legacy\MathExamples.cs
+		Scott.FizzBuzz.Core\Legacy\OptionExample\UserRepositoryOption.cs = Scott.FizzBuzz.Core\Legacy\OptionExample\UserRepositoryOption.cs
+		Scott.FizzBuzz.Core\Legacy\RefactorExample\ShoppingCart.cs = Scott.FizzBuzz.Core\Legacy\RefactorExample\ShoppingCart.cs
+		Scott.FizzBuzz.Core\Legacy\TryOptionExamples\UserRepositoryForTryOption.cs = Scott.FizzBuzz.Core\Legacy\TryOptionExamples\UserRepositoryForTryOption.cs
+	EndProjectSection
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{95AAB8A4-B7DA-4893-AB8D-077FB1D6DF93}"
 	ProjectSection(SolutionItems) = preProject
-			docs\index.md = docs\index.md
+		docs\index.md = docs\index.md
 			mkdocs.yml = mkdocs.yml
 			mkdocs-pdf.yml = mkdocs-pdf.yml
 			requirements-docs.txt = requirements-docs.txt
