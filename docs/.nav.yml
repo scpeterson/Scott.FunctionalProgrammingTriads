@@ -20,3 +20,4 @@ nav:
       - architecture/adr/0007-postgresql-sql-first-changelog-workflow.md
       - architecture/adr/0008-languageext-eff-aff-effect-boundaries.md
       - architecture/adr/0009-option-monad-triad-comparison.md
+      - architecture/adr/0010-monad-triad-expansion.md

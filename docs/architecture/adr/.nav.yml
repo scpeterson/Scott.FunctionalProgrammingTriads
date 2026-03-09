@@ -8,3 +8,4 @@ nav:
   - 0007 PostgreSQL SQL-First Changelog Workflow: 0007-postgresql-sql-first-changelog-workflow.md
   - 0008 LanguageExt Eff/Aff Effect Boundaries: 0008-languageext-eff-aff-effect-boundaries.md
   - 0009 Option Monad Triad Comparison: 0009-option-monad-triad-comparison.md
+  - 0010 Monad Triad Expansion: 0010-monad-triad-expansion.md

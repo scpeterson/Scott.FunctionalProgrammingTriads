@@ -1,8 +1,13 @@
 using LanguageExt.UnitTesting;
 using Scott.FizzBuzz.Core.Demos;
+using Scott.FizzBuzz.Core.Demos.EitherMonadTriad;
+using Scott.FizzBuzz.Core.Demos.IOMonadTriad;
 using Scott.FizzBuzz.Core.Demos.NullOptionTriad;
 using Scott.FizzBuzz.Core.Demos.OptionMonadTriad;
 using Scott.FizzBuzz.Core.Demos.ParseValidateTriad;
+using Scott.FizzBuzz.Core.Demos.ReaderMonadTriad;
+using Scott.FizzBuzz.Core.Demos.StateMonadTriad;
+using Scott.FizzBuzz.Core.Demos.ValidationMonadTriad;
 using Scott.FizzBuzz.Core.Demos.ValidationAccumulationTriad;
 using Scott.FizzBuzz.Core.Interfaces;
 
@@ -22,6 +27,21 @@ public class ScaffoldedTriadsShould
             new ImperativeOptionComparisonDemo(),
             new CSharpOptionComparisonDemo(),
             new LanguageExtOptionMonadComparisonDemo(),
+            new ImperativeEitherComparisonDemo(),
+            new CSharpEitherComparisonDemo(),
+            new LanguageExtEitherMonadComparisonDemo(),
+            new ImperativeValidationMonadComparisonDemo(),
+            new CSharpValidationMonadComparisonDemo(),
+            new LanguageExtValidationMonadComparisonDemo(),
+            new ImperativeReaderComparisonDemo(),
+            new CSharpReaderComparisonDemo(),
+            new LanguageExtReaderMonadComparisonDemo(),
+            new ImperativeStateComparisonDemo(),
+            new CSharpStateComparisonDemo(),
+            new LanguageExtStateMonadComparisonDemo(),
+            new ImperativeIoComparisonDemo(),
+            new CSharpIoComparisonDemo(),
+            new LanguageExtIoMonadComparisonDemo(),
             new ImperativeParseValidateDemo(),
             new CSharpParseValidatePipelineDemo(),
             new LanguageExtEitherParseValidateDemo(),
