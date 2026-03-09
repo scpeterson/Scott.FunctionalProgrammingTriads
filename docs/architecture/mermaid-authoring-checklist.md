@@ -13,11 +13,11 @@ Use this checklist when writing Mermaid diagrams so they render consistently in 
 
 1. Start with a minimal graph that compiles:
 
-```mermaid
-flowchart TD
-    A["Start"] --> B["Do Work"]
-    B --> C["End"]
-```
+    ```mermaid
+    flowchart TD
+        A["Start"] --> B["Do Work"]
+        B --> C["End"]
+    ```
 
 2. Add one branch at a time and re-render after each change.
 3. Only add classes/styles after the base graph is stable.
