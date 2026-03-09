@@ -11,6 +11,7 @@ using Scott.FizzBuzz.Core.Demos.ReaderMonadTriad;
 using Scott.FizzBuzz.Core.Demos.SeqMonadTriad;
 using Scott.FizzBuzz.Core.Demos.StateMonadTriad;
 using Scott.FizzBuzz.Core.Demos.TryMonadTriad;
+using Scott.FizzBuzz.Core.Demos.TryOptionMonadTriad;
 using Scott.FizzBuzz.Core.Demos.ValidationMonadTriad;
 using Scott.FizzBuzz.Core.Demos.ValidationAccumulationTriad;
 using Scott.FizzBuzz.Core.Demos.WriterMonadTriad;
@@ -50,6 +51,9 @@ public class ScaffoldedTriadsShould
             new ImperativeTryMonadComparisonDemo(),
             new CSharpTryMonadComparisonDemo(),
             new LanguageExtTryMonadComparisonDemo(),
+            new ImperativeTryOptionMonadComparisonDemo(),
+            new CSharpTryOptionMonadComparisonDemo(),
+            new LanguageExtTryOptionMonadComparisonDemo(),
             new ImperativeEffMonadComparisonDemo(),
             new CSharpEffMonadComparisonDemo(),
             new LanguageExtEffMonadComparisonDemo(),

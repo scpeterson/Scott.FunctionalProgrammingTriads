@@ -20,6 +20,14 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "architecture", "architecture", "{3FDF6A14-5F9A-4BDE-B2D2-A5DAB0EC9125}"
 	ProjectSection(SolutionItems) = preProject
 		docs\architecture\README.md = docs\architecture\README.md
+		docs\architecture\mermaid-authoring-checklist.md = docs\architecture\mermaid-authoring-checklist.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "diagrams", "diagrams", "{E82C7F29-14AE-4AE3-BE89-9DECC34D2A61}"
+	ProjectSection(SolutionItems) = preProject
+		docs\architecture\diagrams\.nav.yml = docs\architecture\diagrams\.nav.yml
+		docs\architecture\diagrams\system-overview.md = docs\architecture\diagrams\system-overview.md
+		docs\architecture\diagrams\template.md = docs\architecture\diagrams\template.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "adr", "adr", "{59C61EE3-1D6B-4326-964E-39489D332C5F}"
@@ -33,8 +41,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "adr", "adr", "{59C61EE3-1D6
 		docs\architecture\adr\0007-postgresql-sql-first-changelog-workflow.md = docs\architecture\adr\0007-postgresql-sql-first-changelog-workflow.md
 		docs\architecture\adr\0008-languageext-eff-aff-effect-boundaries.md = docs\architecture\adr\0008-languageext-eff-aff-effect-boundaries.md
 		docs\architecture\adr\0009-option-monad-triad-comparison.md = docs\architecture\adr\0009-option-monad-triad-comparison.md
-		docs\architecture\adr\0010-monad-triad-expansion.md = docs\architecture\adr\0010-monad-triad-expansion.md
-		docs\architecture\adr\0011-monad-triad-wave-two-try-eff-aff-seq-writer.md = docs\architecture\adr\0011-monad-triad-wave-two-try-eff-aff-seq-writer.md
+		docs\architecture\adr\0010-either-monad-triad-comparison.md = docs\architecture\adr\0010-either-monad-triad-comparison.md
+		docs\architecture\adr\0011-validation-monad-triad-comparison.md = docs\architecture\adr\0011-validation-monad-triad-comparison.md
+		docs\architecture\adr\0012-reader-monad-triad-comparison.md = docs\architecture\adr\0012-reader-monad-triad-comparison.md
+		docs\architecture\adr\0013-state-monad-triad-comparison.md = docs\architecture\adr\0013-state-monad-triad-comparison.md
+		docs\architecture\adr\0014-io-monad-triad-comparison.md = docs\architecture\adr\0014-io-monad-triad-comparison.md
+		docs\architecture\adr\0015-try-monad-triad-comparison.md = docs\architecture\adr\0015-try-monad-triad-comparison.md
+		docs\architecture\adr\0016-eff-monad-triad-comparison.md = docs\architecture\adr\0016-eff-monad-triad-comparison.md
+		docs\architecture\adr\0017-aff-monad-triad-comparison.md = docs\architecture\adr\0017-aff-monad-triad-comparison.md
+		docs\architecture\adr\0018-seq-monad-triad-comparison.md = docs\architecture\adr\0018-seq-monad-triad-comparison.md
+		docs\architecture\adr\0019-writer-monad-triad-comparison.md = docs\architecture\adr\0019-writer-monad-triad-comparison.md
+		docs\architecture\adr\0020-tryoption-monad-triad-comparison.md = docs\architecture\adr\0020-tryoption-monad-triad-comparison.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "database", "database", "{F8F83BB4-30CC-4532-ADFA-2BDF75A245C4}"
@@ -192,6 +209,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".run", ".run", "{0F0B2F09-2
 		.run\Triad - Try Monad - 01 Imperative.run.xml = .run\Triad - Try Monad - 01 Imperative.run.xml
 		.run\Triad - Try Monad - 02 CSharp.run.xml = .run\Triad - Try Monad - 02 CSharp.run.xml
 		.run\Triad - Try Monad - 03 LanguageExt.run.xml = .run\Triad - Try Monad - 03 LanguageExt.run.xml
+		.run\Triad - TryOption Monad - 01 Imperative.run.xml = .run\Triad - TryOption Monad - 01 Imperative.run.xml
+		.run\Triad - TryOption Monad - 02 CSharp.run.xml = .run\Triad - TryOption Monad - 02 CSharp.run.xml
+		.run\Triad - TryOption Monad - 03 LanguageExt.run.xml = .run\Triad - TryOption Monad - 03 LanguageExt.run.xml
 		.run\Triad - Eff Monad - 01 Imperative.run.xml = .run\Triad - Eff Monad - 01 Imperative.run.xml
 		.run\Triad - Eff Monad - 02 CSharp.run.xml = .run\Triad - Eff Monad - 02 CSharp.run.xml
 		.run\Triad - Eff Monad - 03 LanguageExt.run.xml = .run\Triad - Eff Monad - 03 LanguageExt.run.xml
@@ -245,6 +265,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3FDF6A14-5F9A-4BDE-B2D2-A5DAB0EC9125} = {95AAB8A4-B7DA-4893-AB8D-077FB1D6DF93}
+		{E82C7F29-14AE-4AE3-BE89-9DECC34D2A61} = {3FDF6A14-5F9A-4BDE-B2D2-A5DAB0EC9125}
 		{59C61EE3-1D6B-4326-964E-39489D332C5F} = {3FDF6A14-5F9A-4BDE-B2D2-A5DAB0EC9125}
 		{F8F83BB4-30CC-4532-ADFA-2BDF75A245C4} = {95AAB8A4-B7DA-4893-AB8D-077FB1D6DF93}
 		{D38A2C53-45E2-4338-BD4A-4A8A702A3459} = {F8F83BB4-30CC-4532-ADFA-2BDF75A245C4}

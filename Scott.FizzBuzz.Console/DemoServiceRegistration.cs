@@ -17,6 +17,7 @@ using Scott.FizzBuzz.Core.Demos.ReaderMonadTriad;
 using Scott.FizzBuzz.Core.Demos.SeqMonadTriad;
 using Scott.FizzBuzz.Core.Demos.StateMonadTriad;
 using Scott.FizzBuzz.Core.Demos.TryMonadTriad;
+using Scott.FizzBuzz.Core.Demos.TryOptionMonadTriad;
 using Scott.FizzBuzz.Core.Demos.ValidationMonadTriad;
 using Scott.FizzBuzz.Core.Demos.ValidationAccumulationTriad;
 using Scott.FizzBuzz.Core.Demos.WriterMonadTriad;
@@ -67,6 +68,9 @@ public static class DemoServiceRegistration
         services.AddTransient<IDemo, ImperativeTryMonadComparisonDemo>();
         services.AddTransient<IDemo, CSharpTryMonadComparisonDemo>();
         services.AddTransient<IDemo, LanguageExtTryMonadComparisonDemo>();
+        services.AddTransient<IDemo, ImperativeTryOptionMonadComparisonDemo>();
+        services.AddTransient<IDemo, CSharpTryOptionMonadComparisonDemo>();
+        services.AddTransient<IDemo, LanguageExtTryOptionMonadComparisonDemo>();
         services.AddTransient<IDemo, ImperativeEffMonadComparisonDemo>();
         services.AddTransient<IDemo, CSharpEffMonadComparisonDemo>();
         services.AddTransient<IDemo, LanguageExtEffMonadComparisonDemo>();

@@ -8,5 +8,14 @@ nav:
   - 0007 PostgreSQL SQL-First Changelog Workflow: 0007-postgresql-sql-first-changelog-workflow.md
   - 0008 LanguageExt Eff/Aff Effect Boundaries: 0008-languageext-eff-aff-effect-boundaries.md
   - 0009 Option Monad Triad Comparison: 0009-option-monad-triad-comparison.md
-  - 0010 Monad Triad Expansion: 0010-monad-triad-expansion.md
-  - 0011 Monad Triad Wave Two (Try/Eff/Aff/Seq/Writer): 0011-monad-triad-wave-two-try-eff-aff-seq-writer.md
+  - 0010 Either Monad Triad Comparison: 0010-either-monad-triad-comparison.md
+  - 0011 Validation Monad Triad Comparison: 0011-validation-monad-triad-comparison.md
+  - 0012 Reader Monad Triad Comparison: 0012-reader-monad-triad-comparison.md
+  - 0013 State Monad Triad Comparison: 0013-state-monad-triad-comparison.md
+  - 0014 IO Monad Triad Comparison: 0014-io-monad-triad-comparison.md
+  - 0015 Try Monad Triad Comparison: 0015-try-monad-triad-comparison.md
+  - 0016 Eff Monad Triad Comparison: 0016-eff-monad-triad-comparison.md
+  - 0017 Aff Monad Triad Comparison: 0017-aff-monad-triad-comparison.md
+  - 0018 Seq Monad Triad Comparison: 0018-seq-monad-triad-comparison.md
+  - 0019 Writer Monad Triad Comparison: 0019-writer-monad-triad-comparison.md
+  - 0020 TryOption Monad Triad Comparison: 0020-tryoption-monad-triad-comparison.md
