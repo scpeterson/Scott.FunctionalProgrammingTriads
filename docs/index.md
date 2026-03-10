@@ -54,6 +54,7 @@ This site hosts architecture documentation and decision records for the project.
 - [ADR 0047: Composition Root Triad Comparison](architecture/adr/0047-composition-root-triad-comparison.md)
 - [ADR 0048: Domain Workflow Triad Comparison](architecture/adr/0048-domain-workflow-triad-comparison.md)
 - [ADR 0049: Idempotent Command Triad Comparison](architecture/adr/0049-idempotent-command-triad-comparison.md)
+- [ADR 0050: Retries + Backoff as Pure Policy Triad Comparison](architecture/adr/0050-retries-backoff-pure-policy-triad-comparison.md)
 - [PostgreSQL Changelog Workflow](architecture/database-changelog-workflow.md)
 - [PostgreSQL Operations Runbook](architecture/database-operations-runbook.md)
 - [Architecture Docs Contributing Guide](architecture/contributing.md)

@@ -11,6 +11,7 @@ using Scott.FizzBuzz.Core.Demos.NullOptionTriad;
 using Scott.FizzBuzz.Core.Demos.OptionMonadTriad;
 using Scott.FizzBuzz.Core.Demos.ParseValidateTriad;
 using Scott.FizzBuzz.Core.Demos.ReaderMonadTriad;
+using Scott.FizzBuzz.Core.Demos.RetryBackoffTriad;
 using Scott.FizzBuzz.Core.Demos.SeqMonadTriad;
 using Scott.FizzBuzz.Core.Demos.StateMonadTriad;
 using Scott.FizzBuzz.Core.Demos.TryMonadTriad;
@@ -42,6 +43,9 @@ public class ScaffoldedTriadsShould
             new ImperativeDomainWorkflowComparisonDemo(),
             new CSharpDomainWorkflowComparisonDemo(),
             new LanguageExtDomainWorkflowComparisonDemo(),
+            new ImperativeRetryBackoffComparisonDemo(),
+            new CSharpRetryBackoffComparisonDemo(),
+            new LanguageExtRetryBackoffComparisonDemo(),
             new ImperativeIdempotentCommandComparisonDemo(),
             new CSharpIdempotentCommandComparisonDemo(),
             new LanguageExtIdempotentCommandComparisonDemo(),
@@ -93,6 +97,8 @@ public class ScaffoldedTriadsShould
         {
             var (name, number) = demo.Key.Contains("currying-comparison", StringComparison.Ordinal)
                 ? ("vip", "100")
+                : demo.Key.Contains("retry-backoff-comparison", StringComparison.Ordinal)
+                    ? ("exp", "2")
                 : ("Scott", "21");
 
             var result = demo.Run(name, number);

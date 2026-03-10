@@ -48,3 +48,4 @@ nav:
   - 0047 Composition Root Triad Comparison: 0047-composition-root-triad-comparison.md
   - 0048 Domain Workflow Triad Comparison: 0048-domain-workflow-triad-comparison.md
   - 0049 Idempotent Command Triad Comparison: 0049-idempotent-command-triad-comparison.md
+  - 0050 Retries + Backoff as Pure Policy Triad Comparison: 0050-retries-backoff-pure-policy-triad-comparison.md
