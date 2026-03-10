@@ -22,6 +22,7 @@ Supersede this grouped ADR with one ADR per demo concern:
 ## Alternatives Considered
 
 Keep all three concerns in one ADR:
+
 - Rejected to align with the project's "one ADR per demo" documentation rule.
 
 ## Consequences
