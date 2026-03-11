@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Triad - Validation Monad - 02 CSharp" type="DotNetProject" factoryName=".NET Project">
+  <configuration default="false" name="Triad - Validation Monad - 02 CSharp" type="DotNetProject" factoryName=".NET Project" folderName="Triads/Validation Monad">
     <option name="PROJECT_PATH" value="$PROJECT_DIR$/Scott.FizzBuzz.Console/Scott.FizzBuzz.Console.csproj" />
     <option name="PROGRAM_PARAMETERS" value="-m csharp-validation-monad-comparison -n Scott -b 21" />
     <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Scott.FizzBuzz.Console/bin/Debug/net10.0" />

@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="DB - reset (safe)" type="ShConfigurationType">
+  <configuration default="false" name="DB - reset (safe)" type="ShConfigurationType" folderName="DB">
     <option name="SCRIPT_TEXT" value="" />
     <option name="SCRIPT_PATH" value="$PROJECT_DIR$/scripts/db-reset.sh" />
     <option name="SCRIPT_OPTIONS" value="" />

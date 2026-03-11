@@ -17,7 +17,7 @@
     &lt;Project Location="/Users/scottpeterson/Dev/FizzBuzz/Scott.FizzBuzz/Scott.FizzBuzz.Core.Tests" Presentation="&amp;lt;Scott.FizzBuzz.Core.Tests&amp;gt;" /&gt;
   &lt;/Or&gt;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a16bc37c_002Db07e_002D4590_002Da3a0_002D56c4627a726a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ReturnRightForKnownDemo" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a16bc37c_002Db07e_002D4590_002Da3a0_002D56c4627a726a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ReturnRightForKnownDemo" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;Or&gt;
     &lt;TestAncestor&gt;
       &lt;TestId&gt;xUnit::9BE3C6C8-39AD-4998-AC10-EAA86B02748E::net9.0::Scott.FizzBuzz.Console.Tests.DemoRunnerShould&lt;/TestId&gt;
@@ -27,9 +27,9 @@
     &lt;Project Location="/Users/scottpeterson/Dev/FizzBuzz/Scott.FizzBuzz/Scott.FizzBuzz.Console.Tests" Presentation="&amp;lt;Scott.FizzBuzz.Console.Tests&amp;gt;" /&gt;
   &lt;/Or&gt;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e03f9453_002De0fc_002D4f3e_002D885b_002D62467cb38648/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e03f9453_002De0fc_002D4f3e_002D885b_002D62467cb38648/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;Solution /&gt;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f834ee98_002D2d5f_002D463b_002D990a_002D03cecd797b32/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f834ee98_002D2d5f_002D463b_002D990a_002D03cecd797b32/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;Solution /&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

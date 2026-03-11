@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Triad - Retries Backoff - 03 LanguageExt" type="DotNetProject" factoryName=".NET Project">
+  <configuration default="false" name="Triad - Retries Backoff - 03 LanguageExt" type="DotNetProject" factoryName=".NET Project" folderName="Triads/Retries Backoff">
     <option name="PROJECT_PATH" value="$PROJECT_DIR$/Scott.FizzBuzz.Console/Scott.FizzBuzz.Console.csproj" />
     <option name="PROGRAM_PARAMETERS" value="-m langext-retry-backoff-comparison -n exp -b 2" />
     <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Scott.FizzBuzz.Console/bin/Debug/net10.0" />
