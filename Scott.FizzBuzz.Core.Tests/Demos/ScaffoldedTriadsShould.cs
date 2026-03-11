@@ -1,5 +1,6 @@
 using LanguageExt.UnitTesting;
 using Scott.FizzBuzz.Core.Demos.CurryingTriad;
+using Scott.FizzBuzz.Core.Demos.ConcurrencySafetyTriad;
 using Scott.FizzBuzz.Core.Demos.CompositionRootTriad;
 using Scott.FizzBuzz.Core.Demos.DomainWorkflowTriad;
 using Scott.FizzBuzz.Core.Demos.EitherMonadTriad;
@@ -44,6 +45,9 @@ public class ScaffoldedTriadsShould
             new ImperativeDomainWorkflowComparisonDemo(),
             new CSharpDomainWorkflowComparisonDemo(),
             new LanguageExtDomainWorkflowComparisonDemo(),
+            new ImperativeConcurrencySafetyComparisonDemo(),
+            new CSharpConcurrencySafetyComparisonDemo(),
+            new LanguageExtConcurrencySafetyComparisonDemo(),
             new ImperativeStreamingLargeDataComparisonDemo(),
             new CSharpStreamingLargeDataComparisonDemo(),
             new LanguageExtStreamingLargeDataComparisonDemo(),
@@ -101,6 +105,8 @@ public class ScaffoldedTriadsShould
         {
             var (name, number) = demo.Key.Contains("currying-comparison", StringComparison.Ordinal)
                 ? ("vip", "100")
+                : demo.Key.Contains("concurrency-safety-comparison", StringComparison.Ordinal)
+                    ? ("scenario", "1000")
                 : demo.Key.Contains("streaming-large-data-comparison", StringComparison.Ordinal)
                     ? ("1000", "128")
                 : demo.Key.Contains("retry-backoff-comparison", StringComparison.Ordinal)

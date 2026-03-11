@@ -63,3 +63,4 @@ nav:
       - architecture/adr/0049-idempotent-command-triad-comparison.md
       - architecture/adr/0050-retries-backoff-pure-policy-triad-comparison.md
       - architecture/adr/0051-streaming-large-data-processing-triad-comparison.md
+      - architecture/adr/0052-concurrency-safety-triad-comparison.md

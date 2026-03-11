@@ -4,6 +4,7 @@ using Scott.FizzBuzz.Core.Demos.AffMonadTriad;
 using Scott.FizzBuzz.Core.Demos.Baseline;
 using Scott.FizzBuzz.Core.Demos.BaselineLanguageExt;
 using Scott.FizzBuzz.Core.Demos.CollectionsAggregationTriad;
+using Scott.FizzBuzz.Core.Demos.ConcurrencySafetyTriad;
 using Scott.FizzBuzz.Core.Demos.CurryingBaseline;
 using Scott.FizzBuzz.Core.Demos.CurryingTriad;
 using Scott.FizzBuzz.Core.Demos.DatabasePostgresTriad;
@@ -55,6 +56,9 @@ public static class DemoServiceRegistration
         services.AddTransient<IDemo, ImperativeDomainWorkflowComparisonDemo>();
         services.AddTransient<IDemo, CSharpDomainWorkflowComparisonDemo>();
         services.AddTransient<IDemo, LanguageExtDomainWorkflowComparisonDemo>();
+        services.AddTransient<IDemo, ImperativeConcurrencySafetyComparisonDemo>();
+        services.AddTransient<IDemo, CSharpConcurrencySafetyComparisonDemo>();
+        services.AddTransient<IDemo, LanguageExtConcurrencySafetyComparisonDemo>();
         services.AddTransient<IDemo, ImperativeStreamingLargeDataComparisonDemo>();
         services.AddTransient<IDemo, CSharpStreamingLargeDataComparisonDemo>();
         services.AddTransient<IDemo, LanguageExtStreamingLargeDataComparisonDemo>();
