@@ -20,6 +20,8 @@ Refactor `OutputUtilities` and demos to route output through these interfaces.
 
 Use `ConsoleOutput` as the production implementation.
 
+Centralize test doubles for output contracts in a shared test utility module (`NullOutputSink`, `RecordingOutputSink`, `RecordingStyledOutputSink`) so output assertions remain consistent across demo test suites.
+
 ## Alternatives Considered
 
 - Keep direct `Console` usage
@@ -46,3 +48,4 @@ Use `ConsoleOutput` as the production implementation.
 - `Scott.FizzBuzz.Core/Interfaces/IStyledOutput.cs`
 - `Scott.FizzBuzz.Core/ConsoleOutput.cs`
 - `Scott.FizzBuzz.Core/OutputUtilities.cs`
+- `Scott.FizzBuzz.Core.Tests/TestUtilities/TestOutputSinks.cs`

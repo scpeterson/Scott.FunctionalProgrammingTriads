@@ -14,11 +14,13 @@ The repository needed enforceable quality gates without overfitting tests to imp
 Adopt layered test strategy:
 
 - Pure helper unit tests (high precision)
-- Demo behavior tests with recording output
+- Demo behavior tests with shared recording output test sinks
 - Runner/CLI contract tests
 - Smoke tests across registered demos
 
 Add CI coverage thresholds per project using Coverlet MSBuild integration and scoped module includes.
+
+Standardize output test doubles in a shared test utility module to avoid per-file duplication and keep assertions consistent.
 
 ## Alternatives Considered
 
@@ -34,6 +36,7 @@ Add CI coverage thresholds per project using Coverlet MSBuild integration and sc
 - Detects regressions early in pull requests.
 - Encourages extraction of testable pure logic.
 - Keeps architecture decisions enforceable over time.
+- Reduces duplicated test plumbing and lowers maintenance cost for output-focused tests.
 
 ### Negative
 
@@ -45,3 +48,4 @@ Add CI coverage thresholds per project using Coverlet MSBuild integration and sc
 - `.github/workflows/ci.yml`
 - `Scott.FizzBuzz.Core.Tests/Scott.FizzBuzz.Core.Tests.csproj`
 - `Scott.FizzBuzz.Console.Tests/Scott.FizzBuzz.Console.Tests.csproj`
+- `Scott.FizzBuzz.Core.Tests/TestUtilities/TestOutputSinks.cs`
