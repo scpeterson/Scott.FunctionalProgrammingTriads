@@ -4,25 +4,49 @@ This site hosts architecture documentation and decision records for the project.
 
 ## Start Here
 
-- Learning path for imperative programmers:
-  1. Supporting C# features:
-     [Pattern Matching Demo Baseline](architecture/adr/0026-pattern-matching-demo-baseline.md),
-     [Tuple Demo Baseline](architecture/adr/0027-tuple-demo-baseline.md)
-  2. Baseline comparisons:
-     [Imperative Demo Baseline](architecture/adr/0023-imperative-demo-baseline.md),
-     [Range Iteration Demo Baseline](architecture/adr/0024-range-iteration-demo-baseline.md),
-     [Currying Baseline Demo](architecture/adr/0028-currying-baseline-demo.md)
-  3. Core triads:
-     [Null Option Triad Comparison](architecture/adr/0038-null-option-triad-comparison.md),
-     [Parse Validate Triad Comparison](architecture/adr/0039-parse-validate-triad-comparison.md),
-     [Validation Accumulation Triad Comparison](architecture/adr/0040-validation-accumulation-triad-comparison.md),
-     [End-to-End Registration Triad Comparison](architecture/adr/0044-end-to-end-registration-triad-comparison.md)
-  4. Effect/infrastructure triads:
-     [Async Eff Workflow Triad Comparison](architecture/adr/0043-async-eff-workflow-triad-comparison.md),
-     [Database Text-Store Triad Comparison](architecture/adr/0045-database-text-store-triad-comparison.md),
-     [Database PostgreSQL Triad Comparison](architecture/adr/0046-database-postgres-triad-comparison.md)
-  5. LanguageExt monad and advanced demos:
-     [Learning Path](architecture/learning-path.md)
+Learning path for imperative programmers:
+
+<ul>
+  <li>
+    <strong>Supporting C# features</strong>
+    <ul>
+      <li><a href="architecture/adr/0025-pattern-matching-demo-baseline/">Pattern Matching Demo Baseline</a></li>
+      <li><a href="architecture/adr/0026-tuple-demo-baseline/">Tuple Demo Baseline</a></li>
+    </ul>
+  </li>
+  <li>
+    <strong>Baseline comparisons</strong>
+    <ul>
+      <li><a href="architecture/adr/0022-imperative-demo-baseline/">Imperative Demo Baseline</a></li>
+      <li><a href="architecture/adr/0023-range-iteration-demo-baseline/">Range Iteration Demo Baseline</a></li>
+      <li><a href="architecture/adr/0027-currying-baseline-demo/">Currying Baseline Demo</a></li>
+    </ul>
+  </li>
+  <li>
+    <strong>Core triads</strong>
+    <ul>
+      <li><a href="architecture/adr/0037-null-option-triad-comparison/">Null Option Triad Comparison</a></li>
+      <li><a href="architecture/adr/0038-parse-validate-triad-comparison/">Parse Validate Triad Comparison</a></li>
+      <li><a href="architecture/adr/0039-validation-accumulation-triad-comparison/">Validation Accumulation Triad Comparison</a></li>
+      <li><a href="architecture/adr/0043-end-to-end-registration-triad-comparison/">End-to-End Registration Triad Comparison</a></li>
+    </ul>
+  </li>
+  <li>
+    <strong>Effect/infrastructure triads</strong>
+    <ul>
+      <li><a href="architecture/adr/0042-async-eff-workflow-triad-comparison/">Async Eff Workflow Triad Comparison</a></li>
+      <li><a href="architecture/adr/0044-database-text-store-triad-comparison/">Database Text-Store Triad Comparison</a></li>
+      <li><a href="architecture/adr/0045-database-postgres-triad-comparison/">Database PostgreSQL Triad Comparison</a></li>
+    </ul>
+  </li>
+  <li>
+    <strong>LanguageExt monad and advanced demos</strong>
+    <ul>
+      <li><a href="architecture/learning-path/">Learning Path</a></li>
+    </ul>
+  </li>
+</ul>
+
 - [Architecture Overview](architecture/README.md)
 - [Learning Path](architecture/learning-path.md)
 - [ADR 0001: Demo Triad Structure](architecture/adr/0001-demo-triad-structure.md)
@@ -46,40 +70,39 @@ This site hosts architecture documentation and decision records for the project.
 - [ADR 0019: Writer Monad Triad Comparison](architecture/adr/0019-writer-monad-triad-comparison.md)
 - [ADR 0020: TryOption Monad Triad Comparison](architecture/adr/0020-tryoption-monad-triad-comparison.md)
 - [ADR 0021: Currying Triad Comparison](architecture/adr/0021-currying-triad-comparison.md)
-- [ADR 0022: Composition Root, Domain Workflow, and Idempotent Command Triads (Superseded)](architecture/adr/0022-composition-root-domain-workflow-idempotent-triads.md)
-- [ADR 0023: Imperative Demo Baseline](architecture/adr/0023-imperative-demo-baseline.md)
-- [ADR 0024: Range Iteration Demo Baseline](architecture/adr/0024-range-iteration-demo-baseline.md)
-- [ADR 0025: No Dependency Demo Baseline](architecture/adr/0025-no-dependency-demo-baseline.md)
-- [ADR 0026: Pattern Matching Demo Baseline](architecture/adr/0026-pattern-matching-demo-baseline.md)
-- [ADR 0027: Tuple Demo Baseline](architecture/adr/0027-tuple-demo-baseline.md)
-- [ADR 0028: Currying Baseline Demo](architecture/adr/0028-currying-baseline-demo.md)
-- [ADR 0029: Applicative Validation Demo](architecture/adr/0029-applicative-validation-demo.md)
-- [ADR 0030: Either Baseline Demo](architecture/adr/0030-either-baseline-demo.md)
-- [ADR 0031: LanguageExt Baseline Demo](architecture/adr/0031-languageext-baseline-demo.md)
-- [ADR 0032: Schrodinger's Cat Demo](architecture/adr/0032-schrodingers-cat-demo.md)
-- [ADR 0033: Monadic Functions Demo](architecture/adr/0033-monadic-functions-demo.md)
-- [ADR 0034: Monad Basics Cat Demo](architecture/adr/0034-monad-basics-cat-demo.md)
-- [ADR 0035: Other Monads Demo](architecture/adr/0035-other-monads-demo.md)
-- [ADR 0036: .NET 10 Strict JSON Validation Demo](architecture/adr/0036-dotnet10-json-strict-validation-demo.md)
-- [ADR 0037: .NET 10 Extension Members and Typeclass-style Demo](architecture/adr/0037-dotnet10-extension-members-typeclass-demo.md)
-- [ADR 0038: Null Option Triad Comparison](architecture/adr/0038-null-option-triad-comparison.md)
-- [ADR 0039: Parse Validate Triad Comparison](architecture/adr/0039-parse-validate-triad-comparison.md)
-- [ADR 0040: Validation Accumulation Triad Comparison](architecture/adr/0040-validation-accumulation-triad-comparison.md)
-- [ADR 0041: Collections Aggregation Triad Comparison](architecture/adr/0041-collections-aggregation-triad-comparison.md)
-- [ADR 0042: Exception Boundaries Triad Comparison](architecture/adr/0042-exception-boundaries-triad-comparison.md)
-- [ADR 0043: Async Eff Workflow Triad Comparison](architecture/adr/0043-async-eff-workflow-triad-comparison.md)
-- [ADR 0044: End-to-End Registration Triad Comparison](architecture/adr/0044-end-to-end-registration-triad-comparison.md)
-- [ADR 0045: Database Text-Store Triad Comparison](architecture/adr/0045-database-text-store-triad-comparison.md)
-- [ADR 0046: Database PostgreSQL Triad Comparison](architecture/adr/0046-database-postgres-triad-comparison.md)
-- [ADR 0047: Composition Root Triad Comparison](architecture/adr/0047-composition-root-triad-comparison.md)
-- [ADR 0048: Domain Workflow Triad Comparison](architecture/adr/0048-domain-workflow-triad-comparison.md)
-- [ADR 0049: Idempotent Command Triad Comparison](architecture/adr/0049-idempotent-command-triad-comparison.md)
-- [ADR 0050: Retries + Backoff as Pure Policy Triad Comparison](architecture/adr/0050-retries-backoff-pure-policy-triad-comparison.md)
-- [ADR 0051: Streaming / Large Data Processing Triad Comparison](architecture/adr/0051-streaming-large-data-processing-triad-comparison.md)
-- [ADR 0052: Concurrency Safety Triad Comparison](architecture/adr/0052-concurrency-safety-triad-comparison.md)
-- [ADR 0053: Event Sourcing Lite Triad Comparison](architecture/adr/0053-event-sourcing-lite-triad-comparison.md)
-- [ADR 0054: Configuration Validation at Startup Triad Comparison](architecture/adr/0054-configuration-validation-startup-triad-comparison.md)
-- [ADR 0055: Demo Execution Result Contract](architecture/adr/0055-demo-execution-result-contract.md)
+- [ADR 0022: Imperative Demo Baseline](architecture/adr/0022-imperative-demo-baseline.md)
+- [ADR 0023: Range Iteration Demo Baseline](architecture/adr/0023-range-iteration-demo-baseline.md)
+- [ADR 0024: No Dependency Demo Baseline](architecture/adr/0024-no-dependency-demo-baseline.md)
+- [ADR 0025: Pattern Matching Demo Baseline](architecture/adr/0025-pattern-matching-demo-baseline.md)
+- [ADR 0026: Tuple Demo Baseline](architecture/adr/0026-tuple-demo-baseline.md)
+- [ADR 0027: Currying Baseline Demo](architecture/adr/0027-currying-baseline-demo.md)
+- [ADR 0028: Applicative Validation Demo](architecture/adr/0028-applicative-validation-demo.md)
+- [ADR 0029: Either Baseline Demo](architecture/adr/0029-either-baseline-demo.md)
+- [ADR 0030: LanguageExt Baseline Demo](architecture/adr/0030-languageext-baseline-demo.md)
+- [ADR 0031: Schrodinger's Cat Demo](architecture/adr/0031-schrodingers-cat-demo.md)
+- [ADR 0032: Monadic Functions Demo](architecture/adr/0032-monadic-functions-demo.md)
+- [ADR 0033: Monad Basics Cat Demo](architecture/adr/0033-monad-basics-cat-demo.md)
+- [ADR 0034: Other Monads Demo](architecture/adr/0034-other-monads-demo.md)
+- [ADR 0035: .NET 10 Strict JSON Validation Demo](architecture/adr/0035-dotnet10-json-strict-validation-demo.md)
+- [ADR 0036: .NET 10 Extension Members and Typeclass-style Demo](architecture/adr/0036-dotnet10-extension-members-typeclass-demo.md)
+- [ADR 0037: Null Option Triad Comparison](architecture/adr/0037-null-option-triad-comparison.md)
+- [ADR 0038: Parse Validate Triad Comparison](architecture/adr/0038-parse-validate-triad-comparison.md)
+- [ADR 0039: Validation Accumulation Triad Comparison](architecture/adr/0039-validation-accumulation-triad-comparison.md)
+- [ADR 0040: Collections Aggregation Triad Comparison](architecture/adr/0040-collections-aggregation-triad-comparison.md)
+- [ADR 0041: Exception Boundaries Triad Comparison](architecture/adr/0041-exception-boundaries-triad-comparison.md)
+- [ADR 0042: Async Eff Workflow Triad Comparison](architecture/adr/0042-async-eff-workflow-triad-comparison.md)
+- [ADR 0043: End-to-End Registration Triad Comparison](architecture/adr/0043-end-to-end-registration-triad-comparison.md)
+- [ADR 0044: Database Text-Store Triad Comparison](architecture/adr/0044-database-text-store-triad-comparison.md)
+- [ADR 0045: Database PostgreSQL Triad Comparison](architecture/adr/0045-database-postgres-triad-comparison.md)
+- [ADR 0046: Composition Root Triad Comparison](architecture/adr/0046-composition-root-triad-comparison.md)
+- [ADR 0047: Domain Workflow Triad Comparison](architecture/adr/0047-domain-workflow-triad-comparison.md)
+- [ADR 0048: Idempotent Command Triad Comparison](architecture/adr/0048-idempotent-command-triad-comparison.md)
+- [ADR 0049: Retries + Backoff as Pure Policy Triad Comparison](architecture/adr/0049-retries-backoff-pure-policy-triad-comparison.md)
+- [ADR 0050: Streaming / Large Data Processing Triad Comparison](architecture/adr/0050-streaming-large-data-processing-triad-comparison.md)
+- [ADR 0051: Concurrency Safety Triad Comparison](architecture/adr/0051-concurrency-safety-triad-comparison.md)
+- [ADR 0052: Event Sourcing Lite Triad Comparison](architecture/adr/0052-event-sourcing-lite-triad-comparison.md)
+- [ADR 0053: Configuration Validation at Startup Triad Comparison](architecture/adr/0053-configuration-validation-startup-triad-comparison.md)
+- [ADR 0054: Demo Execution Result Contract](architecture/adr/0054-demo-execution-result-contract.md)
 - [PostgreSQL Changelog Workflow](architecture/database-changelog-workflow.md)
 - [PostgreSQL Operations Runbook](architecture/database-operations-runbook.md)
 - [Architecture Docs Contributing Guide](architecture/contributing.md)
