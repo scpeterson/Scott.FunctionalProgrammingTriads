@@ -22,6 +22,8 @@ Use `ConsoleOutput` as the production implementation.
 
 Centralize test doubles for output contracts in a shared test utility module (`NullOutputSink`, `RecordingOutputSink`, `RecordingStyledOutputSink`) so output assertions remain consistent across demo test suites.
 
+Keep rule/helper functions pure where practical, and treat demo classes as the presentation boundary that renders success/failure summaries through `IOutput`.
+
 ## Alternatives Considered
 
 - Keep direct `Console` usage
@@ -36,6 +38,7 @@ Centralize test doubles for output contracts in a shared test utility module (`N
 - Easier unit testing with recording/fake outputs.
 - Clear side-effect boundary.
 - Retains optional styling without forcing it on all outputs.
+- Allows pure LanguageExt rule paths to remain side-effect free while still presenting comparable CLI output.
 
 ### Negative
 
