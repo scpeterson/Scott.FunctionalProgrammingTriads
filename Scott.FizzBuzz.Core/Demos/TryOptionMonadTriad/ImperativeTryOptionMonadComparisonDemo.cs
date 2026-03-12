@@ -32,7 +32,7 @@ public class ImperativeTryOptionMonadComparisonDemo : IDemo
                 var value = TryOptionMonadRules.LookupNullable(id);
                 if (value.HasValue)
                 {
-                    _output.WriteLine($"Value found: {value.Value:0.##}");
+                    _output.WriteLine($"Result: {value.Value:0.##}");
                 }
                 else
                 {

@@ -53,7 +53,7 @@ public class ImperativeCompositionRootComparisonDemo : IDemo
                 select CompositionRootRules.CalculateTotal(amount, discount, tax);
 
             totalResult.Match(
-                Right: total => _output.WriteLine($"Imperative composition-root total: {total:0.00}"),
+                Right: total => _output.WriteLine($"Result: total = {total:0.00}"),
                 Left: error => _output.WriteLine($"Failed: {error}"));
         }, "Imperative Composition Root Comparison");
 }

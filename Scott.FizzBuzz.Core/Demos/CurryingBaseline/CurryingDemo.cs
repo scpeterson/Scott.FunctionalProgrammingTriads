@@ -32,7 +32,7 @@ public class CurryingDemo : IDemo
         // The first function takes `a` and returns a new function that takes `b` and returns the sum of `a` and `b`
         Func<int, Func<int,int>> curriedAdd = x => y => x + y;
         var add5 = curriedAdd(5);
-        _output.WriteLine($"5 + 10 = {add5(10)}");
+        _output.WriteLine($"Result: 5 + 10 = {add5(10)}");
 
         // 2) Un‑curried vs curried filter
         Func<IEnumerable<Employee>, Func<Func<Employee,bool>, 

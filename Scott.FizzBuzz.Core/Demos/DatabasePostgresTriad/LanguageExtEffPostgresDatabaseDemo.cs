@@ -6,6 +6,14 @@ namespace Scott.FizzBuzz.Core.Demos.DatabasePostgresTriad;
 
 public class LanguageExtEffPostgresDatabaseDemo : IDemo
 {
+    private readonly IOutput _output;
+
+    public LanguageExtEffPostgresDatabaseDemo() : this(new ConsoleOutput())
+    {
+    }
+
+    public LanguageExtEffPostgresDatabaseDemo(IOutput output) => _output = output;
+
     public const string DemoKey = "langext-db-postgres-eff";
 
     public string Key => DemoKey;
@@ -14,11 +22,19 @@ public class LanguageExtEffPostgresDatabaseDemo : IDemo
     public string Description => "LanguageExt PostgreSQL workflow with pure transforms and DB IO at the Eff boundary.";
 
     public Either<string, Unit> Run(string? name, string? number) =>
-        BuildProgram(name, number)
-            .Run()
-            .Match(
-                Succ: result => result.Map(_ => unit),
-                Fail: error => Left<string, Unit>(error.Message));
+        FunctionalDemoOutput.Render(
+            _output,
+            "LanguageExt PostgreSQL Database Demo",
+            BuildProgram(name, number)
+                .Run()
+                .Match(
+                    Succ: result => result,
+                    Fail: error => Left<string, PostgresPersonRecord>(error.Message)),
+            (output, record) =>
+            {
+                output.WriteLine("Result: database upsert succeeded.");
+                output.WriteLine($"Record: id={record.Id}, name={record.Name}, age={record.Age}");
+            });
 
     internal static Eff<Either<string, PostgresPersonRecord>> BuildProgram(string? name, string? number) =>
         Eff(() =>

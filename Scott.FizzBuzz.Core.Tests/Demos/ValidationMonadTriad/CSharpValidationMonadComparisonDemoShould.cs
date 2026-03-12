@@ -60,7 +60,7 @@ public class CSharpValidationMonadComparisonDemoShould
 
         result.ShouldBeRight();
         output.Messages.Should().Contain(message =>
-            message.Contains("Validated candidate: Scott (21)", StringComparison.Ordinal));
+            message.Contains("Result: validated candidate = Scott (21)", StringComparison.Ordinal));
         output.Messages.Should().Contain(CSharpValidationMonadComparisonDemo.SuccessAccumulationNote);
     }
 }

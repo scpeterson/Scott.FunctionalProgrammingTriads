@@ -57,7 +57,7 @@ public class ImperativeReaderComparisonDemo : IDemo
             var taxed = subtotal * (1m + context.TaxRate);
             var total = taxed + context.ServiceFee;
 
-            _output.WriteLine($"{context.ProfileName}: total = {total:0.00} {context.Currency}");
+            _output.WriteLine($"Result: {context.ProfileName}: total = {total:0.00} {context.Currency}");
             _output.WriteLine($"Imperative checks: {checks}");
         }, "Imperative Reader Comparison");
 }

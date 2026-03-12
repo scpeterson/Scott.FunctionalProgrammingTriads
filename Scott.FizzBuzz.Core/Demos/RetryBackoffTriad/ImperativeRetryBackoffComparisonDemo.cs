@@ -36,8 +36,8 @@ public class ImperativeRetryBackoffComparisonDemo : IDemo
                         Right: failuresBeforeSuccess =>
                         {
                             var result = RetryBackoffRules.ExecuteImperative(policy, failuresBeforeSuccess);
+                            _output.WriteLine($"Result: {RetryBackoffRules.FormatSummary(result)}");
                             _output.WriteLine($"Policy: {policy.Name}");
-                            _output.WriteLine(RetryBackoffRules.FormatSummary(result));
                             _output.WriteLine($"Backoff schedule: {RetryBackoffRules.FormatSchedule(result.BackoffSchedule)}");
                         },
                         Left: error => _output.WriteLine($"Failed: {error}")),

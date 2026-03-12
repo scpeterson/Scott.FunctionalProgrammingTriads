@@ -6,6 +6,14 @@ namespace Scott.FizzBuzz.Core.Demos.OptionMonadTriad;
 
 public class LanguageExtOptionMonadComparisonDemo : IDemo
 {
+    private readonly IOutput _output;
+
+    public LanguageExtOptionMonadComparisonDemo() : this(new ConsoleOutput())
+    {
+    }
+
+    public LanguageExtOptionMonadComparisonDemo(IOutput output) => _output = output;
+
     public const string DemoKey = "langext-option-monad-comparison";
 
     public string Key => DemoKey;
@@ -14,15 +22,24 @@ public class LanguageExtOptionMonadComparisonDemo : IDemo
     public string Description => "Option pipeline for nested optional data with no null-check branching in orchestration.";
 
     public Either<string, Unit> Run(string? name, string? number) =>
+        FunctionalDemoOutput.Render(
+            _output,
+            "LanguageExt Option Monad Comparison",
+            ComputeResult(name),
+            (output, result) => output.WriteLine($"Result: {result}"));
+
+    private static Either<string, string> ComputeResult(string? name) =>
         Optional(OptionMonadSampleData.ResolveCustomer(name))
             .Bind(customer => Optional(customer.Profile))
             .Bind(profile => Optional(profile.Email))
             .Map(email => email.Trim())
             .Filter(email => email.Length > 0)
             .Bind(ParseDomain)
-            .Bind(domain => Optional(OptionMonadSampleData.LookupSegment(domain)))
+            .Bind(domain =>
+                Optional(OptionMonadSampleData.LookupSegment(domain))
+                    .Map(segment => $"segment = {segment}"))
             .ToEither("No segment resolved from optional inputs.")
-            .Map(_ => unit);
+        ;
 
     private static Option<string> ParseDomain(string email)
     {

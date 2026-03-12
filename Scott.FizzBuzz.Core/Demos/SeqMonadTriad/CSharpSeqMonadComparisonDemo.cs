@@ -27,7 +27,7 @@ public class CSharpSeqMonadComparisonDemo : IDemo
                 select numbers.Where(n => n >= threshold).Select(n => n * n).Sum();
 
             result.Match(
-                Right: sum => _output.WriteLine($"Sum: {sum}"),
+                Right: sum => _output.WriteLine($"Result: sum = {sum}"),
                 Left: error => _output.WriteLine($"Failed: {error}"));
         }, "C# Seq Monad Comparison");
 }

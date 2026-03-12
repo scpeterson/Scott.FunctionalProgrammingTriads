@@ -29,7 +29,7 @@ public class CSharpParseValidatePipelineDemo : IDemo
         {
             ParsePositive(number ?? "12")
                 .Match(
-                    Right: value => _output.WriteLine($"Accepted: {value}"),
+                    Right: value => _output.WriteLine($"Result: accepted = {value}"),
                     Left: error => _output.WriteLine(error));
         }, "C# Parse + Validate Pipeline");
 

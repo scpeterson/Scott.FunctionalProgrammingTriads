@@ -37,8 +37,8 @@ public class FpExtensionMembersTypeclassesDemo : IDemo
                     .BindFp(RequireMultipleOfFour)
                     .MapFp(value => $"Accepted value: {value}")
                     .Match(
-                        Right: message => _output.WriteLine($"Input '{input}': {message}"),
-                        Left: error => _output.WriteLine($"Input '{input}': {error}")
+                        Right: message => _output.WriteLine($"Result: input '{input}' -> {message}"),
+                        Left: error => _output.WriteLine($"Failed: input '{input}' -> {error}")
                     );
             }
         }, "C# 14 Extension Members with FP Composition");

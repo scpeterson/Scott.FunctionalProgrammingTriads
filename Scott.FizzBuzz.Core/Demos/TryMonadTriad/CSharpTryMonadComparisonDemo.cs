@@ -36,7 +36,7 @@ public class CSharpTryMonadComparisonDemo : IDemo
                 });
 
             result.Match(
-                Right: inverse => _output.WriteLine($"Inverse: {inverse:0.####}"),
+                Right: inverse => _output.WriteLine($"Result: inverse = {inverse:0.####}"),
                 Left: error => _output.WriteLine($"Failed: {error}"));
         }, "C# Try Monad Comparison");
 }

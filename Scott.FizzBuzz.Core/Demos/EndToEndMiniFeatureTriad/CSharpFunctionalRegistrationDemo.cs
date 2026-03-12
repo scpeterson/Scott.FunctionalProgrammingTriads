@@ -30,7 +30,7 @@ public class CSharpFunctionalRegistrationDemo : IDemo
         {
             CSharpFunctionalRegistrationLogic.Register(name, number)
                 .Match(
-                    Right: user => _output.WriteLine($"Registered user {user.Id}"),
+                    Right: user => _output.WriteLine($"Result: registered user {user.Id}"),
                     Left: error => _output.WriteLine(error));
         }, "C# Functional Registration");
 }

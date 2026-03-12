@@ -84,7 +84,7 @@ public class ImperativeEitherComparisonDemo : IDemo
                 return;
             }
 
-            _output.WriteLine($"Final amount: {finalAmount:0.00}");
+            _output.WriteLine($"Result: final amount = {finalAmount:0.00}");
             _output.WriteLine($"Imperative error checks: {errorsChecked}");
         }, "Imperative Either Comparison");
 }

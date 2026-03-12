@@ -27,7 +27,7 @@ public class CSharpEffMonadComparisonDemo : IDemo
                 select units * rate;
 
             result.Match(
-                Right: total => _output.WriteLine($"Total: {total:0.00}"),
+                Right: total => _output.WriteLine($"Result: total = {total:0.00}"),
                 Left: error => _output.WriteLine($"Failed: {error}"));
         }, "C# Eff Monad Comparison");
 }

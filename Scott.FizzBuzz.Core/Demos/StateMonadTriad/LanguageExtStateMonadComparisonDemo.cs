@@ -6,6 +6,14 @@ namespace Scott.FizzBuzz.Core.Demos.StateMonadTriad;
 
 public class LanguageExtStateMonadComparisonDemo : IDemo
 {
+    private readonly IOutput _output;
+
+    public LanguageExtStateMonadComparisonDemo() : this(new ConsoleOutput())
+    {
+    }
+
+    public LanguageExtStateMonadComparisonDemo(IOutput output) => _output = output;
+
     public const string DemoKey = "langext-state-monad-comparison";
 
     public string Key => DemoKey;
@@ -14,10 +22,21 @@ public class LanguageExtStateMonadComparisonDemo : IDemo
     public string Description => "LanguageExt State monad composes transitions without explicit state plumbing.";
 
     public Either<string, Unit> Run(string? name, string? number) =>
+        FunctionalDemoOutput.Render(
+            _output,
+            "LanguageExt State Monad Comparison",
+            ComputeResult(name, number),
+            (output, state) =>
+            {
+                output.WriteLine($"Result: score={state.Score}, multiplier={state.Multiplier}, penalties={state.Penalties}");
+                output.WriteLine("LanguageExt comparison note: state transitions are composed without explicit state plumbing.");
+            });
+
+    private static Either<string, StateGame> ComputeResult(string? name, string? number) =>
         from plan in StateMonadRules.ResolvePlan(name)
         from step in StateMonadRules.ParseStep(number)
         from _ in RunProgram(plan, step)
-        select unit;
+        select plan.Fold(new StateGame(0, 1, 0), (state, op) => StateMonadRules.Apply(op, step, state));
 
     private static Either<string, Unit> RunProgram(Seq<string> plan, int step)
     {

@@ -33,6 +33,7 @@ public class CSharpConcurrencySafetyComparisonDemo : IDemo
             result.Match(
                 Right: summary =>
                 {
+                    _output.WriteLine("Result: no lost updates.");
                     _output.WriteLine(ConcurrencySafetyRules.FormatSummary(summary));
                     _output.WriteLine("C# note: explicit atomic operations are required for shared mutable state.");
                 },

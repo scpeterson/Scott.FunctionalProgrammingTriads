@@ -43,6 +43,6 @@ public class ImperativeSeqMonadComparisonDemo : IDemo
                 }
             }
 
-            _output.WriteLine($"Sum: {sum}");
+            _output.WriteLine($"Result: sum = {sum}");
         }, "Imperative Seq Monad Comparison");
 }

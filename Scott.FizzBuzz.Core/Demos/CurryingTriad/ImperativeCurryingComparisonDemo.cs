@@ -59,6 +59,6 @@ public class ImperativeCurryingComparisonDemo : IDemo
             }
 
             var total = CurryingTriadRules.CalculateTotalNonCurried(baseAmount, discountRate, taxRate);
-            _output.WriteLine($"Imperative total: {total:0.00}");
+            _output.WriteLine($"Result: total = {total:0.00}");
         }, "Imperative Currying Comparison");
 }

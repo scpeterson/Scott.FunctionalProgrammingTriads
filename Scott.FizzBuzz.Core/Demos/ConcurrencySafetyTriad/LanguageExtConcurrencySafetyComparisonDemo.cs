@@ -6,6 +6,14 @@ namespace Scott.FizzBuzz.Core.Demos.ConcurrencySafetyTriad;
 
 public class LanguageExtConcurrencySafetyComparisonDemo : IDemo
 {
+    private readonly IOutput _output;
+
+    public LanguageExtConcurrencySafetyComparisonDemo() : this(new ConsoleOutput())
+    {
+    }
+
+    public LanguageExtConcurrencySafetyComparisonDemo(IOutput output) => _output = output;
+
     public const string DemoKey = "langext-concurrency-safety-comparison";
 
     public string Key => DemoKey;
@@ -14,11 +22,21 @@ public class LanguageExtConcurrencySafetyComparisonDemo : IDemo
     public string Description => "Pure fold-based update model that avoids shared mutable state and lost updates.";
 
     public Either<string, Unit> Run(string? name, string? number) =>
+        FunctionalDemoOutput.Render(
+            _output,
+            "LanguageExt Concurrency Safety Comparison",
+            ComputeResult(number),
+            (output, result) =>
+            {
+                output.WriteLine("Result: no lost updates.");
+                output.WriteLine(ConcurrencySafetyRules.FormatSummary(result));
+            });
+
+    private static Either<string, ConcurrencySafetyRules.ConcurrencySimulationResult> ComputeResult(string? number) =>
         ConcurrencySafetyRules.ParseIterations(number)
             .Map(ConcurrencySafetyRules.ExecuteLanguageExtPure)
             .Bind(result =>
                 result.FinalBalance == result.ExpectedBalance
                     ? Right<string, ConcurrencySafetyRules.ConcurrencySimulationResult>(result)
-                    : Left<string, ConcurrencySafetyRules.ConcurrencySimulationResult>("Unexpected lost update in pure model."))
-            .Map(_ => unit);
+                    : Left<string, ConcurrencySafetyRules.ConcurrencySimulationResult>("Unexpected lost update in pure model."));
 }

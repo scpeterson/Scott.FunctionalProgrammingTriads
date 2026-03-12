@@ -42,7 +42,7 @@ public class CSharpCompositionRootComparisonDemo : IDemo
                 select total;
 
             totalResult.Match(
-                Right: total => _output.WriteLine($"C# composition-root total: {total:0.00}"),
+                Right: total => _output.WriteLine($"Result: total = {total:0.00}"),
                 Left: error => _output.WriteLine($"Failed: {error}"));
         }, "C# Composition Root Comparison");
 }

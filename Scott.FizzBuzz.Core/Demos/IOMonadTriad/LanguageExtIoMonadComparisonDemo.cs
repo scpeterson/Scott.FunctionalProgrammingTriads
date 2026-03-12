@@ -6,6 +6,14 @@ namespace Scott.FizzBuzz.Core.Demos.IOMonadTriad;
 
 public class LanguageExtIoMonadComparisonDemo : IDemo
 {
+    private readonly IOutput _output;
+
+    public LanguageExtIoMonadComparisonDemo() : this(new ConsoleOutput())
+    {
+    }
+
+    public LanguageExtIoMonadComparisonDemo(IOutput output) => _output = output;
+
     public const string DemoKey = "langext-io-monad-comparison";
 
     public string Key => DemoKey;
@@ -23,10 +31,16 @@ public class LanguageExtIoMonadComparisonDemo : IDemo
                 from w in weight
                 select IoMonadRules.CalculateQuote(w, p);
 
-        return program
+        var result = program
             .Run()
             .Match(
-                Succ: result => result.Map(_ => unit),
-                Fail: error => Left<string, Unit>($"IO effect failure: {error.Message}"));
+                Succ: success => success,
+                Fail: error => Left<string, decimal>($"IO effect failure: {error.Message}"));
+
+        return FunctionalDemoOutput.Render(
+            _output,
+            "LanguageExt IO Monad Comparison",
+            result,
+            (output, quote) => output.WriteLine($"Result: quote = {quote:0.00}"));
     }
 }

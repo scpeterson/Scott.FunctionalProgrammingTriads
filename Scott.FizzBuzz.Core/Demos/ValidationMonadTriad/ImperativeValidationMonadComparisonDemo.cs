@@ -70,7 +70,7 @@ public class ImperativeValidationMonadComparisonDemo : IDemo
                 return;
             }
 
-            _output.WriteLine($"Validated candidate: {normalizedName} ({age})");
+            _output.WriteLine($"Result: validated candidate = {normalizedName} ({age})");
             _output.WriteLine($"Imperative checks executed: {checks}");
         }, "Imperative Validation Monad Comparison");
 }

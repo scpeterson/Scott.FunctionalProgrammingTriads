@@ -31,6 +31,7 @@ public class ImperativeConcurrencySafetyComparisonDemo : IDemo
                 Right: iterations =>
                 {
                     var result = ConcurrencySafetyRules.ExecuteImperativeUnsafe(iterations);
+                    _output.WriteLine("Result: lost updates detected.");
                     _output.WriteLine(ConcurrencySafetyRules.FormatSummary(result));
                     _output.WriteLine("Imperative note: non-atomic read-modify-write can lose updates.");
                 },

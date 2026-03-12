@@ -1,11 +1,18 @@
 using LanguageExt;
 using Scott.FizzBuzz.Core.Interfaces;
-using static LanguageExt.Prelude;
 
 namespace Scott.FizzBuzz.Core.Demos.ValidationMonadTriad;
 
 public class LanguageExtValidationMonadComparisonDemo : IDemo
 {
+    private readonly IOutput _output;
+
+    public LanguageExtValidationMonadComparisonDemo() : this(new ConsoleOutput())
+    {
+    }
+
+    public LanguageExtValidationMonadComparisonDemo(IOutput output) => _output = output;
+
     public const string DemoKey = "langext-validation-monad-comparison";
 
     public string Key => DemoKey;
@@ -14,8 +21,14 @@ public class LanguageExtValidationMonadComparisonDemo : IDemo
     public string Description => "LanguageExt Validation applicative composition with error accumulation.";
 
     public Either<string, Unit> Run(string? name, string? number) =>
+        FunctionalDemoOutput.Render(
+            _output,
+            "LanguageExt Validation Monad Comparison",
+            ComputeResult(name, number),
+            (output, result) => output.WriteLine($"Result: validated candidate = {result.Name}, age {result.Age}"));
+
+    private static Either<string, ValidationMonadCandidate> ComputeResult(string? name, string? number) =>
         ValidationMonadRules.ValidateCandidate(name, number)
             .ToEither()
-            .MapLeft(error => error.ToString())
-            .Map(_ => unit);
+            .MapLeft(error => error.ToString());
 }

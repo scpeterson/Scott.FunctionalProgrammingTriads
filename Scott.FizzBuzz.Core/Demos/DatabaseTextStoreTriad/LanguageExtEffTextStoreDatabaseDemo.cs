@@ -6,6 +6,14 @@ namespace Scott.FizzBuzz.Core.Demos.DatabaseTextStoreTriad;
 
 public class LanguageExtEffTextStoreDatabaseDemo : IDemo
 {
+    private readonly IOutput _output;
+
+    public LanguageExtEffTextStoreDatabaseDemo() : this(new ConsoleOutput())
+    {
+    }
+
+    public LanguageExtEffTextStoreDatabaseDemo(IOutput output) => _output = output;
+
     public const string DemoKey = "langext-db-text-store-eff";
 
     public string Key => DemoKey;
@@ -19,11 +27,21 @@ public class LanguageExtEffTextStoreDatabaseDemo : IDemo
 
         try
         {
-            return SaveAndReadBack(filePath, name, number)
+            var result = SaveAndReadBack(filePath, name, number)
                 .Run()
                 .Match(
-                    Succ: result => result.Map(_ => unit),
-                    Fail: error => Left<string, Unit>(error.Message));
+                    Succ: success => success,
+                    Fail: error => Left<string, PersonRecord>(error.Message));
+
+            return FunctionalDemoOutput.Render(
+                _output,
+                "LanguageExt Text-Store Database Demo",
+                result,
+                (output, record) =>
+                {
+                    output.WriteLine("Result: database save succeeded.");
+                    output.WriteLine($"Record: id={record.Id}, name={record.Name}, age={record.Age}");
+                });
         }
         finally
         {

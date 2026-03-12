@@ -32,7 +32,7 @@ public class ApplicativeValidationDemo : IDemo
                 Succ: entity =>
                     ExecuteWithSpacing(
                         _output,
-                        () => _output.WriteLine($"Validated entity: firstName={entity.FirstName}, age={entity.Age}"),
+                        () => _output.WriteLine($"Result: validated entity = firstName={entity.FirstName}, age={entity.Age}"),
                         "Applicative Validation"),
                 Fail: errors => Left<string, Unit>(string.Join(" | ", errors.Map(error => error.Message))));
 }

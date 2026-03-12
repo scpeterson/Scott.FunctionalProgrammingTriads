@@ -30,7 +30,7 @@ public class ImperativeTryMonadComparisonDemo : IDemo
             try
             {
                 var inverse = TryMonadRules.RiskyInverse(value);
-                _output.WriteLine($"Inverse: {inverse:0.####}");
+                _output.WriteLine($"Result: inverse = {inverse:0.####}");
             }
             catch (Exception ex)
             {

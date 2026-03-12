@@ -33,7 +33,7 @@ public class CSharpStreamingLargeDataComparisonDemo : IDemo
                         .Map(chunkSize => StreamingLargeDataRules.ExecuteCSharpPipeline(itemCount, chunkSize)));
 
             result.Match(
-                Right: summary => _output.WriteLine(StreamingLargeDataRules.FormatSummary(summary)),
+                Right: summary => _output.WriteLine($"Result: {StreamingLargeDataRules.FormatSummary(summary)}"),
                 Left: error => _output.WriteLine($"Failed: {error}"));
         }, "C# Streaming / Large Data Comparison");
 }

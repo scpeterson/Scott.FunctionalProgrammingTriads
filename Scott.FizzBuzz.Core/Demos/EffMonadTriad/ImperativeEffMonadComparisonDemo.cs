@@ -38,6 +38,6 @@ public class ImperativeEffMonadComparisonDemo : IDemo
                 return;
             }
 
-            _output.WriteLine($"Total: {(units * rate):0.00}");
+            _output.WriteLine($"Result: total = {(units * rate):0.00}");
         }, "Imperative Eff Monad Comparison");
 }

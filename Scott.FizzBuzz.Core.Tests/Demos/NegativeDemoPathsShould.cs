@@ -42,8 +42,8 @@ public class NegativeDemoPathsShould
         _ = demo.Run(null, "1");
 
         output.Messages.Should().Contain(message =>
-            message.Contains("Input '1': Value 2 is not a multiple of four.", StringComparison.Ordinal));
+            message.Contains("Failed: input '1' -> Value 2 is not a multiple of four.", StringComparison.Ordinal));
         output.Messages.Should().Contain(message =>
-            message.Contains("Input 'abc': Could not parse 'abc' as an integer.", StringComparison.Ordinal));
+            message.Contains("Failed: input 'abc' -> Could not parse 'abc' as an integer.", StringComparison.Ordinal));
     }
 }

@@ -68,7 +68,7 @@ public class CSharpValidationMonadComparisonDemo : IDemo
                 return;
             }
 
-            _output.WriteLine($"Validated candidate: {normalizedName} ({age})");
+            _output.WriteLine($"Result: validated candidate = {normalizedName} ({age})");
             _output.WriteLine(SuccessAccumulationNote);
         }, "C# Validation Monad Comparison");
 }

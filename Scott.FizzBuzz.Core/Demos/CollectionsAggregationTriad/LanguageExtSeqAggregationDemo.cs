@@ -6,6 +6,14 @@ namespace Scott.FizzBuzz.Core.Demos.CollectionsAggregationTriad;
 
 public class LanguageExtSeqAggregationDemo : IDemo
 {
+    private readonly IOutput _output;
+
+    public LanguageExtSeqAggregationDemo() : this(new ConsoleOutput())
+    {
+    }
+
+    public LanguageExtSeqAggregationDemo(IOutput output) => _output = output;
+
     public const string DemoKey = "langext-seq-aggregation";
 
     public string Key => DemoKey;
@@ -13,7 +21,15 @@ public class LanguageExtSeqAggregationDemo : IDemo
     public IReadOnlyCollection<string> Tags => ["fp", "languageext", "comparison", "collections", "aggregation"];
 
     public Either<string, Unit> Run(string? name, string? number) =>
-        Aggregate(SampleOrders()).Map(_ => unit);
+        FunctionalDemoOutput.Render(
+            _output,
+            "LanguageExt Collections + Aggregation",
+            Aggregate(SampleOrders()),
+            (output, result) =>
+            {
+                output.WriteLine($"Result: total = {result.Total:0.00}");
+                output.WriteLine($"Orders aggregated: {result.Count}");
+            });
 
     private static Either<string, OrderSummary> Aggregate(Seq<Order> orders)
     {

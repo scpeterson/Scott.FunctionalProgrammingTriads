@@ -35,7 +35,7 @@ public class CSharpReaderComparisonDemo : IDemo
                         .Map(total => ReaderMonadRules.FormatTotal(total, context)));
 
             result.Match(
-                Right: message => _output.WriteLine(message),
+                Right: message => _output.WriteLine($"Result: {message}"),
                 Left: error => _output.WriteLine($"Failed: {error}"));
 
             _output.WriteLine("C#/.NET comparison note: context must be threaded through each function call.");

@@ -48,6 +48,6 @@ public class ImperativeUserRegistrationDemo : IDemo
             }
 
             var id = $"{rawName.Trim().ToLowerInvariant()}-{age}";
-            _output.WriteLine($"Registered user {id}");
+            _output.WriteLine($"Result: registered user {id}");
         }, "Imperative User Registration");
 }

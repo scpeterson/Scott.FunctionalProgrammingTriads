@@ -46,6 +46,6 @@ public class CSharpCurryingComparisonDemo : IDemo
             var applyDiscount = applyBase(rates.DiscountRate);
             var total = applyDiscount(rates.TaxRate);
 
-            _output.WriteLine($"C# curried total: {total:0.00}");
+            _output.WriteLine($"Result: total = {total:0.00}");
         }, "C# Currying Comparison");
 }

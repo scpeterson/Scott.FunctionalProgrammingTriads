@@ -7,6 +7,14 @@ namespace Scott.FizzBuzz.Core.Demos.ExceptionBoundariesTriad;
 
 public class LanguageExtTryEitherRecoveryDemo : IDemo
 {
+    private readonly IOutput _output;
+
+    public LanguageExtTryEitherRecoveryDemo() : this(new ConsoleOutput())
+    {
+    }
+
+    public LanguageExtTryEitherRecoveryDemo(IOutput output) => _output = output;
+
     public const string DemoKey = "langext-try-either-recovery";
 
     public string Key => DemoKey;
@@ -14,7 +22,11 @@ public class LanguageExtTryEitherRecoveryDemo : IDemo
     public IReadOnlyCollection<string> Tags => ["fp", "languageext", "comparison", "exceptions", "either", "try"];
 
     public Either<string, Unit> Run(string? name, string? number) =>
-        DivideByUserInput(number ?? "2").Map(_ => unit);
+        FunctionalDemoOutput.Render(
+            _output,
+            "LanguageExt Try/Either Recovery",
+            DivideByUserInput(number ?? "2"),
+            (output, result) => output.WriteLine($"Result: {result}"));
 
     private static Either<string, int> DivideByUserInput(string raw) =>
         TryEither(

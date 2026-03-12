@@ -33,7 +33,11 @@ public class CSharpEventSourcingLiteComparisonDemo : IDemo
                         .Map(depositAmount => EventSourcingLiteRules.ExecuteCSharpPipeline(streamId, depositAmount)));
 
             result.Match(
-                Right: success => _output.WriteLine(EventSourcingLiteRules.FormatSummary(success)),
+                Right: success =>
+                {
+                    _output.WriteLine("Result: event stream updated.");
+                    _output.WriteLine(EventSourcingLiteRules.FormatSummary(success));
+                },
                 Left: error => _output.WriteLine($"Failed: {error}"));
         }, "C# Event Sourcing Lite Comparison");
 }

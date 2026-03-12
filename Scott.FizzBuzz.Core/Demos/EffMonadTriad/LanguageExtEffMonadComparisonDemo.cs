@@ -6,6 +6,14 @@ namespace Scott.FizzBuzz.Core.Demos.EffMonadTriad;
 
 public class LanguageExtEffMonadComparisonDemo : IDemo
 {
+    private readonly IOutput _output;
+
+    public LanguageExtEffMonadComparisonDemo() : this(new ConsoleOutput())
+    {
+    }
+
+    public LanguageExtEffMonadComparisonDemo(IOutput output) => _output = output;
+
     public const string DemoKey = "langext-eff-monad-comparison";
 
     public string Key => DemoKey;
@@ -13,9 +21,16 @@ public class LanguageExtEffMonadComparisonDemo : IDemo
     public IReadOnlyCollection<string> Tags => ["fp", "languageext", "comparison", "eff", "monad"];
 
     public Either<string, Unit> Run(string? name, string? number) =>
+        FunctionalDemoOutput.Render(
+            _output,
+            "LanguageExt Eff Monad Comparison",
+            ComputeResult(name, number),
+            (output, result) => output.WriteLine($"Result: {result:0.##}"));
+
+    private static Either<string, decimal> ComputeResult(string? name, string? number) =>
         EffMonadRules.ComputeEff(name, number)
             .Run()
             .Match(
-                Succ: result => result.Map(_ => unit),
-                Fail: error => Left<string, Unit>($"Eff failure: {error.Message}"));
+                Succ: result => result,
+                Fail: error => Left<string, decimal>($"Eff failure: {error.Message}"));
 }

@@ -33,7 +33,7 @@ public class CSharpStateComparisonDemo : IDemo
                 select plan.Fold(new StateGame(0, 1, 0), (state, op) => StateMonadRules.Apply(op, step, state));
 
             result.Match(
-                Right: state => _output.WriteLine($"Final state: score={state.Score}, multiplier={state.Multiplier}, penalties={state.Penalties}"),
+                Right: state => _output.WriteLine($"Result: score={state.Score}, multiplier={state.Multiplier}, penalties={state.Penalties}"),
                 Left: error => _output.WriteLine($"Failed: {error}"));
 
             _output.WriteLine("C#/.NET comparison note: explicit fold and state passing are still required.");

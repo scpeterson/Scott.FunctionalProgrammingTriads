@@ -38,7 +38,7 @@ public class CSharpDomainWorkflowComparisonDemo : IDemo
                 select (DomainWorkflowRules.FulfillmentState)shipped;
 
             stateResult.Match(
-                Right: state => _output.WriteLine($"C# workflow final state: {DomainWorkflowRules.Render(state)}"),
+                Right: state => _output.WriteLine($"Result: {DomainWorkflowRules.Render(state)}"),
                 Left: error => _output.WriteLine($"Failed: {error}"));
         }, "C# Domain Workflow Comparison");
 }

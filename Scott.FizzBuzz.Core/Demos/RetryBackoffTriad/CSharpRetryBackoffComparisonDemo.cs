@@ -40,8 +40,8 @@ public class CSharpRetryBackoffComparisonDemo : IDemo
             result.Match(
                 Right: success =>
                 {
+                    _output.WriteLine($"Result: {RetryBackoffRules.FormatSummary(success.Execution)}");
                     _output.WriteLine($"Policy: {success.PolicyName}");
-                    _output.WriteLine(RetryBackoffRules.FormatSummary(success.Execution));
                     _output.WriteLine($"Backoff schedule: {RetryBackoffRules.FormatSchedule(success.Execution.BackoffSchedule)}");
                 },
                 Left: error => _output.WriteLine($"Failed: {error}"));

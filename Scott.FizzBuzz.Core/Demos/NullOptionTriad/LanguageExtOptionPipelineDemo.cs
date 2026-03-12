@@ -6,6 +6,14 @@ namespace Scott.FizzBuzz.Core.Demos.NullOptionTriad;
 
 public class LanguageExtOptionPipelineDemo : IDemo
 {
+    private readonly IOutput _output;
+
+    public LanguageExtOptionPipelineDemo() : this(new ConsoleOutput())
+    {
+    }
+
+    public LanguageExtOptionPipelineDemo(IOutput output) => _output = output;
+
     public const string DemoKey = "langext-option-pipeline";
 
     public string Key => DemoKey;
@@ -13,9 +21,16 @@ public class LanguageExtOptionPipelineDemo : IDemo
     public IReadOnlyCollection<string> Tags => ["fp", "languageext", "comparison", "option", "null"];
 
     public Either<string, Unit> Run(string? name, string? number) =>
+        FunctionalDemoOutput.Render(
+            _output,
+            "LanguageExt Option Pipeline",
+            ComputeResult(name),
+            (output, result) => output.WriteLine($"Result: {result}"));
+
+    private static Either<string, string> ComputeResult(string? name) =>
         Optional(name)
             .Map(value => value.Trim())
             .Filter(value => value.Length > 0)
             .ToEither("Name missing or empty.")
-            .Map(_ => unit);
+            .Map(value => $"validated name = {value}");
 }

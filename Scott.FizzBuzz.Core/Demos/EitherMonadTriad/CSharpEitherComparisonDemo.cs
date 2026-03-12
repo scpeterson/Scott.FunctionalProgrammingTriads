@@ -34,7 +34,7 @@ public class CSharpEitherComparisonDemo : IDemo
 
             if (result.IsSuccess)
             {
-                _output.WriteLine($"Final amount: {result.Value:0.00}");
+                _output.WriteLine($"Result: final amount = {result.Value:0.00}");
             }
             else
             {

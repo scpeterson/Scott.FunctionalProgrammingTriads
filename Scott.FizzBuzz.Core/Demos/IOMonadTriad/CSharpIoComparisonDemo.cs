@@ -36,7 +36,7 @@ public class CSharpIoComparisonDemo : IDemo
                 Right: tuple =>
                 {
                     var audit = IoMonadRules.FormatAudit(tuple.profile, tuple.weight, tuple.quote);
-                    _output.WriteLine($"Quote: {tuple.quote:0.00}");
+                    _output.WriteLine($"Result: quote = {tuple.quote:0.00}");
                     _output.WriteLine($"Audit: {audit}");
                 },
                 Left: error => _output.WriteLine($"Failed: {error}"));

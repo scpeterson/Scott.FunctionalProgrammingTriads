@@ -6,6 +6,14 @@ namespace Scott.FizzBuzz.Core.Demos.ReaderMonadTriad;
 
 public class LanguageExtReaderMonadComparisonDemo : IDemo
 {
+    private readonly IOutput _output;
+
+    public LanguageExtReaderMonadComparisonDemo() : this(new ConsoleOutput())
+    {
+    }
+
+    public LanguageExtReaderMonadComparisonDemo(IOutput output) => _output = output;
+
     public const string DemoKey = "langext-reader-monad-comparison";
 
     public string Key => DemoKey;
@@ -14,6 +22,13 @@ public class LanguageExtReaderMonadComparisonDemo : IDemo
     public string Description => "Reader monad composes environment-dependent functions without passing context explicitly.";
 
     public Either<string, Unit> Run(string? name, string? number) =>
+        FunctionalDemoOutput.Render(
+            _output,
+            "LanguageExt Reader Monad Comparison",
+            ComputeResult(name, number),
+            (output, result) => output.WriteLine($"Result: {result}"));
+
+    private static Either<string, string> ComputeResult(string? name, string? number) =>
         ReaderMonadRules.ResolveContext(name)
             .Bind(context => ReaderMonadRules.ParseSubtotal(number).Map(subtotal => (context, subtotal)))
             .Bind(args =>
@@ -22,8 +37,8 @@ public class LanguageExtReaderMonadComparisonDemo : IDemo
                 var fin = program.Run(args.context);
 
                 return fin.Match(
-                    Succ: _ => Right<string, Unit>(unit),
-                    Fail: error => Left<string, Unit>($"Reader failure: {error.Message}"));
+                    Succ: result => Right<string, string>(result),
+                    Fail: error => Left<string, string>($"Reader failure: {error.Message}"));
             });
 
     private static Reader<ReaderPricingContext, string> BuildProgram(decimal subtotal) =>

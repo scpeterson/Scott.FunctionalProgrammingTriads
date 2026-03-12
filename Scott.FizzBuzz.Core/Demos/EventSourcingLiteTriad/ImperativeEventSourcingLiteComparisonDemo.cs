@@ -36,6 +36,7 @@ public class ImperativeEventSourcingLiteComparisonDemo : IDemo
                         Right: depositAmount =>
                         {
                             var result = EventSourcingLiteRules.ExecuteImperative(streamId, depositAmount);
+                            _output.WriteLine("Result: event stream updated.");
                             _output.WriteLine(EventSourcingLiteRules.FormatSummary(result));
                         },
                         Left: error => _output.WriteLine($"Failed: {error}")),

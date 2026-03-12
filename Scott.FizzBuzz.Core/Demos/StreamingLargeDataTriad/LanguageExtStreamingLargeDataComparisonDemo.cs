@@ -6,6 +6,14 @@ namespace Scott.FizzBuzz.Core.Demos.StreamingLargeDataTriad;
 
 public class LanguageExtStreamingLargeDataComparisonDemo : IDemo
 {
+    private readonly IOutput _output;
+
+    public LanguageExtStreamingLargeDataComparisonDemo() : this(new ConsoleOutput())
+    {
+    }
+
+    public LanguageExtStreamingLargeDataComparisonDemo(IOutput output) => _output = output;
+
     public const string DemoKey = "langext-streaming-large-data-comparison";
 
     public string Key => DemoKey;
@@ -14,6 +22,13 @@ public class LanguageExtStreamingLargeDataComparisonDemo : IDemo
     public string Description => "Pure fold-based stream policy in LanguageExt with deterministic, side-effect-free aggregation.";
 
     public Either<string, Unit> Run(string? name, string? number) =>
+        FunctionalDemoOutput.Render(
+            _output,
+            "LanguageExt Streaming Large Data Comparison",
+            ComputeResult(name, number),
+            (output, result) => output.WriteLine($"Result: {StreamingLargeDataRules.FormatSummary(result)}"));
+
+    private static Either<string, StreamingLargeDataRules.StreamAggregationResult> ComputeResult(string? name, string? number) =>
         StreamingLargeDataRules.ParseItemCount(name)
             .Bind(itemCount =>
                 StreamingLargeDataRules.ParseChunkSize(number)
@@ -21,6 +36,5 @@ public class LanguageExtStreamingLargeDataComparisonDemo : IDemo
             .Bind(summary =>
                 summary.ItemCount > 0
                     ? Right<string, StreamingLargeDataRules.StreamAggregationResult>(summary)
-                    : Left<string, StreamingLargeDataRules.StreamAggregationResult>("Stream did not process any items."))
-            .Map(_ => unit);
+                    : Left<string, StreamingLargeDataRules.StreamAggregationResult>("Stream did not process any items."));
 }

@@ -30,7 +30,11 @@ public class ImperativeConfigurationValidationStartupComparisonDemo : IDemo
             var result = ConfigurationValidationStartupRules.ExecuteImperative(name, number);
 
             result.Match(
-                Right: config => _output.WriteLine(ConfigurationValidationStartupRules.FormatSummary(config)),
+                Right: config =>
+                {
+                    _output.WriteLine("Result: configuration valid.");
+                    _output.WriteLine(ConfigurationValidationStartupRules.FormatSummary(config));
+                },
                 Left: error => _output.WriteLine($"Failed: {error}"));
         }, "Imperative Startup Configuration Validation Comparison");
 }

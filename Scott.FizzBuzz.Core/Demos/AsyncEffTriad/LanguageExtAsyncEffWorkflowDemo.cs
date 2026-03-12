@@ -6,6 +6,14 @@ namespace Scott.FizzBuzz.Core.Demos.AsyncEffTriad;
 
 public class LanguageExtAsyncEffWorkflowDemo : IDemo
 {
+    private readonly IOutput _output;
+
+    public LanguageExtAsyncEffWorkflowDemo() : this(new ConsoleOutput())
+    {
+    }
+
+    public LanguageExtAsyncEffWorkflowDemo(IOutput output) => _output = output;
+
     public const string DemoKey = "langext-eff-async-workflow";
 
     public string Key => DemoKey;
@@ -13,15 +21,22 @@ public class LanguageExtAsyncEffWorkflowDemo : IDemo
     public IReadOnlyCollection<string> Tags => ["fp", "languageext", "comparison", "async", "eff", "aff", "effects"];
     public string Description => "LanguageExt composition using Eff (sync effect) + Aff (async effect).";
 
-    public Either<string, Unit> Run(string? name, string? number)
+    public Either<string, Unit> Run(string? name, string? number) =>
+        FunctionalDemoOutput.Render(
+            _output,
+            "LanguageExt Eff/Aff Workflow",
+            ComputeResult(number),
+            (output, result) => output.WriteLine($"Result: {result}"));
+
+    private static Either<string, int> ComputeResult(string? input)
     {
-        var effResult = ParseAndDoubleEff(number)
+        var effResult = ParseAndDoubleEff(input)
             .Run()
             .Match(
                 Succ: result => result,
                 Fail: error => Left<string, int>($"Eff failure: {error.Message}"));
 
-        var affResult = AddTenAff(effResult)
+        return AddTenAff(effResult)
             .Run()
             .AsTask()
             .GetAwaiter()
@@ -29,8 +44,6 @@ public class LanguageExtAsyncEffWorkflowDemo : IDemo
             .Match(
                 Succ: result => result,
                 Fail: error => Left<string, int>($"Aff failure: {error.Message}"));
-
-        return affResult.Map(_ => unit);
     }
 
     private static Eff<Either<string, int>> ParseAndDoubleEff(string? input) =>
