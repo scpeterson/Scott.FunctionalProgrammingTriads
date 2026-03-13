@@ -27,6 +27,6 @@ Maintain a dedicated triad for null/option handling:
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/NullOptionTriad/ImperativeNullHandlingDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/NullOptionTriad/CSharpNullPatternsDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/NullOptionTriad/LanguageExtOptionPipelineDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/NullOptionTriad/ImperativeNullHandlingDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/NullOptionTriad/CSharpNullPatternsDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/NullOptionTriad/LanguageExtOptionPipelineDemo.cs`

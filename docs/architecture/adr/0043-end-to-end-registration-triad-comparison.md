@@ -27,6 +27,6 @@ Maintain an end-to-end registration triad:
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/EndToEndMiniFeatureTriad/ImperativeUserRegistrationDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/EndToEndMiniFeatureTriad/CSharpFunctionalRegistrationDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/EndToEndMiniFeatureTriad/LanguageExtFunctionalRegistrationDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/EndToEndMiniFeatureTriad/ImperativeUserRegistrationDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/EndToEndMiniFeatureTriad/CSharpFunctionalRegistrationDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/EndToEndMiniFeatureTriad/LanguageExtFunctionalRegistrationDemo.cs`

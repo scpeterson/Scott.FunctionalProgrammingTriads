@@ -23,6 +23,6 @@ Keep `monadic-functions` as a standalone explanatory demo in monad foundations.
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/MonadFoundations/MonadicFunctionsDemo.cs`
-- `Scott.FizzBuzz.Core/MonadicFunctions/PureFunctions.cs`
-- `Scott.FizzBuzz.Core/MonadicFunctions/ImpureFunctions.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/MonadFoundations/MonadicFunctionsDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/MonadicFunctions/PureFunctions.cs`
+- `Scott.FunctionalProgrammingTriads.Core/MonadicFunctions/ImpureFunctions.cs`

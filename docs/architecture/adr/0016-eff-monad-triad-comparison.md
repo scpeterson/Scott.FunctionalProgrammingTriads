@@ -32,6 +32,6 @@ Adopt a dedicated Eff monad triad:
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/EffMonadTriad/LanguageExtEffMonadComparisonDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/EffMonadTriad/EffMonadRules.cs`
-- `Scott.FizzBuzz.Core.Tests/Demos/EffMonadTriad/EffMonadTriadShould.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/EffMonadTriad/LanguageExtEffMonadComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/EffMonadTriad/EffMonadRules.cs`
+- `Scott.FunctionalProgrammingTriads.Core.Tests/Demos/EffMonadTriad/EffMonadTriadShould.cs`

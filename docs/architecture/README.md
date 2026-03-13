@@ -28,15 +28,15 @@ The architecture intentionally optimizes for comparison, repeatability, and test
 
 ## Primary Runtime Components
 
-- `Scott.FizzBuzz.Console/Program.cs`
+- `Scott.FunctionalProgrammingTriads.Console/Program.cs`
   - CLI entry point and DI setup.
-- `Scott.FizzBuzz.Console/DemoRunner.cs`
+- `Scott.FunctionalProgrammingTriads.Console/DemoRunner.cs`
   - Validates CLI contract, lists demos, dispatches execution by key.
-- `Scott.FizzBuzz.Console/DemoServiceRegistration.cs`
+- `Scott.FunctionalProgrammingTriads.Console/DemoServiceRegistration.cs`
   - Registers all demos in DI.
-- `Scott.FizzBuzz.Core/Interfaces/IDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Interfaces/IDemo.cs`
   - Runtime contract for all demos.
-- `Scott.FizzBuzz.Core/Interfaces/IOutput.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Interfaces/IOutput.cs`
   - Side-effect boundary for text output.
 
 ## Decision Log

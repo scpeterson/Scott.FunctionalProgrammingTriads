@@ -48,9 +48,9 @@ Use a shared pure codec for parsing and serialization so all variants can compar
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/DatabaseTextStoreTriad/ImperativeTextStoreDatabaseDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/DatabaseTextStoreTriad/CSharpFunctionalTextStoreDatabaseDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/DatabaseTextStoreTriad/LanguageExtEffTextStoreDatabaseDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/DatabaseTextStoreTriad/TextStoreRecordCodec.cs`
-- `Scott.FizzBuzz.Console/DemoServiceRegistration.cs`
-- `Scott.FizzBuzz.Core.Tests/Demos/DatabaseTextStoreTriad/DatabaseTextStoreTriadShould.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/DatabaseTextStoreTriad/ImperativeTextStoreDatabaseDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/DatabaseTextStoreTriad/CSharpFunctionalTextStoreDatabaseDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/DatabaseTextStoreTriad/LanguageExtEffTextStoreDatabaseDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/DatabaseTextStoreTriad/TextStoreRecordCodec.cs`
+- `Scott.FunctionalProgrammingTriads.Console/DemoServiceRegistration.cs`
+- `Scott.FunctionalProgrammingTriads.Core.Tests/Demos/DatabaseTextStoreTriad/DatabaseTextStoreTriadShould.cs`

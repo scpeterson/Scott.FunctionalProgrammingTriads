@@ -27,6 +27,6 @@ Maintain an async workflow triad:
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/AsyncEffTriad/ImperativeAsyncWorkflowDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/AsyncEffTriad/CSharpAsyncCompositionDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/AsyncEffTriad/LanguageExtAsyncEffWorkflowDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/AsyncEffTriad/ImperativeAsyncWorkflowDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/AsyncEffTriad/CSharpAsyncCompositionDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/AsyncEffTriad/LanguageExtAsyncEffWorkflowDemo.cs`

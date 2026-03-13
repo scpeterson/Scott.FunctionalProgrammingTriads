@@ -72,7 +72,7 @@ For each topic:
 Use the demo list to browse in the same general order:
 
 ```bash
-dotnet run --project Scott.FizzBuzz.Console -- --list
+dotnet run --project Scott.FunctionalProgrammingTriads.Console/Scott.FunctionalProgrammingTriads.Console.csproj -- --list
 ```
 
 The list is intentionally ordered to surface supporting features first, then baseline demos, then comparison triads, and finally more advanced material.

@@ -35,6 +35,6 @@ Use one shared transition model and operation plan.
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/StateMonadTriad/LanguageExtStateMonadComparisonDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/StateMonadTriad/StateMonadRules.cs`
-- `Scott.FizzBuzz.Core.Tests/Demos/StateMonadTriad/StateMonadTriadShould.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/StateMonadTriad/LanguageExtStateMonadComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/StateMonadTriad/StateMonadRules.cs`
+- `Scott.FunctionalProgrammingTriads.Core.Tests/Demos/StateMonadTriad/StateMonadTriadShould.cs`

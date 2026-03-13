@@ -35,6 +35,6 @@ LanguageExt variant uses applicative validation composition with shared validati
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/ValidationMonadTriad/LanguageExtValidationMonadComparisonDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/ValidationMonadTriad/ValidationMonadRules.cs`
-- `Scott.FizzBuzz.Core.Tests/Demos/ValidationMonadTriad/ValidationMonadTriadShould.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/ValidationMonadTriad/LanguageExtValidationMonadComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/ValidationMonadTriad/ValidationMonadRules.cs`
+- `Scott.FunctionalProgrammingTriads.Core.Tests/Demos/ValidationMonadTriad/ValidationMonadTriadShould.cs`

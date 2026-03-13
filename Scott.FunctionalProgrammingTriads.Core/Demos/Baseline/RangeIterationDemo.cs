@@ -1,0 +1,41 @@
+using Scott.FunctionalProgrammingTriads.Core;
+using Scott.FunctionalProgrammingTriads.Core.Interfaces;
+using static LanguageExt.Prelude;
+using static Scott.FunctionalProgrammingTriads.Core.ImperativeExample;
+using static Scott.FunctionalProgrammingTriads.Core.OutputUtilities;
+
+namespace Scott.FunctionalProgrammingTriads.Core.Demos.Baseline;
+
+public class RangeIterationDemo : IDemo
+{
+    private readonly IOutput _output;
+
+    public RangeIterationDemo() : this(new ConsoleOutput())
+    {
+    }
+
+    public RangeIterationDemo(IOutput output)
+    {
+        _output = output;
+    }
+
+    // This companion demo exists to contrast with ImperativeDemo:
+    // same fizzbuzz logic, but expressed as a functional data pipeline.
+    public const string DemoKey = "range-iter";
+
+    public string Key => DemoKey;
+    public string Category => "functional";
+    public IReadOnlyCollection<string> Tags => ["fp", "comparison", "seq", "baseline"];
+    public string Description => "Baseline functional FizzBuzz pipeline using Range, Map, and iteration over a sequence.";
+
+    public DemoExecutionResult Run(string? name, string? number) =>
+        ExecuteWithSpacing(_output, ShowRangeIterationFizzBuzz, nameof(ShowRangeIterationFizzBuzz));
+
+    private void ShowRangeIterationFizzBuzz()
+    {
+        // Sequence pipeline: transform each number then iterate for output.
+        Range(1, 100)
+            .Map(ImperativeFizzBuzz)
+            .Iter(_output.WriteLine);
+    }
+}

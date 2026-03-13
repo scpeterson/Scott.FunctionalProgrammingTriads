@@ -50,8 +50,8 @@ Triad topics may still include imperative and core C# functional variants; the L
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/AsyncEffTriad/LanguageExtAsyncEffWorkflowDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/MonadFoundations/OtherMonadsDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/AsyncEffTriad/ImperativeAsyncWorkflowDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/AsyncEffTriad/CSharpAsyncCompositionDemo.cs`
-- `Scott.FizzBuzz.Core.Tests/Demos/NegativeDemoPathsShould.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/AsyncEffTriad/LanguageExtAsyncEffWorkflowDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/MonadFoundations/OtherMonadsDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/AsyncEffTriad/ImperativeAsyncWorkflowDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/AsyncEffTriad/CSharpAsyncCompositionDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core.Tests/Demos/NegativeDemoPathsShould.cs`

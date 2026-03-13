@@ -53,8 +53,8 @@ This applies equally to demos that perform IO:
 
 ## References
 
-- `Scott.FizzBuzz.Core/Interfaces/IOutput.cs`
-- `Scott.FizzBuzz.Core/Interfaces/IStyledOutput.cs`
-- `Scott.FizzBuzz.Core/ConsoleOutput.cs`
-- `Scott.FizzBuzz.Core/OutputUtilities.cs`
-- `Scott.FizzBuzz.Core.Tests/TestUtilities/TestOutputSinks.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Interfaces/IOutput.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Interfaces/IStyledOutput.cs`
+- `Scott.FunctionalProgrammingTriads.Core/ConsoleOutput.cs`
+- `Scott.FunctionalProgrammingTriads.Core/OutputUtilities.cs`
+- `Scott.FunctionalProgrammingTriads.Core.Tests/TestUtilities/TestOutputSinks.cs`

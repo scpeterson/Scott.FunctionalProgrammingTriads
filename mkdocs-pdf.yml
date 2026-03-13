@@ -1,7 +1,7 @@
-site_name: Scott FizzBuzz Architecture (PDF)
-site_description: PDF-focused docs build for Scott.FizzBuzz
-repo_name: Scott.FizzBuzz
-repo_url: https://github.com/your-org/Scott.FizzBuzz
+site_name: Scott Functional Programming Triads Architecture (PDF)
+site_description: PDF-focused docs build for Scott.FunctionalProgrammingTriads
+repo_name: Scott.FunctionalProgrammingTriads
+repo_url: https://github.com/scpeterson/Scott.FunctionalProgrammingTriads
 edit_uri: edit/main/docs/
 docs_dir: docs
 
@@ -13,7 +13,7 @@ plugins:
   - search
   - with-pdf:
       enabled_if_env: ENABLE_PDF_EXPORT
-      output_path: pdf/scott-fizzbuzz-architecture.pdf
+      output_path: pdf/scott-functional-programming-triads-architecture.pdf
 
 markdown_extensions:
   - admonition

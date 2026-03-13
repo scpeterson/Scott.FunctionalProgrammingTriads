@@ -36,6 +36,6 @@ Use one shared scenario and rules so differences are in orchestration, not busin
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/EitherMonadTriad/LanguageExtEitherMonadComparisonDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/EitherMonadTriad/EitherMonadRules.cs`
-- `Scott.FizzBuzz.Core.Tests/Demos/EitherMonadTriad/EitherMonadTriadShould.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/EitherMonadTriad/LanguageExtEitherMonadComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/EitherMonadTriad/EitherMonadRules.cs`
+- `Scott.FunctionalProgrammingTriads.Core.Tests/Demos/EitherMonadTriad/EitherMonadTriadShould.cs`

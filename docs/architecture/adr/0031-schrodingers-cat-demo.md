@@ -23,5 +23,5 @@ Keep `demo-monad` as a dedicated narrative teaching demo.
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/MonadFoundations/SchrodingersCatDemo.cs`
-- `Scott.FizzBuzz.Console/DemoServiceRegistration.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/MonadFoundations/SchrodingersCatDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Console/DemoServiceRegistration.cs`

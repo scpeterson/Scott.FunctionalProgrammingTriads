@@ -30,8 +30,8 @@ Use explicit domain states and transition functions to compare imperative versus
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/DomainWorkflowTriad/DomainWorkflowRules.cs`
-- `Scott.FizzBuzz.Core/Demos/DomainWorkflowTriad/ImperativeDomainWorkflowComparisonDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/DomainWorkflowTriad/CSharpDomainWorkflowComparisonDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/DomainWorkflowTriad/LanguageExtDomainWorkflowComparisonDemo.cs`
-- `Scott.FizzBuzz.Core.Tests/Demos/DomainWorkflowTriad/DomainWorkflowTriadShould.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/DomainWorkflowTriad/DomainWorkflowRules.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/DomainWorkflowTriad/ImperativeDomainWorkflowComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/DomainWorkflowTriad/CSharpDomainWorkflowComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/DomainWorkflowTriad/LanguageExtDomainWorkflowComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core.Tests/Demos/DomainWorkflowTriad/DomainWorkflowTriadShould.cs`

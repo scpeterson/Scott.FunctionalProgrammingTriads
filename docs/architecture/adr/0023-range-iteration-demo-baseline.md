@@ -23,5 +23,5 @@ Keep `range-iter` as a baseline demo showing range/iteration usage without full 
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/Baseline/RangeIterationDemo.cs`
-- `Scott.FizzBuzz.Console/DemoServiceRegistration.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/Baseline/RangeIterationDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Console/DemoServiceRegistration.cs`

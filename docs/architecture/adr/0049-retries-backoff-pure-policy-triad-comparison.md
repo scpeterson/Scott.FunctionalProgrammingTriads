@@ -45,12 +45,12 @@ The LanguageExt variant remains pure and returns success/failure as `Either<stri
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/RetryBackoffTriad/RetryBackoffRules.cs`
-- `Scott.FizzBuzz.Core/Demos/RetryBackoffTriad/ImperativeRetryBackoffComparisonDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/RetryBackoffTriad/CSharpRetryBackoffComparisonDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/RetryBackoffTriad/LanguageExtRetryBackoffComparisonDemo.cs`
-- `Scott.FizzBuzz.Console/DemoServiceRegistration.cs`
-- `Scott.FizzBuzz.Core.Tests/Demos/RetryBackoffTriad/RetryBackoffTriadShould.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/RetryBackoffTriad/RetryBackoffRules.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/RetryBackoffTriad/ImperativeRetryBackoffComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/RetryBackoffTriad/CSharpRetryBackoffComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/RetryBackoffTriad/LanguageExtRetryBackoffComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Console/DemoServiceRegistration.cs`
+- `Scott.FunctionalProgrammingTriads.Core.Tests/Demos/RetryBackoffTriad/RetryBackoffTriadShould.cs`
 - `.run/Triad - Retries Backoff - 01 Imperative.run.xml`
 - `.run/Triad - Retries Backoff - 02 CSharp.run.xml`
 - `.run/Triad - Retries Backoff - 03 LanguageExt.run.xml`

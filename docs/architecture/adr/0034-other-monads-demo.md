@@ -23,5 +23,5 @@ Keep `other-monads` as a standalone advanced monad survey demo.
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/MonadFoundations/OtherMonadsDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/MonadFoundations/OtherMonadsValidation.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/MonadFoundations/OtherMonadsDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/MonadFoundations/OtherMonadsValidation.cs`

@@ -30,10 +30,10 @@ Use a shared seeded set of processed command IDs in the environment for comparab
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/Shared/IFunctionalDemoEnvironment.cs`
-- `Scott.FizzBuzz.Core/Demos/Shared/InMemoryFunctionalDemoEnvironment.cs`
-- `Scott.FizzBuzz.Core/Demos/IdempotentCommandTriad/IdempotentCommandRules.cs`
-- `Scott.FizzBuzz.Core/Demos/IdempotentCommandTriad/ImperativeIdempotentCommandComparisonDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/IdempotentCommandTriad/CSharpIdempotentCommandComparisonDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/IdempotentCommandTriad/LanguageExtIdempotentCommandComparisonDemo.cs`
-- `Scott.FizzBuzz.Core.Tests/Demos/IdempotentCommandTriad/IdempotentCommandTriadShould.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/Shared/IFunctionalDemoEnvironment.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/Shared/InMemoryFunctionalDemoEnvironment.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/IdempotentCommandTriad/IdempotentCommandRules.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/IdempotentCommandTriad/ImperativeIdempotentCommandComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/IdempotentCommandTriad/CSharpIdempotentCommandComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/IdempotentCommandTriad/LanguageExtIdempotentCommandComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core.Tests/Demos/IdempotentCommandTriad/IdempotentCommandTriadShould.cs`

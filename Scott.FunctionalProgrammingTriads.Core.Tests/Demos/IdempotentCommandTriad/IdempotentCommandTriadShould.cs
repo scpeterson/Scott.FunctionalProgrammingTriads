@@ -1,0 +1,34 @@
+using LanguageExt.UnitTesting;
+using Scott.FunctionalProgrammingTriads.Core.Tests.TestUtilities;
+using Scott.FunctionalProgrammingTriads.Core.Demos.IdempotentCommandTriad;
+using Scott.FunctionalProgrammingTriads.Core.Interfaces;
+
+namespace Scott.FunctionalProgrammingTriads.Core.Tests.Demos.IdempotentCommandTriad;
+
+public class IdempotentCommandTriadShould
+{
+    [Fact]
+    public void RunAllIdempotentCommandVariantsForHappyPath()
+    {
+        var output = new NullOutputSink();
+        IDemo[] demos =
+        [
+            new ImperativeIdempotentCommandComparisonDemo(output),
+            new CSharpIdempotentCommandComparisonDemo(output),
+            new LanguageExtIdempotentCommandComparisonDemo()
+        ];
+
+        foreach (var demo in demos)
+        {
+            demo.Run("cmd-new", "21").ShouldBeRight();
+        }
+    }
+
+    [Fact]
+    public void ReturnLeftForDuplicateCommandInLanguageExtVariant() =>
+        new LanguageExtIdempotentCommandComparisonDemo().Run("cmd-processed", "21").ShouldBeLeft();
+
+    [Fact]
+    public void ReturnLeftForInvalidAmountInLanguageExtVariant() =>
+        new LanguageExtIdempotentCommandComparisonDemo().Run("cmd-new", "bad").ShouldBeLeft();
+}

@@ -32,6 +32,6 @@ Adopt a dedicated Writer monad triad:
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/WriterMonadTriad/LanguageExtWriterMonadComparisonDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/WriterMonadTriad/WriterMonadRules.cs`
-- `Scott.FizzBuzz.Core.Tests/Demos/WriterMonadTriad/WriterMonadTriadShould.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/WriterMonadTriad/LanguageExtWriterMonadComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/WriterMonadTriad/WriterMonadRules.cs`
+- `Scott.FunctionalProgrammingTriads.Core.Tests/Demos/WriterMonadTriad/WriterMonadTriadShould.cs`

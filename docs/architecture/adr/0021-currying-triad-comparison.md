@@ -36,9 +36,9 @@ Use a shared rule module (`CurryingTriadRules`) so all variants compare identica
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/CurryingTriad/CurryingTriadRules.cs`
-- `Scott.FizzBuzz.Core/Demos/CurryingTriad/ImperativeCurryingComparisonDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/CurryingTriad/CSharpCurryingComparisonDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/CurryingTriad/LanguageExtCurryingComparisonDemo.cs`
-- `Scott.FizzBuzz.Core.Tests/Demos/CurryingTriad/CurryingTriadShould.cs`
-- `Scott.FizzBuzz.Console/DemoServiceRegistration.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/CurryingTriad/CurryingTriadRules.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/CurryingTriad/ImperativeCurryingComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/CurryingTriad/CSharpCurryingComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/CurryingTriad/LanguageExtCurryingComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core.Tests/Demos/CurryingTriad/CurryingTriadShould.cs`
+- `Scott.FunctionalProgrammingTriads.Console/DemoServiceRegistration.cs`

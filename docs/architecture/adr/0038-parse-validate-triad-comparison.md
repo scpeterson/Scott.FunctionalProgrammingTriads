@@ -27,6 +27,6 @@ Maintain a dedicated parse/validate triad:
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/ParseValidateTriad/ImperativeParseValidateDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/ParseValidateTriad/CSharpParseValidatePipelineDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/ParseValidateTriad/LanguageExtEitherParseValidateDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/ParseValidateTriad/ImperativeParseValidateDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/ParseValidateTriad/CSharpParseValidatePipelineDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/ParseValidateTriad/LanguageExtEitherParseValidateDemo.cs`

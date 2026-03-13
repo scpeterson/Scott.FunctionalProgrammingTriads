@@ -23,5 +23,5 @@ Keep `lang-ext` as a standalone LanguageExt baseline demo.
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/BaselineLanguageExt/LanguageExtDemo.cs`
-- `Scott.FizzBuzz.Console/DemoServiceRegistration.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/BaselineLanguageExt/LanguageExtDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Console/DemoServiceRegistration.cs`

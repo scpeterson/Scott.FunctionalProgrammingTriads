@@ -23,6 +23,6 @@ Keep a dedicated `applicative-validation` demo focused on reusable validation co
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/ValidationFoundations/ApplicativeValidationDemo.cs`
-- `Scott.FizzBuzz.Core/ApplicativeValidationExample/ApplicativeValidationDemo.cs`
-- `Scott.FizzBuzz.Core.Tests/Demos/ApplicativeValidationDemoEntryShould.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/ValidationFoundations/ApplicativeValidationDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/ApplicativeValidationExample/ApplicativeValidationDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core.Tests/Demos/ApplicativeValidationDemoEntryShould.cs`

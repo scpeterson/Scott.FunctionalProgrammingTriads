@@ -23,5 +23,5 @@ Keep `monad-basics-cat` as a standalone beginner monad demo.
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/MonadFoundations/MonadBasicsCatDemo.cs`
-- `Scott.FizzBuzz.Core/MonadBasics/Cat.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/MonadFoundations/MonadBasicsCatDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/MonadBasics/Cat.cs`

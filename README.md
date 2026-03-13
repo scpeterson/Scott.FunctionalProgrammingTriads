@@ -1,6 +1,6 @@
-# Scott.FizzBuzz
+# Scott.FunctionalProgrammingTriads
 
-A teaching codebase for imperative developers learning functional programming in C#.
+A teaching codebase for imperative developers learning functional programming in C#. The project began with FizzBuzz comparisons and has expanded into a broader triad-based functional programming guide.
 
 The project demonstrates common tasks in a triad format:
 
@@ -34,14 +34,14 @@ If you're approaching the codebase from an imperative background, the smoothest 
    - `langext-validation-monad-comparison`
    - `langext-eff-async-workflow`
 
-`dotnet run --project Scott.FizzBuzz.Console -- --list` now follows this learning path more closely.
+`dotnet run --project Scott.FunctionalProgrammingTriads.Console/Scott.FunctionalProgrammingTriads.Console.csproj -- --list` now follows this learning path more closely.
 
 ## Solution Structure
 
-- `Scott.FizzBuzz.Console`: CLI host and demo runner
-- `Scott.FizzBuzz.Core`: demo implementations and shared logic
-- `Scott.FizzBuzz.Core.Tests`: core tests
-- `Scott.FizzBuzz.Console.Tests`: console/registration tests
+- `Scott.FunctionalProgrammingTriads.Console`: CLI host and demo runner
+- `Scott.FunctionalProgrammingTriads.Core`: demo implementations and shared logic
+- `Scott.FunctionalProgrammingTriads.Core.Tests`: core tests
+- `Scott.FunctionalProgrammingTriads.Console.Tests`: console/registration tests
 - `docs/`: architecture docs and ADRs (MkDocs site)
 - `db/`: SQL changelog files (bootstrap, migrations, seeds, verify)
 - `scripts/`: database automation scripts
@@ -57,9 +57,9 @@ If you're approaching the codebase from an imperative background, the smoothest 
 From repo root:
 
 ```bash
-dotnet run --project Scott.FizzBuzz.Console -- --list
-dotnet run --project Scott.FizzBuzz.Console -- -m imperative
-dotnet run --project Scott.FizzBuzz.Console -- -m langext-db-postgres-eff -n Scott -b 21
+dotnet run --project Scott.FunctionalProgrammingTriads.Console/Scott.FunctionalProgrammingTriads.Console.csproj -- --list
+dotnet run --project Scott.FunctionalProgrammingTriads.Console/Scott.FunctionalProgrammingTriads.Console.csproj -- -m imperative
+dotnet run --project Scott.FunctionalProgrammingTriads.Console/Scott.FunctionalProgrammingTriads.Console.csproj -- -m langext-db-postgres-eff -n Scott -b 21
 ```
 
 For PostgreSQL demos, set:
@@ -93,9 +93,9 @@ Detailed operations guide:
 ## Build and Test
 
 ```bash
-dotnet build
-dotnet test Scott.FizzBuzz.Core.Tests/Scott.FizzBuzz.Core.Tests.csproj
-dotnet test Scott.FizzBuzz.Console.Tests/Scott.FizzBuzz.Console.Tests.csproj
+dotnet build Scott.FunctionalProgrammingTriads.sln
+dotnet test Scott.FunctionalProgrammingTriads.Core.Tests/Scott.FunctionalProgrammingTriads.Core.Tests.csproj
+dotnet test Scott.FunctionalProgrammingTriads.Console.Tests/Scott.FunctionalProgrammingTriads.Console.Tests.csproj
 ```
 
 ## Documentation Site

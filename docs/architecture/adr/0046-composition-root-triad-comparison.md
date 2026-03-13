@@ -30,10 +30,10 @@ Use shared environment contracts for consistent dependency lookup behavior.
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/Shared/IFunctionalDemoEnvironment.cs`
-- `Scott.FizzBuzz.Core/Demos/Shared/InMemoryFunctionalDemoEnvironment.cs`
-- `Scott.FizzBuzz.Core/Demos/CompositionRootTriad/CompositionRootRules.cs`
-- `Scott.FizzBuzz.Core/Demos/CompositionRootTriad/ImperativeCompositionRootComparisonDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/CompositionRootTriad/CSharpCompositionRootComparisonDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/CompositionRootTriad/LanguageExtCompositionRootComparisonDemo.cs`
-- `Scott.FizzBuzz.Core.Tests/Demos/CompositionRootTriad/CompositionRootTriadShould.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/Shared/IFunctionalDemoEnvironment.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/Shared/InMemoryFunctionalDemoEnvironment.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/CompositionRootTriad/CompositionRootRules.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/CompositionRootTriad/ImperativeCompositionRootComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/CompositionRootTriad/CSharpCompositionRootComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/CompositionRootTriad/LanguageExtCompositionRootComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core.Tests/Demos/CompositionRootTriad/CompositionRootTriadShould.cs`

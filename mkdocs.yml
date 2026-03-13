@@ -1,8 +1,8 @@
-site_name: Scott FizzBuzz Architecture
-site_description: Architecture overview and ADRs for Scott.FizzBuzz
-repo_name: Scott.FizzBuzz
+site_name: Scott Functional Programming Triads Architecture
+site_description: Architecture overview and ADRs for Scott.FunctionalProgrammingTriads
+repo_name: Scott.FunctionalProgrammingTriads
 # Replace with your actual repository URL when a remote is configured.
-repo_url: https://github.com/scpeterson/FizzBuzz
+repo_url: https://github.com/scpeterson/Scott.FunctionalProgrammingTriads
 # Edit links in the docs view. Adjust branch/path if needed.
 edit_uri: edit/main/docs/
 docs_dir: docs

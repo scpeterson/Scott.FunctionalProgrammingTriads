@@ -32,6 +32,6 @@ Adopt a dedicated Try monad triad:
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/TryMonadTriad/LanguageExtTryMonadComparisonDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/TryMonadTriad/TryMonadRules.cs`
-- `Scott.FizzBuzz.Core.Tests/Demos/TryMonadTriad/TryMonadTriadShould.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/TryMonadTriad/LanguageExtTryMonadComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/TryMonadTriad/TryMonadRules.cs`
+- `Scott.FunctionalProgrammingTriads.Core.Tests/Demos/TryMonadTriad/TryMonadTriadShould.cs`

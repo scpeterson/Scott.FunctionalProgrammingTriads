@@ -45,12 +45,12 @@ The LanguageExt variant remains side-effect free and validates that no updates a
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/ConcurrencySafetyTriad/ConcurrencySafetyRules.cs`
-- `Scott.FizzBuzz.Core/Demos/ConcurrencySafetyTriad/ImperativeConcurrencySafetyComparisonDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/ConcurrencySafetyTriad/CSharpConcurrencySafetyComparisonDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/ConcurrencySafetyTriad/LanguageExtConcurrencySafetyComparisonDemo.cs`
-- `Scott.FizzBuzz.Console/DemoServiceRegistration.cs`
-- `Scott.FizzBuzz.Core.Tests/Demos/ConcurrencySafetyTriad/ConcurrencySafetyTriadShould.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/ConcurrencySafetyTriad/ConcurrencySafetyRules.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/ConcurrencySafetyTriad/ImperativeConcurrencySafetyComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/ConcurrencySafetyTriad/CSharpConcurrencySafetyComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/ConcurrencySafetyTriad/LanguageExtConcurrencySafetyComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Console/DemoServiceRegistration.cs`
+- `Scott.FunctionalProgrammingTriads.Core.Tests/Demos/ConcurrencySafetyTriad/ConcurrencySafetyTriadShould.cs`
 - `.run/Triad - Concurrency Safety - 01 Imperative.run.xml`
 - `.run/Triad - Concurrency Safety - 02 CSharp.run.xml`
 - `.run/Triad - Concurrency Safety - 03 LanguageExt.run.xml`

@@ -27,6 +27,6 @@ Maintain a dedicated validation-accumulation triad:
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/ValidationAccumulationTriad/ImperativeValidationFirstErrorDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/ValidationAccumulationTriad/CSharpValidationErrorListDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/ValidationAccumulationTriad/LanguageExtValidationAccumulateDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/ValidationAccumulationTriad/ImperativeValidationFirstErrorDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/ValidationAccumulationTriad/CSharpValidationErrorListDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/ValidationAccumulationTriad/LanguageExtValidationAccumulateDemo.cs`

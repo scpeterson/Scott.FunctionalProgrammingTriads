@@ -68,10 +68,10 @@ jobs:
           cache-dependency-path: requirements-docs.txt
 
       - name: Restore
-        run: dotnet restore Scott.FizzBuzz.sln
+        run: dotnet restore Scott.FunctionalProgrammingTriads.sln
 
       - name: Build
-        run: dotnet build Scott.FizzBuzz.sln --configuration Release --no-restore -m:1
+        run: dotnet build Scott.FunctionalProgrammingTriads.sln --configuration Release --no-restore -m:1
 
       - name: Install Docs Dependencies
         if: steps.changes.outputs.docs == 'true'
@@ -98,7 +98,7 @@ jobs:
 
       - name: Test Core With Coverage Thresholds
         run: >
-          dotnet test Scott.FizzBuzz.Core.Tests/Scott.FizzBuzz.Core.Tests.csproj
+          dotnet test Scott.FizzBuzz.Core.Tests/Scott.FunctionalProgrammingTriads.Core.Tests.csproj
           --configuration Release
           --no-build
           /p:CollectCoverage=true
@@ -110,7 +110,7 @@ jobs:
 
       - name: Test Core Branch Coverage Threshold
         run: >
-          dotnet test Scott.FizzBuzz.Core.Tests/Scott.FizzBuzz.Core.Tests.csproj
+          dotnet test Scott.FizzBuzz.Core.Tests/Scott.FunctionalProgrammingTriads.Core.Tests.csproj
           --configuration Release
           --no-build
           /p:CollectCoverage=true
@@ -122,7 +122,7 @@ jobs:
 
       - name: Test Console Line Coverage Threshold
         run: >
-          dotnet test Scott.FizzBuzz.Console.Tests/Scott.FizzBuzz.Console.Tests.csproj
+          dotnet test Scott.FizzBuzz.Console.Tests/Scott.FunctionalProgrammingTriads.Console.Tests.csproj
           --configuration Release
           --no-build
           /p:CollectCoverage=true
@@ -134,7 +134,7 @@ jobs:
 
       - name: Test Console Branch Coverage Threshold
         run: >
-          dotnet test Scott.FizzBuzz.Console.Tests/Scott.FizzBuzz.Console.Tests.csproj
+          dotnet test Scott.FizzBuzz.Console.Tests/Scott.FunctionalProgrammingTriads.Console.Tests.csproj
           --configuration Release
           --no-build
           /p:CollectCoverage=true

@@ -46,11 +46,11 @@ The LanguageExt variant remains pure and side-effect free, returning `Either<str
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/ConfigurationValidationStartupTriad/ConfigurationValidationStartupRules.cs`
-- `Scott.FizzBuzz.Core/Demos/ConfigurationValidationStartupTriad/ImperativeConfigurationValidationStartupComparisonDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/ConfigurationValidationStartupTriad/CSharpConfigurationValidationStartupComparisonDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/ConfigurationValidationStartupTriad/LanguageExtConfigurationValidationStartupComparisonDemo.cs`
-- `Scott.FizzBuzz.Core.Tests/Demos/ConfigurationValidationStartupTriad/ConfigurationValidationStartupTriadShould.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/ConfigurationValidationStartupTriad/ConfigurationValidationStartupRules.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/ConfigurationValidationStartupTriad/ImperativeConfigurationValidationStartupComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/ConfigurationValidationStartupTriad/CSharpConfigurationValidationStartupComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/ConfigurationValidationStartupTriad/LanguageExtConfigurationValidationStartupComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core.Tests/Demos/ConfigurationValidationStartupTriad/ConfigurationValidationStartupTriadShould.cs`
 - `.run/Triad - Startup Config Validation - 01 Imperative.run.xml`
 - `.run/Triad - Startup Config Validation - 02 CSharp.run.xml`
 - `.run/Triad - Startup Config Validation - 03 LanguageExt.run.xml`

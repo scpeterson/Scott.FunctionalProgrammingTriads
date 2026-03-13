@@ -41,9 +41,9 @@ Use one shared rules class (`TryOptionMonadRules`) to keep scenario parity acros
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/TryOptionMonadTriad/ImperativeTryOptionMonadComparisonDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/TryOptionMonadTriad/CSharpTryOptionMonadComparisonDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/TryOptionMonadTriad/LanguageExtTryOptionMonadComparisonDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/TryOptionMonadTriad/TryOptionMonadRules.cs`
-- `Scott.FizzBuzz.Core.Tests/Demos/TryOptionMonadTriad/TryOptionMonadTriadShould.cs`
-- `Scott.FizzBuzz.Console/DemoServiceRegistration.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/TryOptionMonadTriad/ImperativeTryOptionMonadComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/TryOptionMonadTriad/CSharpTryOptionMonadComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/TryOptionMonadTriad/LanguageExtTryOptionMonadComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/TryOptionMonadTriad/TryOptionMonadRules.cs`
+- `Scott.FunctionalProgrammingTriads.Core.Tests/Demos/TryOptionMonadTriad/TryOptionMonadTriadShould.cs`
+- `Scott.FunctionalProgrammingTriads.Console/DemoServiceRegistration.cs`

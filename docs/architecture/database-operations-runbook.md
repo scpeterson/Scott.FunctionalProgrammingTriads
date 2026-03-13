@@ -160,9 +160,9 @@ Available run configs include:
 
 And demo configs:
 
-- `FizzBuzz - imperative-db-postgres`
-- `FizzBuzz - csharp-db-postgres`
-- `FizzBuzz - langext-db-postgres-eff`
+- `Demos - imperative-db-postgres`
+- `Demos - csharp-db-postgres`
+- `Demos - langext-db-postgres-eff`
 - `Triad - Database Postgres - 01 Imperative`
 - `Triad - Database Postgres - 02 CSharp`
 - `Triad - Database Postgres - 03 LanguageExt`

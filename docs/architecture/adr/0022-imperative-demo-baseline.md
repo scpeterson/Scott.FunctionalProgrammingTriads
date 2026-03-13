@@ -23,5 +23,5 @@ Keep a dedicated imperative baseline demo (`imperative`) that demonstrates tradi
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/Baseline/ImperativeDemo.cs`
-- `Scott.FizzBuzz.Console/DemoServiceRegistration.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/Baseline/ImperativeDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Console/DemoServiceRegistration.cs`

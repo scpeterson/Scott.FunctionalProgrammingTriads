@@ -23,6 +23,6 @@ Keep `demo-either` as a standalone baseline demo.
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/BaselineLanguageExt/EitherDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/BaselineLanguageExt/EitherValidation.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/BaselineLanguageExt/EitherDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/BaselineLanguageExt/EitherValidation.cs`
 - `docs/architecture/adr/0010-either-monad-triad-comparison.md`

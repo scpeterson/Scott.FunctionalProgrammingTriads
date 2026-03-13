@@ -49,7 +49,7 @@ Plain C# demos may still use local result records internally where helpful, but 
 
 ## References
 
-- `Scott.FizzBuzz.Core/DemoExecutionResult.cs`
-- `Scott.FizzBuzz.Core/Interfaces/IDemo.cs`
-- `Scott.FizzBuzz.Console/DemoRunner.cs`
-- `Scott.FizzBuzz.Console/Program.cs`
+- `Scott.FunctionalProgrammingTriads.Core/DemoExecutionResult.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Interfaces/IDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Console/DemoRunner.cs`
+- `Scott.FunctionalProgrammingTriads.Console/Program.cs`

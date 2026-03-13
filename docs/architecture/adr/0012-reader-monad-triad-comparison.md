@@ -34,6 +34,6 @@ Use a shared pricing-context scenario for parity.
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/ReaderMonadTriad/LanguageExtReaderMonadComparisonDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/ReaderMonadTriad/ReaderMonadRules.cs`
-- `Scott.FizzBuzz.Core.Tests/Demos/ReaderMonadTriad/ReaderMonadTriadShould.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/ReaderMonadTriad/LanguageExtReaderMonadComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/ReaderMonadTriad/ReaderMonadRules.cs`
+- `Scott.FunctionalProgrammingTriads.Core.Tests/Demos/ReaderMonadTriad/ReaderMonadTriadShould.cs`

@@ -59,6 +59,6 @@ Apply the same separation rule to side-effect-heavy topics as well:
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos`
-- `Scott.FizzBuzz.Console/DemoServiceRegistration.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos`
+- `Scott.FunctionalProgrammingTriads.Console/DemoServiceRegistration.cs`
 - `.run/Triad - *.run.xml`

@@ -23,5 +23,5 @@ Keep `pattern-matching` as a standalone baseline demo focused on C# pattern matc
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/Baseline/PatternMatchingDemo.cs`
-- `Scott.FizzBuzz.Console/DemoServiceRegistration.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/Baseline/PatternMatchingDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Console/DemoServiceRegistration.cs`

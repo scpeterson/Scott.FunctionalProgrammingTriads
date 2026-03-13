@@ -46,11 +46,11 @@ The LanguageExt variant remains pure and returns `Either<string, Unit>` without 
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/EventSourcingLiteTriad/EventSourcingLiteRules.cs`
-- `Scott.FizzBuzz.Core/Demos/EventSourcingLiteTriad/ImperativeEventSourcingLiteComparisonDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/EventSourcingLiteTriad/CSharpEventSourcingLiteComparisonDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/EventSourcingLiteTriad/LanguageExtEventSourcingLiteComparisonDemo.cs`
-- `Scott.FizzBuzz.Core.Tests/Demos/EventSourcingLiteTriad/EventSourcingLiteTriadShould.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/EventSourcingLiteTriad/EventSourcingLiteRules.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/EventSourcingLiteTriad/ImperativeEventSourcingLiteComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/EventSourcingLiteTriad/CSharpEventSourcingLiteComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/EventSourcingLiteTriad/LanguageExtEventSourcingLiteComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core.Tests/Demos/EventSourcingLiteTriad/EventSourcingLiteTriadShould.cs`
 - `.run/Triad - Event Sourcing Lite - 01 Imperative.run.xml`
 - `.run/Triad - Event Sourcing Lite - 02 CSharp.run.xml`
 - `.run/Triad - Event Sourcing Lite - 03 LanguageExt.run.xml`

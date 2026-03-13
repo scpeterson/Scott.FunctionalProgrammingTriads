@@ -44,12 +44,12 @@ The LanguageExt variant remains pure and side-effect-free, returning `Either<str
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/StreamingLargeDataTriad/StreamingLargeDataRules.cs`
-- `Scott.FizzBuzz.Core/Demos/StreamingLargeDataTriad/ImperativeStreamingLargeDataComparisonDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/StreamingLargeDataTriad/CSharpStreamingLargeDataComparisonDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/StreamingLargeDataTriad/LanguageExtStreamingLargeDataComparisonDemo.cs`
-- `Scott.FizzBuzz.Console/DemoServiceRegistration.cs`
-- `Scott.FizzBuzz.Core.Tests/Demos/StreamingLargeDataTriad/StreamingLargeDataTriadShould.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/StreamingLargeDataTriad/StreamingLargeDataRules.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/StreamingLargeDataTriad/ImperativeStreamingLargeDataComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/StreamingLargeDataTriad/CSharpStreamingLargeDataComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/StreamingLargeDataTriad/LanguageExtStreamingLargeDataComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Console/DemoServiceRegistration.cs`
+- `Scott.FunctionalProgrammingTriads.Core.Tests/Demos/StreamingLargeDataTriad/StreamingLargeDataTriadShould.cs`
 - `.run/Triad - Streaming Large Data - 01 Imperative.run.xml`
 - `.run/Triad - Streaming Large Data - 02 CSharp.run.xml`
 - `.run/Triad - Streaming Large Data - 03 LanguageExt.run.xml`

@@ -33,6 +33,6 @@ Adopt a dedicated IO-style triad:
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/IOMonadTriad/LanguageExtIoMonadComparisonDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/IOMonadTriad/IoMonadRules.cs`
-- `Scott.FizzBuzz.Core.Tests/Demos/IOMonadTriad/IoMonadTriadShould.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/IOMonadTriad/LanguageExtIoMonadComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/IOMonadTriad/IoMonadRules.cs`
+- `Scott.FunctionalProgrammingTriads.Core.Tests/Demos/IOMonadTriad/IoMonadTriadShould.cs`

@@ -27,6 +27,6 @@ Maintain a collections/aggregation triad:
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/CollectionsAggregationTriad/ImperativeCollectionsAggregationDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/CollectionsAggregationTriad/CSharpCollectionsAggregationDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/CollectionsAggregationTriad/LanguageExtSeqAggregationDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/CollectionsAggregationTriad/ImperativeCollectionsAggregationDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/CollectionsAggregationTriad/CSharpCollectionsAggregationDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/CollectionsAggregationTriad/LanguageExtSeqAggregationDemo.cs`

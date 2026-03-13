@@ -23,6 +23,6 @@ Keep `demo-currying` as a standalone baseline while maintaining `CurryingTriad` 
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/CurryingBaseline/CurryingDemo.cs`
-- `Scott.FizzBuzz.Console/DemoServiceRegistration.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/CurryingBaseline/CurryingDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Console/DemoServiceRegistration.cs`
 - `docs/architecture/adr/0021-currying-triad-comparison.md`

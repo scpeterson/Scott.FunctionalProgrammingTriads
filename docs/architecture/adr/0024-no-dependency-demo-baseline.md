@@ -23,5 +23,5 @@ Keep `no-dependency` as a dedicated baseline demo without LanguageExt dependenci
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/Baseline/NoDependencyDemo.cs`
-- `Scott.FizzBuzz.Console/DemoServiceRegistration.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/Baseline/NoDependencyDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Console/DemoServiceRegistration.cs`

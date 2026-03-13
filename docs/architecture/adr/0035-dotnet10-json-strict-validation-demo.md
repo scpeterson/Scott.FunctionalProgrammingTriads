@@ -23,6 +23,6 @@ Keep `fp-json-strict-validation` as a dedicated .NET 10 feature demo.
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/DotNet10Features/FpJsonStrictValidationDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/DotNet10Features/FpJsonStrictValidationLogic.cs`
-- `Scott.FizzBuzz.Core.Tests/Demos/FpJsonStrictValidationLogicShould.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/DotNet10Features/FpJsonStrictValidationDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/DotNet10Features/FpJsonStrictValidationLogic.cs`
+- `Scott.FunctionalProgrammingTriads.Core.Tests/Demos/FpJsonStrictValidationLogicShould.cs`

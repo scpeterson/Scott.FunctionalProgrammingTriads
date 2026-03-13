@@ -51,10 +51,10 @@ Design constraints:
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/OptionMonadTriad/ImperativeOptionComparisonDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/OptionMonadTriad/CSharpOptionComparisonDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/OptionMonadTriad/LanguageExtOptionMonadComparisonDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/OptionMonadTriad/CSharpNullableBindExtensions.cs`
-- `Scott.FizzBuzz.Core/Demos/OptionMonadTriad/OptionMonadSampleData.cs`
-- `Scott.FizzBuzz.Console/DemoServiceRegistration.cs`
-- `Scott.FizzBuzz.Core.Tests/Demos/OptionMonadTriad/OptionMonadTriadShould.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/OptionMonadTriad/ImperativeOptionComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/OptionMonadTriad/CSharpOptionComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/OptionMonadTriad/LanguageExtOptionMonadComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/OptionMonadTriad/CSharpNullableBindExtensions.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/OptionMonadTriad/OptionMonadSampleData.cs`
+- `Scott.FunctionalProgrammingTriads.Console/DemoServiceRegistration.cs`
+- `Scott.FunctionalProgrammingTriads.Core.Tests/Demos/OptionMonadTriad/OptionMonadTriadShould.cs`

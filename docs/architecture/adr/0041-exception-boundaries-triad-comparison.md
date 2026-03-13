@@ -27,6 +27,6 @@ Maintain an exception-boundaries triad:
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/ExceptionBoundariesTriad/ImperativeExceptionBoundariesDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/ExceptionBoundariesTriad/CSharpResultRecoveryDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/ExceptionBoundariesTriad/LanguageExtTryEitherRecoveryDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/ExceptionBoundariesTriad/ImperativeExceptionBoundariesDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/ExceptionBoundariesTriad/CSharpResultRecoveryDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/ExceptionBoundariesTriad/LanguageExtTryEitherRecoveryDemo.cs`

@@ -46,6 +46,6 @@ Standardize output test doubles in a shared test utility module to avoid per-fil
 ## References
 
 - `.github/workflows/ci.yml`
-- `Scott.FizzBuzz.Core.Tests/Scott.FizzBuzz.Core.Tests.csproj`
-- `Scott.FizzBuzz.Console.Tests/Scott.FizzBuzz.Console.Tests.csproj`
-- `Scott.FizzBuzz.Core.Tests/TestUtilities/TestOutputSinks.cs`
+- `Scott.FunctionalProgrammingTriads.Core.Tests/Scott.FunctionalProgrammingTriads.Core.Tests.csproj`
+- `Scott.FunctionalProgrammingTriads.Console.Tests/Scott.FunctionalProgrammingTriads.Console.Tests.csproj`
+- `Scott.FunctionalProgrammingTriads.Core.Tests/TestUtilities/TestOutputSinks.cs`

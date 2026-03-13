@@ -32,6 +32,6 @@ Adopt a dedicated Seq monad triad:
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/SeqMonadTriad/LanguageExtSeqMonadComparisonDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/SeqMonadTriad/SeqMonadRules.cs`
-- `Scott.FizzBuzz.Core.Tests/Demos/SeqMonadTriad/SeqMonadTriadShould.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/SeqMonadTriad/LanguageExtSeqMonadComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/SeqMonadTriad/SeqMonadRules.cs`
+- `Scott.FunctionalProgrammingTriads.Core.Tests/Demos/SeqMonadTriad/SeqMonadTriadShould.cs`

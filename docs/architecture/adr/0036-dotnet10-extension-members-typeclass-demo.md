@@ -23,5 +23,5 @@ Keep `fp-extension-members-typeclasses` as a dedicated feature demo.
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/DotNet10Features/FpExtensionMembersTypeclassesDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/DotNet10Features/EitherTypeclassExtensions.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/DotNet10Features/FpExtensionMembersTypeclassesDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/DotNet10Features/EitherTypeclassExtensions.cs`

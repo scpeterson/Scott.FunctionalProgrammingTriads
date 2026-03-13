@@ -41,5 +41,5 @@ Update `DemoRunner` to include these fields in listing output.
 
 ## References
 
-- `Scott.FizzBuzz.Core/Interfaces/IDemo.cs`
-- `Scott.FizzBuzz.Console/DemoRunner.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Interfaces/IDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Console/DemoRunner.cs`

@@ -37,8 +37,8 @@ Keep demo classes focused on orchestration and output.
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/MonadFoundations/OtherMonadsValidation.cs`
-- `Scott.FizzBuzz.Core/Demos/BaselineLanguageExt/EitherValidation.cs`
-- `Scott.FizzBuzz.Core/Demos/DotNet10Features/FpJsonStrictValidationLogic.cs`
-- `Scott.FizzBuzz.Core/Demos/EndToEndMiniFeatureTriad/CSharpFunctionalRegistrationLogic.cs`
-- `Scott.FizzBuzz.Core/Demos/EndToEndMiniFeatureTriad/LanguageExtFunctionalRegistrationLogic.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/MonadFoundations/OtherMonadsValidation.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/BaselineLanguageExt/EitherValidation.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/DotNet10Features/FpJsonStrictValidationLogic.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/EndToEndMiniFeatureTriad/CSharpFunctionalRegistrationLogic.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/EndToEndMiniFeatureTriad/LanguageExtFunctionalRegistrationLogic.cs`

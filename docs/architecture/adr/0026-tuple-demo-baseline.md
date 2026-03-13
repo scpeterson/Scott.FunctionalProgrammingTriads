@@ -23,5 +23,5 @@ Keep `tuple-demo` as a standalone baseline demo introducing tuple-centric transf
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/Baseline/TupleDemo.cs`
-- `Scott.FizzBuzz.Console/DemoServiceRegistration.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/Baseline/TupleDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Console/DemoServiceRegistration.cs`

@@ -34,6 +34,6 @@ Use safe sync-bridge execution where necessary in synchronous demo entry points.
 
 ## References
 
-- `Scott.FizzBuzz.Core/Demos/AffMonadTriad/LanguageExtAffMonadComparisonDemo.cs`
-- `Scott.FizzBuzz.Core/Demos/AffMonadTriad/AffMonadRules.cs`
-- `Scott.FizzBuzz.Core.Tests/Demos/AffMonadTriad/AffMonadTriadShould.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/AffMonadTriad/LanguageExtAffMonadComparisonDemo.cs`
+- `Scott.FunctionalProgrammingTriads.Core/Demos/AffMonadTriad/AffMonadRules.cs`
+- `Scott.FunctionalProgrammingTriads.Core.Tests/Demos/AffMonadTriad/AffMonadTriadShould.cs`

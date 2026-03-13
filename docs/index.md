@@ -1,4 +1,4 @@
-# Scott.FizzBuzz Documentation
+# Scott.FunctionalProgrammingTriads Documentation
 
 This site hosts architecture documentation and decision records for the project.
 
