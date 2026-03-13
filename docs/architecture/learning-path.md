@@ -17,7 +17,6 @@ If you want the quickest useful introduction, start here:
 
 This sequence gives you a gentle ramp from helpful C# language tools to plain C# functional style, then one representative LanguageExt monad comparison.
 
-
 ## Recommended Order
 
 1. Supporting C# features

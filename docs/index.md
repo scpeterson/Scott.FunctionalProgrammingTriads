@@ -6,6 +6,7 @@ This site hosts architecture documentation and decision records for the project.
 
 Learning path for imperative programmers:
 
+<!-- markdownlint-disable MD033 -->
 <!-- Raw HTML is intentional here because nested Markdown lists rendered inconsistently in MkDocs/Chrome even when Rider displayed them correctly. -->
 <ul>
   <li>
@@ -47,6 +48,7 @@ Learning path for imperative programmers:
     </ul>
   </li>
 </ul>
+<!-- markdownlint-enable MD033 -->
 
 - [Architecture Overview](architecture/README.md)
 - [Learning Path](architecture/learning-path.md)
