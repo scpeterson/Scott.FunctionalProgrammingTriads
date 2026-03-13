@@ -29,7 +29,7 @@ Add shared rules in `EventSourcingLiteRules` to provide:
 - Command handling by appending events to history
 - Equivalent execution flows for imperative, C#, and LanguageExt variants
 
-The LanguageExt variant remains pure and returns `Either<string, Unit>` without output side effects.
+The LanguageExt variant remains pure in its event-folding and command logic, while the outer demo boundary returns `DemoExecutionResult` without pushing side effects into the rules.
 
 ## Consequences
 

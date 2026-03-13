@@ -51,6 +51,13 @@ jobs:
               - 'lychee.toml'
               - '.markdownlint.json'
 
+      - name: Check For Stale Project Paths
+        run: |
+          if git grep -n -E 'Scott\.FizzBuzz\.(Core|Console)(\.Tests)?([/\\])' -- README.md docs .run .github '*.sln' '*.csproj'; then
+            echo 'Tracked files still contain stale Scott.FizzBuzz project paths.' >&2
+            exit 1
+          fi
+
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:

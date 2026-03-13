@@ -18,4 +18,19 @@ public class OptionsParsingShould
         parsedOptions.Should().NotBeNull();
         parsedOptions!.List.Should().BeTrue();
     }
+
+    [Fact]
+    public void ParseFirstHourOption()
+    {
+        var parser = new Parser();
+        var parsedOptions = default(Options);
+
+        var result = parser.ParseArguments<Options>(["--list", "--first-hour"])
+            .WithParsed(options => parsedOptions = options);
+
+        result.Tag.Should().Be(ParserResultType.Parsed);
+        parsedOptions.Should().NotBeNull();
+        parsedOptions!.List.Should().BeTrue();
+        parsedOptions.FirstHour.Should().BeTrue();
+    }
 }

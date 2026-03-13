@@ -1,7 +1,5 @@
-using AutoFixture.Xunit2;
 using FluentAssertions;
-using LanguageExt.UnitTesting;
-using Scott.FunctionalProgrammingTriads.Core.CommonExampleCode;
+using LanguageExt.Common;
 using static Scott.FunctionalProgrammingTriads.Core.ErrorHandling.FunctionalErrorHandling;
 
 namespace Scott.FunctionalProgrammingTriads.Core.Tests;
@@ -9,17 +7,21 @@ namespace Scott.FunctionalProgrammingTriads.Core.Tests;
 public class FunctionalErrorHandlingShould
 {
     [Theory]
-    [AutoData]
+    [MemberData(nameof(GetErrors))]
     public void ReturnExpectedErrors(IEnumerable<Error> errors)
     {
-        //Arrange
-        //$"- {error.Tag}: {error}"
-        var expectedResult = errors.Select(error => $"{error.Message}").ToList();
-        
-        //Act
+        var expectedErrors = errors.Select(error => error.Message).ToList();
+
         var result = ShowParseErrors(errors);
-        
-        //Assert
-        result.ShouldBeRight(x => x.Should().BeEquivalentTo(expectedResult));
+
+        result.IsRight.Should().BeTrue();
+        result.RightToSeq().Head().Should().BeEquivalentTo(expectedErrors);
     }
+
+    public static TheoryData<IEnumerable<Error>> GetErrors() => new()
+    {
+        new[] { Error.New("Error 1"), Error.New("Error 2") },
+        new[] { Error.New("Error 1") },
+        Array.Empty<Error>(),
+    };
 }

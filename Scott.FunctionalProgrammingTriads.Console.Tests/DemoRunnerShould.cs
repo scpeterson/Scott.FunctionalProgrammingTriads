@@ -59,6 +59,20 @@ public class DemoRunnerShould
     }
 
     [Fact]
+    public void ReturnLeftWhenFirstHourIsUsedWithoutList()
+    {
+        // Arrange
+        var runner = new DemoRunner([]);
+        var opts = new Options { Method = "any", FirstHour = true };
+
+        // Act
+        var result = runner.Execute(opts);
+
+        // Assert
+        result.ShouldBeLeft(msg => msg.Should().Be("--first-hour can only be used with --list."));
+    }
+
+    [Fact]
     public void ReturnLeftWhenTagIsUsedWithoutList()
     {
         // Arrange
@@ -178,6 +192,43 @@ public class DemoRunnerShould
         result.ShouldBeRight();
         output.Lines.Should().Contain("fp-demo");
         output.Lines.Should().NotContain("imperative-demo");
+    }
+
+    [Fact]
+    public void ListOnlyFirstHourPathInCuratedOrder()
+    {
+        // Arrange
+        var demos = new[]
+        {
+            new StubDemo("langext-option-monad-comparison", (_, _) => DemoExecutionResult.Success(), description: "Option demo"),
+            new StubDemo("csharp-null-patterns", (_, _) => DemoExecutionResult.Success(), description: "Null demo"),
+            new StubDemo("demo-currying", (_, _) => DemoExecutionResult.Success(), description: "Currying demo", tags: ["baseline", "csharp"]),
+            new StubDemo("imperative", (_, _) => DemoExecutionResult.Success(), category: "imperative", description: "Imperative demo", tags: ["baseline"]),
+            new StubDemo("tuple-demo", (_, _) => DemoExecutionResult.Success(), category: "csharp-support", description: "Tuple demo", tags: ["baseline", "supporting-feature"]),
+            new StubDemo("pattern-matching", (_, _) => DemoExecutionResult.Success(), category: "csharp-support", description: "Pattern demo", tags: ["baseline", "supporting-feature"]),
+            new StubDemo("csharp-validation-error-list", (_, _) => DemoExecutionResult.Success(), description: "Validation demo"),
+            new StubDemo("csharp-parse-validate-pipeline", (_, _) => DemoExecutionResult.Success(), description: "Parse demo"),
+            new StubDemo("other-demo", (_, _) => DemoExecutionResult.Success(), description: "Should not appear")
+        };
+        var output = new RecordingOutputSink();
+        var runner = new DemoRunner(demos, output);
+
+        // Act
+        var result = runner.Execute(new Options { List = true, FirstHour = true });
+
+        // Assert
+        result.ShouldBeRight();
+        output.Lines.Should().Contain("== First Hour Path ==");
+        output.Lines.Should().ContainInOrder(
+            "1. pattern-matching",
+            "2. tuple-demo",
+            "3. imperative",
+            "4. demo-currying",
+            "5. csharp-parse-validate-pipeline",
+            "6. csharp-null-patterns",
+            "7. csharp-validation-error-list",
+            "8. langext-option-monad-comparison");
+        output.Lines.Should().NotContain("other-demo");
     }
 
     [Fact]

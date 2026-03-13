@@ -4,7 +4,9 @@
 flowchart TD
   Program["Console Program"] --> Runner["DemoRunner"]
   Runner --> Demos["IDemo Implementations"]
+  Demos --> Result["DemoExecutionResult"]
   Demos --> Output["IOutput / IStyledOutput"]
+  Runner --> Result
   Runner --> List["Metadata Listing (Key/Category/Tags/Description)"]
   Demos --> Helpers["Pure Logic Helpers"]
   Helpers --> Tests["Unit Tests"]

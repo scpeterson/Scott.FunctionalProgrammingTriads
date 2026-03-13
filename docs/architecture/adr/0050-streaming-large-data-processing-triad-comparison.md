@@ -27,7 +27,7 @@ Use a shared rule module (`StreamingLargeDataRules`) that provides:
 - Deterministic streamed data generation
 - Equivalent aggregation contracts across all three variants
 
-The LanguageExt variant remains pure and side-effect-free, returning `Either<string, Unit>`.
+The LanguageExt variant remains pure and side-effect-free in its rule composition, while the demo boundary returns `DemoExecutionResult`.
 
 ## Consequences
 

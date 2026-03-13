@@ -6,6 +6,7 @@ This site hosts architecture documentation and decision records for the project.
 
 Learning path for imperative programmers:
 
+<!-- Raw HTML is intentional here because nested Markdown lists rendered inconsistently in MkDocs/Chrome even when Rider displayed them correctly. -->
 <ul>
   <li>
     <strong>Supporting C# features</strong>
@@ -49,6 +50,9 @@ Learning path for imperative programmers:
 
 - [Architecture Overview](architecture/README.md)
 - [Learning Path](architecture/learning-path.md)
+- [How To Compare A Triad](architecture/how-to-compare-a-triad.md)
+- [Demo Author Checklist](architecture/demo-author-checklist.md)
+- [Repo Health Notes](architecture/repo-health.md)
 - [ADR 0001: Demo Triad Structure](architecture/adr/0001-demo-triad-structure.md)
 - [ADR 0002: Output Abstraction via IOutput](architecture/adr/0002-output-abstraction-ioutput.md)
 - [ADR 0003: Demo Discovery Metadata](architecture/adr/0003-demo-discovery-metadata.md)

@@ -10,14 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scott.FunctionalProgramming
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "legacy", "legacy", "{BEA5255B-BD06-4D99-8812-B08071A0A733}"
 	ProjectSection(SolutionItems) = preProject
-		Scott.FunctionalProgrammingTriads.Core\Legacy\CommonExampleCode\FakeDatabase.cs = Scott.FunctionalProgrammingTriads.Core\Legacy\CommonExampleCode\FakeDatabase.cs
-		Scott.FunctionalProgrammingTriads.Core\Legacy\Currying\UnCurriedFilter.cs = Scott.FunctionalProgrammingTriads.Core\Legacy\Currying\UnCurriedFilter.cs
 		Scott.FunctionalProgrammingTriads.Core\Legacy\Demos\SchrodingerDemo.cs = Scott.FunctionalProgrammingTriads.Core\Legacy\Demos\SchrodingerDemo.cs
-		Scott.FunctionalProgrammingTriads.Core\Legacy\EitherExamples\UserRepository.cs = Scott.FunctionalProgrammingTriads.Core\Legacy\EitherExamples\UserRepository.cs
 		Scott.FunctionalProgrammingTriads.Core\Legacy\MathExamples.cs = Scott.FunctionalProgrammingTriads.Core\Legacy\MathExamples.cs
-		Scott.FunctionalProgrammingTriads.Core\Legacy\OptionExample\UserRepositoryOption.cs = Scott.FunctionalProgrammingTriads.Core\Legacy\OptionExample\UserRepositoryOption.cs
-		Scott.FunctionalProgrammingTriads.Core\Legacy\RefactorExample\ShoppingCart.cs = Scott.FunctionalProgrammingTriads.Core\Legacy\RefactorExample\ShoppingCart.cs
-		Scott.FunctionalProgrammingTriads.Core\Legacy\TryOptionExamples\UserRepositoryForTryOption.cs = Scott.FunctionalProgrammingTriads.Core\Legacy\TryOptionExamples\UserRepositoryForTryOption.cs
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{95AAB8A4-B7DA-4893-AB8D-077FB1D6DF93}"

@@ -1,6 +1,9 @@
 nav:
   - Overview: README.md
   - Learning Path: learning-path.md
+  - How To Compare A Triad: how-to-compare-a-triad.md
+  - Demo Author Checklist: demo-author-checklist.md
+  - Repo Health Notes: repo-health.md
   - Contributing: contributing.md
   - Mermaid Authoring Checklist: mermaid-authoring-checklist.md
   - Tags: tags.md

@@ -25,6 +25,8 @@ The architecture intentionally optimizes for comparison, repeatability, and test
 - LanguageExt async/sync effect demos standardize on `Aff`/`Eff` with pure transforms.
 - PostgreSQL schema/data changes follow a SQL-first changelog workflow.
 - Coverage thresholds in CI to prevent quality regressions.
+- Archival examples are isolated under `Scott.FunctionalProgrammingTriads.Core/Legacy` and documented as non-primary learning material.
+- Demo execution success/failure is standardized through `DemoExecutionResult` at the CLI boundary.
 
 ## Primary Runtime Components
 
@@ -35,9 +37,11 @@ The architecture intentionally optimizes for comparison, repeatability, and test
 - `Scott.FunctionalProgrammingTriads.Console/DemoServiceRegistration.cs`
   - Registers all demos in DI.
 - `Scott.FunctionalProgrammingTriads.Core/Interfaces/IDemo.cs`
-  - Runtime contract for all demos.
+  - Runtime contract for all demos, returning `DemoExecutionResult`.
 - `Scott.FunctionalProgrammingTriads.Core/Interfaces/IOutput.cs`
   - Side-effect boundary for text output.
+- `Scott.FunctionalProgrammingTriads.Core/Legacy/README.md`
+  - Maintainer guidance for archival code.
 
 ## Decision Log
 
@@ -46,6 +50,8 @@ Architecture decisions are captured as ADRs under:
 - `docs/architecture/adr`
 
 Start with `0001` and read in order.
+
+For maintenance guidance outside the ADR stream, see `docs/architecture/repo-health.md`.
 
 ## Adding a New ADR
 

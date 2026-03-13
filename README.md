@@ -8,7 +8,20 @@ The project demonstrates common tasks in a triad format:
 2. Functional C# (core language/.NET)
 3. Functional C# using LanguageExt
 
-## Suggested Learning Path
+## First Hour Path
+
+If you want the shortest path through the repository, start with:
+
+1. `pattern-matching`
+2. `tuple-demo`
+3. `imperative`
+4. `demo-currying`
+5. `csharp-parse-validate-pipeline`
+6. `csharp-null-patterns`
+7. `csharp-validation-error-list`
+8. `langext-option-monad-comparison`
+
+Then move into the broader learning path below.
 
 If you're approaching the codebase from an imperative background, the smoothest order is:
 
@@ -113,4 +126,7 @@ Open: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
 - `docs/architecture/README.md`
 - `docs/architecture/learning-path.md`
+- `docs/architecture/how-to-compare-a-triad.md`
+- `docs/architecture/demo-author-checklist.md`
+- `docs/architecture/repo-health.md`
 - `docs/architecture/adr/`

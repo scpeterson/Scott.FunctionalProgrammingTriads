@@ -8,6 +8,17 @@ namespace Scott.FunctionalProgrammingTriads.Console;
 public class DemoRunner
 {
     private const int DescriptionWrapWidth = 100;
+    private static readonly string[] FirstHourPathKeys =
+    [
+        "pattern-matching",
+        "tuple-demo",
+        "imperative",
+        "demo-currying",
+        "csharp-parse-validate-pipeline",
+        "csharp-null-patterns",
+        "csharp-validation-error-list",
+        "langext-option-monad-comparison"
+    ];
 
     // Keep both structures intentionally:
     // - _allDemos supports list/filter/sort views without rebuilding a sequence.
@@ -16,14 +27,12 @@ public class DemoRunner
     private readonly Dictionary<string, IDemo> _demos;
     private readonly IOutput _output;
 
-    // Option A: DI version
     public DemoRunner(IEnumerable<IDemo> demos) : this(demos, new ConsoleOutput())
     {
     }
 
     public DemoRunner(IEnumerable<IDemo> demos, IOutput output)
     {
-        // Functional null‑guard using LanguageExt:
         var nonNullDemos =
             Optional(demos)
                 .ToEither($"{nameof(demos)} was null")
@@ -31,7 +40,7 @@ public class DemoRunner
                     Right: ds => ds,
                     Left: msg => throw new ArgumentNullException(nameof(demos), msg)
                 );
-        
+
         _allDemos = nonNullDemos.ToList();
         var duplicateKeys = _allDemos
             .GroupBy(d => d.Key)
@@ -65,7 +74,7 @@ public class DemoRunner
 
         if (opts.List)
         {
-            ShowAvailableDemos(opts.Tags);
+            ShowAvailableDemos(opts.Tags, opts.FirstHour);
             return DemoExecutionResult.Success();
         }
 
@@ -91,6 +100,11 @@ public class DemoRunner
             return DemoExecutionResult.Failure("--tag can only be used with --list.");
         }
 
+        if (options.FirstHour && !options.List)
+        {
+            return DemoExecutionResult.Failure("--first-hour can only be used with --list.");
+        }
+
         if (options.List && hasMethod)
         {
             return DemoExecutionResult.Failure("--method cannot be combined with --list.");
@@ -104,13 +118,19 @@ public class DemoRunner
         return DemoExecutionResult.Success();
     }
 
-    private void ShowAvailableDemos(IEnumerable<string>? tags)
+    private void ShowAvailableDemos(IEnumerable<string>? tags, bool firstHour)
     {
         var normalizedTags = tags?
             .Where(tag => !string.IsNullOrWhiteSpace(tag))
             .Select(tag => tag.Trim().ToLowerInvariant())
             .Distinct()
             .ToList() ?? [];
+
+        if (firstHour)
+        {
+            ShowFirstHourPath(normalizedTags);
+            return;
+        }
 
         var demos = _allDemos
             .Where(demo => normalizedTags.Count == 0 ||
@@ -133,7 +153,6 @@ public class DemoRunner
         for (var index = 0; index < demos.Count; index++)
         {
             var demo = demos[index];
-            var tagOutput = demo.Tags.Count == 0 ? "none" : string.Join(",", demo.Tags);
             var learningStage = GetLearningStage(demo);
 
             if (currentStage != learningStage)
@@ -152,19 +171,73 @@ public class DemoRunner
                 WriteLine(string.Empty);
             }
 
-            WriteLine(demo.Key);
-            WriteLine($"  category: {demo.Category}");
-            WriteLine($"  tags: {tagOutput}");
+            WriteDemoBlock(demo);
+        }
+    }
 
-            if (!string.IsNullOrWhiteSpace(demo.Description))
+    private void ShowFirstHourPath(IReadOnlyCollection<string> normalizedTags)
+    {
+        var demos = FirstHourPathKeys
+            .Select(key => _demos.TryGetValue(key, out var demo) ? demo : null)
+            .Where(demo => demo is not null)
+            .Cast<IDemo>()
+            .Where(demo => normalizedTags.Count == 0 ||
+                           normalizedTags.All(tag =>
+                               demo.Tags.Any(demoTag =>
+                                   string.Equals(demoTag, tag, StringComparison.OrdinalIgnoreCase))))
+            .ToList();
+
+        if (demos.Count == 0)
+        {
+            WriteLine("No demos match the supplied filters.");
+            return;
+        }
+
+        WriteLine("== First Hour Path ==");
+        WriteLine(string.Empty);
+
+        for (var index = 0; index < demos.Count; index++)
+        {
+            if (index > 0)
             {
-                foreach (var line in WrapDescription(demo.Description))
-                {
-                    WriteLine(line);
-                }
+                WriteLine(string.Empty);
+            }
+
+            WriteLine($"{index + 1}. {demos[index].Key}");
+            WriteLine($"   why: {GetFirstHourReason(demos[index].Key)}");
+            WriteDemoBlock(demos[index], "   ");
+        }
+    }
+
+    private void WriteDemoBlock(IDemo demo, string indent = "")
+    {
+        var tagOutput = demo.Tags.Count == 0 ? "none" : string.Join(",", demo.Tags);
+
+        WriteLine($"{indent}{demo.Key}");
+        WriteLine($"{indent}  category: {demo.Category}");
+        WriteLine($"{indent}  tags: {tagOutput}");
+
+        if (!string.IsNullOrWhiteSpace(demo.Description))
+        {
+            foreach (var line in WrapDescription(demo.Description, indent))
+            {
+                WriteLine(line);
             }
         }
     }
+
+    private static string GetFirstHourReason(string key) => key switch
+    {
+        "pattern-matching" => "See a supporting C# feature that improves branching readability.",
+        "tuple-demo" => "See a supporting C# feature that helps with explicit data flow.",
+        "imperative" => "Start from the familiar mutable baseline.",
+        "demo-currying" => "Introduce a core FP idea in plain C# before the triads.",
+        "csharp-parse-validate-pipeline" => "See plain C# pipeline-style validation without LanguageExt.",
+        "csharp-null-patterns" => "Compare null handling through explicit transformation steps.",
+        "csharp-validation-error-list" => "See plain C# accumulation of validation issues.",
+        "langext-option-monad-comparison" => "Finish with one representative LanguageExt monad comparison.",
+        _ => "Part of the curated first-hour path."
+    };
 
     private void WriteLine(string message) => _output.WriteLine(message);
 
@@ -192,10 +265,10 @@ public class DemoRunner
         _ => "Advanced Functional Topics"
     };
 
-    private static IReadOnlyList<string> WrapDescription(string description)
+    private static IReadOnlyList<string> WrapDescription(string description, string indent = "")
     {
-        const string firstPrefix = "  description: ";
-        const string continuationPrefix = "               ";
+        var firstPrefix = indent + "  description: ";
+        var continuationPrefix = indent + "               ";
 
         var words = description
             .Split(' ', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);

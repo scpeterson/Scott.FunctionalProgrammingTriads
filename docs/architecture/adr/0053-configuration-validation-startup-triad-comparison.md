@@ -29,7 +29,7 @@ Add shared rules in `ConfigurationValidationStartupRules` to provide:
 - C# aggregated validation path
 - LanguageExt `Validation<Seq<string>, StartupConfig>` applicative path with error accumulation
 
-The LanguageExt variant remains pure and side-effect free, returning `Either<string, Unit>`.
+The LanguageExt variant remains pure and side-effect free in its applicative validation logic, while the demo boundary returns `DemoExecutionResult`.
 
 ## Consequences
 

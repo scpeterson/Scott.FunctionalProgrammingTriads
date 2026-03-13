@@ -32,3 +32,10 @@ Add a new ADR when a change:
 - Alternatives are documented and plausible.
 - Consequences include at least one downside.
 - References resolve to real files.
+
+## Demo Authoring
+
+For demo-specific additions and updates, use:
+
+- `docs/architecture/demo-author-checklist.md`
+- `docs/architecture/how-to-compare-a-triad.md`

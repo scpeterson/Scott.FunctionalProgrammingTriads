@@ -4,6 +4,12 @@ obj/
 riderModule.iml
 /_ReSharper.Caches/
 
+# Test and coverage artifacts
+TestResults/
+coverage*.xml
+coverage*.json
+coverage*.info
+
 # macOS metadata
 .DS_Store
 

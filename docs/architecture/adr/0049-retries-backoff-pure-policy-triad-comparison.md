@@ -28,7 +28,7 @@ Add `RetryBackoffRules` as the shared pure policy module:
 - Delay calculation per retry attempt
 - Deterministic execution simulation with no waiting/sleeping side effects
 
-The LanguageExt variant remains pure and returns success/failure as `Either<string, Unit>` without output side effects.
+The LanguageExt variant keeps its rule composition pure and side-effect free, while the outer demo boundary reports success/failure through `DemoExecutionResult`.
 
 ## Consequences
 

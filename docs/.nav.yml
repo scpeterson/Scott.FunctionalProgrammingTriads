@@ -3,6 +3,9 @@ nav:
   - Architecture:
     - architecture/README.md
     - architecture/learning-path.md
+    - architecture/how-to-compare-a-triad.md
+    - architecture/demo-author-checklist.md
+    - architecture/repo-health.md
     - architecture/contributing.md
     - architecture/mermaid-authoring-checklist.md
     - architecture/tags.md

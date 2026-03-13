@@ -2,6 +2,22 @@
 
 This repository is easiest to use as a staged comparison tool rather than a flat catalog of demos.
 
+## First Hour Path
+
+If you want the quickest useful introduction, start here:
+
+1. `pattern-matching`
+2. `tuple-demo`
+3. `imperative`
+4. `demo-currying`
+5. `csharp-parse-validate-pipeline`
+6. `csharp-null-patterns`
+7. `csharp-validation-error-list`
+8. `langext-option-monad-comparison`
+
+This sequence gives you a gentle ramp from helpful C# language tools to plain C# functional style, then one representative LanguageExt monad comparison.
+
+
 ## Recommended Order
 
 1. Supporting C# features
@@ -76,3 +92,8 @@ dotnet run --project Scott.FunctionalProgrammingTriads.Console/Scott.FunctionalP
 ```
 
 The list is intentionally ordered to surface supporting features first, then baseline demos, then comparison triads, and finally more advanced material.
+
+## Related Guides
+
+- `docs/architecture/how-to-compare-a-triad.md`
+- `docs/architecture/demo-author-checklist.md`
