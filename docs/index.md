@@ -12,39 +12,39 @@ Learning path for imperative programmers:
   <li>
     <strong>Supporting C# features</strong>
     <ul>
-      <li><a href="architecture/adr/0025-pattern-matching-demo-baseline/">Pattern Matching Demo Baseline</a></li>
-      <li><a href="architecture/adr/0026-tuple-demo-baseline/">Tuple Demo Baseline</a></li>
+      <li><a href="architecture/adr/0025-pattern-matching-demo-baseline.md">Pattern Matching Demo Baseline</a></li>
+      <li><a href="architecture/adr/0026-tuple-demo-baseline.md">Tuple Demo Baseline</a></li>
     </ul>
   </li>
   <li>
     <strong>Baseline comparisons</strong>
     <ul>
-      <li><a href="architecture/adr/0022-imperative-demo-baseline/">Imperative Demo Baseline</a></li>
-      <li><a href="architecture/adr/0023-range-iteration-demo-baseline/">Range Iteration Demo Baseline</a></li>
-      <li><a href="architecture/adr/0027-currying-baseline-demo/">Currying Baseline Demo</a></li>
+      <li><a href="architecture/adr/0022-imperative-demo-baseline.md">Imperative Demo Baseline</a></li>
+      <li><a href="architecture/adr/0023-range-iteration-demo-baseline.md">Range Iteration Demo Baseline</a></li>
+      <li><a href="architecture/adr/0027-currying-baseline-demo.md">Currying Baseline Demo</a></li>
     </ul>
   </li>
   <li>
     <strong>Core triads</strong>
     <ul>
-      <li><a href="architecture/adr/0037-null-option-triad-comparison/">Null Option Triad Comparison</a></li>
-      <li><a href="architecture/adr/0038-parse-validate-triad-comparison/">Parse Validate Triad Comparison</a></li>
-      <li><a href="architecture/adr/0039-validation-accumulation-triad-comparison/">Validation Accumulation Triad Comparison</a></li>
-      <li><a href="architecture/adr/0043-end-to-end-registration-triad-comparison/">End-to-End Registration Triad Comparison</a></li>
+      <li><a href="architecture/adr/0037-null-option-triad-comparison.md">Null Option Triad Comparison</a></li>
+      <li><a href="architecture/adr/0038-parse-validate-triad-comparison.md">Parse Validate Triad Comparison</a></li>
+      <li><a href="architecture/adr/0039-validation-accumulation-triad-comparison.md">Validation Accumulation Triad Comparison</a></li>
+      <li><a href="architecture/adr/0043-end-to-end-registration-triad-comparison.md">End-to-End Registration Triad Comparison</a></li>
     </ul>
   </li>
   <li>
     <strong>Effect/infrastructure triads</strong>
     <ul>
-      <li><a href="architecture/adr/0042-async-eff-workflow-triad-comparison/">Async Eff Workflow Triad Comparison</a></li>
-      <li><a href="architecture/adr/0044-database-text-store-triad-comparison/">Database Text-Store Triad Comparison</a></li>
-      <li><a href="architecture/adr/0045-database-postgres-triad-comparison/">Database PostgreSQL Triad Comparison</a></li>
+      <li><a href="architecture/adr/0042-async-eff-workflow-triad-comparison.md">Async Eff Workflow Triad Comparison</a></li>
+      <li><a href="architecture/adr/0044-database-text-store-triad-comparison.md">Database Text-Store Triad Comparison</a></li>
+      <li><a href="architecture/adr/0045-database-postgres-triad-comparison.md">Database PostgreSQL Triad Comparison</a></li>
     </ul>
   </li>
   <li>
     <strong>LanguageExt monad and advanced demos</strong>
     <ul>
-      <li><a href="architecture/learning-path/">Learning Path</a></li>
+      <li><a href="architecture/learning-path.md">Learning Path</a></li>
     </ul>
   </li>
 </ul>
