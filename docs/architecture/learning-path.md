@@ -20,10 +20,12 @@ This sequence gives you a gentle ramp from helpful C# language tools to plain C#
 ## Recommended Order
 
 1. Supporting C# features
+
    - `pattern-matching`
    - `tuple-demo`
 
 2. Baseline comparisons
+
    - `imperative`
    - `range-iter`
    - `demo-currying`
@@ -31,6 +33,7 @@ This sequence gives you a gentle ramp from helpful C# language tools to plain C#
    - `lang-ext`
 
 3. Core comparison triads
+
    - `imperative-null-handling`
    - `csharp-null-patterns`
    - `langext-option-pipeline`
@@ -45,6 +48,7 @@ This sequence gives you a gentle ramp from helpful C# language tools to plain C#
    - `langext-functional-registration`
 
 4. Effect and infrastructure triads
+
    - `imperative-async-workflow`
    - `csharp-async-composition`
    - `langext-eff-async-workflow`
@@ -56,6 +60,7 @@ This sequence gives you a gentle ramp from helpful C# language tools to plain C#
    - `langext-db-postgres-eff`
 
 5. LanguageExt monad comparisons
+
    - `csharp-option-comparison` / `langext-option-monad-comparison`
    - `csharp-either-comparison` / `langext-either-monad-comparison`
    - `csharp-validation-monad-comparison` / `langext-validation-monad-comparison`
@@ -70,6 +75,7 @@ This sequence gives you a gentle ramp from helpful C# language tools to plain C#
    - `csharp-aff-monad-comparison` / `langext-aff-monad-comparison`
 
 6. Advanced and .NET 10 material
+
    - `fp-extension-members-typeclasses`
    - `fp-json-strict-validation`
    - `other-monads`
