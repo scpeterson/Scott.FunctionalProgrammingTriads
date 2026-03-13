@@ -33,9 +33,7 @@ Learning path for imperative programmers:
 ### LanguageExt Monads And Advanced Demos
 
 - [Learning Path](architecture/learning-path.md)
-
 - [Architecture Overview](architecture/README.md)
-- [Learning Path](architecture/learning-path.md)
 - [How To Compare A Triad](architecture/how-to-compare-a-triad.md)
 - [Demo Author Checklist](architecture/demo-author-checklist.md)
 - [Repo Health Notes](architecture/repo-health.md)
