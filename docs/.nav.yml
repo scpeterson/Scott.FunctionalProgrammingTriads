@@ -70,3 +70,4 @@ nav:
       - architecture/adr/0052-event-sourcing-lite-triad-comparison.md
       - architecture/adr/0053-configuration-validation-startup-triad-comparison.md
       - architecture/adr/0054-demo-execution-result-contract.md
+      - architecture/adr/0055-resource-cleanup-boundaries-triad-comparison.md
