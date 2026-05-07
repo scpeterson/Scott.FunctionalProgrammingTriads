@@ -53,3 +53,4 @@ nav:
   - 0052 Event Sourcing Lite Triad Comparison: 0052-event-sourcing-lite-triad-comparison.md
   - 0053 Configuration Validation at Startup Triad Comparison: 0053-configuration-validation-startup-triad-comparison.md
   - 0054 Demo Execution Result Contract: 0054-demo-execution-result-contract.md
+  - 0055 Resource Cleanup Boundaries Triad Comparison: 0055-resource-cleanup-boundaries-triad-comparison.md
