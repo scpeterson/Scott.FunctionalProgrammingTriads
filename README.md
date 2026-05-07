@@ -41,6 +41,7 @@ If you're approaching the codebase from an imperative background, the smoothest 
    - `csharp-async-composition`
    - `csharp-resource-cleanup-comparison`
    - `csharp-startup-config-loading-comparison`
+   - `csharp-startup-config-decoding-comparison`
    - `csharp-db-text-store`
    - `csharp-db-postgres`
 5. LanguageExt monad triads and advanced demos
