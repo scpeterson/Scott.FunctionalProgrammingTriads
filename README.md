@@ -40,6 +40,7 @@ If you're approaching the codebase from an imperative background, the smoothest 
 4. Effect and infrastructure triads
    - `csharp-async-composition`
    - `csharp-resource-cleanup-comparison`
+   - `csharp-startup-config-source-comparison`
    - `csharp-startup-config-loading-comparison`
    - `csharp-startup-config-decoding-comparison`
    - `csharp-db-text-store`

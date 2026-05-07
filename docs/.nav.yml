@@ -73,3 +73,4 @@ nav:
       - architecture/adr/0055-resource-cleanup-boundaries-triad-comparison.md
       - architecture/adr/0056-configuration-loading-before-validation-triad-comparison.md
       - architecture/adr/0057-configuration-typed-decoding-triad-comparison.md
+      - architecture/adr/0058-configuration-source-acquisition-triad-comparison.md

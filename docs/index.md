@@ -28,6 +28,7 @@ Learning path for imperative programmers:
 
 - [Async Eff Workflow Triad Comparison](architecture/adr/0042-async-eff-workflow-triad-comparison.md)
 - [Resource Cleanup Boundaries Triad Comparison](architecture/adr/0055-resource-cleanup-boundaries-triad-comparison.md)
+- [Configuration Source Acquisition Triad Comparison](architecture/adr/0058-configuration-source-acquisition-triad-comparison.md)
 - [Configuration Loading Before Validation Triad Comparison](architecture/adr/0056-configuration-loading-before-validation-triad-comparison.md)
 - [Configuration Typed Decoding Triad Comparison](architecture/adr/0057-configuration-typed-decoding-triad-comparison.md)
 - [Database Text-Store Triad Comparison](architecture/adr/0044-database-text-store-triad-comparison.md)
