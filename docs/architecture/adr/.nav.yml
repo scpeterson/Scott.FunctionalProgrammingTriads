@@ -55,3 +55,4 @@ nav:
   - 0054 Demo Execution Result Contract: 0054-demo-execution-result-contract.md
   - 0055 Resource Cleanup Boundaries Triad Comparison: 0055-resource-cleanup-boundaries-triad-comparison.md
   - 0056 Configuration Loading Before Validation Triad Comparison: 0056-configuration-loading-before-validation-triad-comparison.md
+  - 0057 Configuration Typed Decoding Triad Comparison: 0057-configuration-typed-decoding-triad-comparison.md
