@@ -27,8 +27,10 @@ mike set-default --push latest
 
 ## Publish a New Version
 
+Current published versions run through `1.6`, so the next numbered publish from this branch should be:
+
 ```bash
-mike deploy --push --update-aliases 0.2 latest
+mike deploy --push --update-aliases 1.7 latest
 ```
 
 ## Local Preview of Versioned Site
@@ -45,5 +47,5 @@ mkdocs serve
 
 ## Notes
 
-- Keep version labels stable (`0.1`, `0.2`, `1.0`, etc.).
+- Keep version labels stable (`0.1`, `0.2`, `1.0`, `1.7`, etc.).
 - Use `latest` alias for the most current docs set.
