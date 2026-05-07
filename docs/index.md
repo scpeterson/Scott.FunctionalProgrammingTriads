@@ -27,6 +27,7 @@ Learning path for imperative programmers:
 ### Effect / Infrastructure Triads
 
 - [Async Eff Workflow Triad Comparison](architecture/adr/0042-async-eff-workflow-triad-comparison.md)
+- [Resource Cleanup Boundaries Triad Comparison](architecture/adr/0055-resource-cleanup-boundaries-triad-comparison.md)
 - [Database Text-Store Triad Comparison](architecture/adr/0044-database-text-store-triad-comparison.md)
 - [Database PostgreSQL Triad Comparison](architecture/adr/0045-database-postgres-triad-comparison.md)
 
@@ -91,6 +92,7 @@ Learning path for imperative programmers:
 - [ADR 0052: Event Sourcing Lite Triad Comparison](architecture/adr/0052-event-sourcing-lite-triad-comparison.md)
 - [ADR 0053: Configuration Validation at Startup Triad Comparison](architecture/adr/0053-configuration-validation-startup-triad-comparison.md)
 - [ADR 0054: Demo Execution Result Contract](architecture/adr/0054-demo-execution-result-contract.md)
+- [ADR 0055: Resource Cleanup Boundaries Triad Comparison](architecture/adr/0055-resource-cleanup-boundaries-triad-comparison.md)
 - [PostgreSQL Changelog Workflow](architecture/database-changelog-workflow.md)
 - [PostgreSQL Operations Runbook](architecture/database-operations-runbook.md)
 - [Architecture Docs Contributing Guide](architecture/contributing.md)

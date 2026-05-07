@@ -39,6 +39,7 @@ If you're approaching the codebase from an imperative background, the smoothest 
    - `csharp-functional-registration`
 4. Effect and infrastructure triads
    - `csharp-async-composition`
+   - `csharp-resource-cleanup-comparison`
    - `csharp-db-text-store`
    - `csharp-db-postgres`
 5. LanguageExt monad triads and advanced demos
