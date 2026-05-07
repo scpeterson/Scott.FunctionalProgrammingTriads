@@ -14,6 +14,7 @@ using Scott.FunctionalProgrammingTriads.Core.Demos.NullOptionTriad;
 using Scott.FunctionalProgrammingTriads.Core.Demos.OptionMonadTriad;
 using Scott.FunctionalProgrammingTriads.Core.Demos.ParseValidateTriad;
 using Scott.FunctionalProgrammingTriads.Core.Demos.ReaderMonadTriad;
+using Scott.FunctionalProgrammingTriads.Core.Demos.ResourceCleanupTriad;
 using Scott.FunctionalProgrammingTriads.Core.Demos.StreamingLargeDataTriad;
 using Scott.FunctionalProgrammingTriads.Core.Demos.RetryBackoffTriad;
 using Scott.FunctionalProgrammingTriads.Core.Demos.SeqMonadTriad;
@@ -62,6 +63,9 @@ public class ScaffoldedTriadsShould
             new ImperativeRetryBackoffComparisonDemo(),
             new CSharpRetryBackoffComparisonDemo(),
             new LanguageExtRetryBackoffComparisonDemo(),
+            new ImperativeResourceCleanupComparisonDemo(),
+            new CSharpResourceCleanupComparisonDemo(),
+            new LanguageExtResourceCleanupComparisonDemo(),
             new ImperativeIdempotentCommandComparisonDemo(),
             new CSharpIdempotentCommandComparisonDemo(),
             new LanguageExtIdempotentCommandComparisonDemo(),
@@ -119,6 +123,8 @@ public class ScaffoldedTriadsShould
                     ? ("1000", "128")
                 : demo.Key.Contains("retry-backoff-comparison", StringComparison.Ordinal)
                     ? ("exp", "2")
+                : demo.Key.Contains("resource-cleanup-comparison", StringComparison.Ordinal)
+                    ? ("success", string.Empty)
                 : demo.Key.Contains("startup-config-validation-comparison", StringComparison.Ordinal)
                     ? ("prod", "20")
                 : ("Scott", "21");
