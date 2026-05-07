@@ -5,6 +5,7 @@ using Scott.FunctionalProgrammingTriads.Core.Demos.CompositionRootTriad;
 using Scott.FunctionalProgrammingTriads.Core.Demos.DomainWorkflowTriad;
 using Scott.FunctionalProgrammingTriads.Core.Demos.EventSourcingLiteTriad;
 using Scott.FunctionalProgrammingTriads.Core.Demos.ConfigurationLoadingTriad;
+using Scott.FunctionalProgrammingTriads.Core.Demos.ConfigurationSourceAcquisitionTriad;
 using Scott.FunctionalProgrammingTriads.Core.Demos.ConfigurationTypedDecodingTriad;
 using Scott.FunctionalProgrammingTriads.Core.Demos.ConfigurationValidationStartupTriad;
 using Scott.FunctionalProgrammingTriads.Core.Demos.EitherMonadTriad;
@@ -53,6 +54,9 @@ public class ScaffoldedTriadsShould
             new ImperativeEventSourcingLiteComparisonDemo(),
             new CSharpEventSourcingLiteComparisonDemo(),
             new LanguageExtEventSourcingLiteComparisonDemo(),
+            new ImperativeConfigurationSourceAcquisitionComparisonDemo(),
+            new CSharpConfigurationSourceAcquisitionComparisonDemo(),
+            new LanguageExtConfigurationSourceAcquisitionComparisonDemo(),
             new ImperativeConfigurationLoadingComparisonDemo(),
             new CSharpConfigurationLoadingComparisonDemo(),
             new LanguageExtConfigurationLoadingComparisonDemo(),
@@ -132,6 +136,8 @@ public class ScaffoldedTriadsShould
                 : demo.Key.Contains("retry-backoff-comparison", StringComparison.Ordinal)
                     ? ("exp", "2")
                 : demo.Key.Contains("resource-cleanup-comparison", StringComparison.Ordinal)
+                    ? ("success", string.Empty)
+                : demo.Key.Contains("startup-config-source-comparison", StringComparison.Ordinal)
                     ? ("success", string.Empty)
                 : demo.Key.Contains("startup-config-loading-comparison", StringComparison.Ordinal)
                     ? ("success", string.Empty)
