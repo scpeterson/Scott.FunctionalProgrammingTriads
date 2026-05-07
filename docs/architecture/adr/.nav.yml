@@ -54,3 +54,4 @@ nav:
   - 0053 Configuration Validation at Startup Triad Comparison: 0053-configuration-validation-startup-triad-comparison.md
   - 0054 Demo Execution Result Contract: 0054-demo-execution-result-contract.md
   - 0055 Resource Cleanup Boundaries Triad Comparison: 0055-resource-cleanup-boundaries-triad-comparison.md
+  - 0056 Configuration Loading Before Validation Triad Comparison: 0056-configuration-loading-before-validation-triad-comparison.md
